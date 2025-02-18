@@ -95,7 +95,57 @@ return (
                 </div>
             </div>
         </div>
+
+        <div className={'col-wrap'}>
+            <div className='notice'>
+                <h2>공지사항</h2>
+                <div className='notice-box'>
+                    <div className='nb'>
+                        <div className={'notice-box-date-text'}>
+                            2024.01.15
+                        </div>
+                        <div className={'notice-box-title-text'}>
+                            2024년 1학기 수업 일정 안내
+                        </div>
+                    </div>
+                </div>
+                <div className='notice-box'>
+                    <div className='nb'>
+                        <div className={'notice-box-date-text'}>
+                            2024.01.15
+                        </div>
+                        <div className={'notice-box-title-text'}>
+                            2024년 1학기 수업 일정 안내
+                        </div>
+                    </div>
+                </div>
+                <div className='notice-box'>
+                    <div className='nb'>
+                        <div className={'notice-box-date-text'}>
+                            2024.01.15
+                        </div>
+                        <div className={'notice-box-title-text'}>
+                            2024년 1학기 수업 일정 안내
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="notice">
+                <h2>공지사항</h2>
+                <div className='notice-box'>
+                    <div className='nb'>
+                        <div className={'notice-box-date-text'}>
+                            2024.01.15
+                        </div>
+                        <div className={'notice-box-title-text'}>
+                            2024년 1학기 수업 일정 안내
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    
 
 );
 };

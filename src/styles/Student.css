@@ -1,0 +1,3334 @@
+.frame- {
+    width: 1440px;
+    height: 1024px;
+    overflow: hidden;
+    background: #F9FAFB;
+    .div {
+        position: absolute;
+        top: 0.05px;
+        left: 0px;
+        width: 1440px;
+        height: 1024px;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: start;
+        flex-wrap: wrap;
+        row-gap: 0px;
+        background: rgba(0, 0, 0, 0);
+        .aside {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 256px;
+            height: 1024px;
+            box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), rgba(255, 255, 255, 1);
+            .div-1 {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 256px;
+                height: 436px;
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: start;
+                flex-wrap: wrap;
+                row-gap: 10px;
+                column-gap: 10px;
+                padding: 24px;
+                background: rgba(0, 0, 0, 0);
+                .h1 {
+                    position: absolute;
+                    top: 24px;
+                    left: 24px;
+                    width: 208px;
+                    height: 28px;
+                    background: rgba(0, 0, 0, 0);
+                    .text-- {
+                        position: absolute;
+                        top: 0px;
+                        left: 0px;
+                        width: 97px;
+                        height: 28px;
+                        white-space: nowrap;
+                        color: #000000;
+                        font-family: "Roboto";
+                        font-size: 20px;
+                        line-height: 28px;
+                        font-weight: 700;
+                    }
+                }
+                .nav {
+                    position: absolute;
+                    top: 84px;
+                    left: 24px;
+                    width: 208px;
+                    height: 328px;
+                    background: rgba(0, 0, 0, 0);
+                    .a {
+                        position: absolute;
+                        top: 0px;
+                        left: 0px;
+                        width: 208px;
+                        height: 48px;
+                        border-radius: 8px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: start;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        row-gap: 0px;
+                        padding: 12px;
+                        background: rgba(0, 0, 0, 0);
+                        .i {
+                            position: absolute;
+                            top: 15.95px;
+                            left: 12px;
+                            width: 20px;
+                            height: 16px;
+                        }
+                        .span {
+                            position: absolute;
+                            top: 12px;
+                            left: 44px;
+                            width: 14.73px;
+                            height: 24px;
+                            background: rgba(0, 0, 0, 0);
+                            .text- {
+                                position: absolute;
+                                top: 0px;
+                                left: 0px;
+                                width: 15px;
+                                height: 24px;
+                                white-space: nowrap;
+                                color: #4B5563;
+                                font-family: "Roboto";
+                                font-size: 16px;
+                                line-height: 24px;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                    .a-1 {
+                        position: absolute;
+                        top: 56px;
+                        left: 0px;
+                        width: 208px;
+                        height: 48px;
+                        border-radius: 8px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: start;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        row-gap: 0px;
+                        padding: 12px;
+                        background: #000000;
+                        .i-1 {
+                            position: absolute;
+                            top: 15.95px;
+                            left: 12px;
+                            width: 20px;
+                            height: 16px;
+                        }
+                        .span-1 {
+                            position: absolute;
+                            top: 12px;
+                            left: 44px;
+                            width: 58.89px;
+                            height: 24px;
+                            background: rgba(0, 0, 0, 0);
+                            .text--1 {
+                                position: absolute;
+                                top: 0px;
+                                left: 0px;
+                                width: 59px;
+                                height: 24px;
+                                white-space: nowrap;
+                                color: #FFFFFF;
+                                font-family: "Roboto";
+                                font-size: 16px;
+                                line-height: 24px;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                    .a-2 {
+                        position: absolute;
+                        top: 112px;
+                        left: 0px;
+                        width: 208px;
+                        height: 48px;
+                        border-radius: 8px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: start;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        row-gap: 0px;
+                        padding: 12px;
+                        background: rgba(0, 0, 0, 0);
+                        .i-2 {
+                            position: absolute;
+                            top: 15.95px;
+                            left: 12px;
+                            width: 20px;
+                            height: 16px;
+                        }
+                        .span-2 {
+                            position: absolute;
+                            top: 12px;
+                            left: 44px;
+                            width: 58.89px;
+                            height: 24px;
+                            background: rgba(0, 0, 0, 0);
+                            .text--2 {
+                                position: absolute;
+                                top: 0px;
+                                left: 0px;
+                                width: 59px;
+                                height: 24px;
+                                white-space: nowrap;
+                                color: #4B5563;
+                                font-family: "Roboto";
+                                font-size: 16px;
+                                line-height: 24px;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                    .a-3 {
+                        position: absolute;
+                        top: 168px;
+                        left: 0px;
+                        width: 208px;
+                        height: 48px;
+                        border-radius: 8px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: start;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        row-gap: 0px;
+                        padding: 12px;
+                        background: rgba(0, 0, 0, 0);
+                        .i-3 {
+                            position: absolute;
+                            top: 15.95px;
+                            left: 12px;
+                            width: 20px;
+                            height: 16px;
+                        }
+                        .span-3 {
+                            position: absolute;
+                            top: 12px;
+                            left: 44px;
+                            width: 58.89px;
+                            height: 24px;
+                            background: rgba(0, 0, 0, 0);
+                            .text--3 {
+                                position: absolute;
+                                top: 0px;
+                                left: 0px;
+                                width: 59px;
+                                height: 24px;
+                                white-space: nowrap;
+                                color: #4B5563;
+                                font-family: "Roboto";
+                                font-size: 16px;
+                                line-height: 24px;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                    .a-4 {
+                        position: absolute;
+                        top: 224px;
+                        left: 0px;
+                        width: 208px;
+                        height: 48px;
+                        border-radius: 8px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: start;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        row-gap: 0px;
+                        padding: 12px;
+                        background: rgba(0, 0, 0, 0);
+                        .i-4 {
+                            position: absolute;
+                            top: 15.95px;
+                            left: 12px;
+                            width: 20px;
+                            height: 16px;
+                        }
+                        .span-4 {
+                            position: absolute;
+                            top: 12px;
+                            left: 44px;
+                            width: 58.89px;
+                            height: 24px;
+                            background: rgba(0, 0, 0, 0);
+                            .text--4 {
+                                position: absolute;
+                                top: 0px;
+                                left: 0px;
+                                width: 59px;
+                                height: 24px;
+                                white-space: nowrap;
+                                color: #4B5563;
+                                font-family: "Roboto";
+                                font-size: 16px;
+                                line-height: 24px;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                    .a-5 {
+                        position: absolute;
+                        top: 280px;
+                        left: 0px;
+                        width: 208px;
+                        height: 48px;
+                        border-radius: 8px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: start;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        row-gap: 0px;
+                        padding: 12px;
+                        background: rgba(0, 0, 0, 0);
+                        .i-5 {
+                            position: absolute;
+                            top: 15.95px;
+                            left: 12px;
+                            width: 20px;
+                            height: 16px;
+                        }
+                        .span-5 {
+                            position: absolute;
+                            top: 12px;
+                            left: 44px;
+                            width: 29.45px;
+                            height: 24px;
+                            background: rgba(0, 0, 0, 0);
+                            .text--5 {
+                                position: absolute;
+                                top: 0px;
+                                left: 0px;
+                                width: 30px;
+                                height: 24px;
+                                white-space: nowrap;
+                                color: #4B5563;
+                                font-family: "Roboto";
+                                font-size: 16px;
+                                line-height: 24px;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .main {
+            position: absolute;
+            top: 0px;
+            left: 256px;
+            width: 1184px;
+            height: 1024px;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            flex-wrap: wrap;
+            row-gap: 10px;
+            column-gap: 10px;
+            padding: 32px;
+            background: rgba(0, 0, 0, 0);
+            .div-2 {
+                position: absolute;
+                top: 32px;
+                left: 32px;
+                width: 1120px;
+                height: 859px;
+                background: rgba(0, 0, 0, 0);
+                .div-3 {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    width: 1120px;
+                    height: 859px;
+                    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+                    border-radius: 8px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: start;
+                    align-items: start;
+                    flex-wrap: wrap;
+                    row-gap: 10px;
+                    column-gap: 10px;
+                    padding: 24px;
+                    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), rgba(255, 255, 255, 1);
+                    .h2 {
+                        position: absolute;
+                        top: 24px;
+                        left: 24px;
+                        width: 1072px;
+                        height: 28px;
+                        background: rgba(0, 0, 0, 0);
+                        .text---1 {
+                            position: absolute;
+                            top: 0px;
+                            left: 0px;
+                            width: 79px;
+                            height: 28px;
+                            white-space: nowrap;
+                            color: #000000;
+                            font-family: "Roboto";
+                            font-size: 20px;
+                            line-height: 28px;
+                            font-weight: 700;
+                        }
+                    }
+                    .div-4 {
+                        position: absolute;
+                        top: 76px;
+                        left: 24px;
+                        width: 1072px;
+                        height: 40px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        row-gap: 0px;
+                        background: rgba(0, 0, 0, 0);
+                        .button {
+                            position: absolute;
+                            top: 0px;
+                            left: 0px;
+                            width: 94.84px;
+                            height: 40px;
+                            border-radius: 4px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: start;
+                            align-items: start;
+                            flex-wrap: wrap;
+                            row-gap: 10px;
+                            column-gap: 10px;
+                            background: #000000;
+                            .text---2 {
+                                position: absolute;
+                                top: 8px;
+                                left: 15.92px;
+                                width: 63px;
+                                height: 24px;
+                                white-space: nowrap;
+                                color: #FFFFFF;
+                                font-family: "Roboto";
+                                font-size: 16px;
+                                line-height: 24px;
+                                font-weight: 400;
+                                text-align: center;
+                            }
+                        }
+                        .button-1 {
+                            position: absolute;
+                            top: 0px;
+                            left: 337.05px;
+                            width: 76.17px;
+                            height: 40px;
+                            border-radius: 4px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: start;
+                            align-items: start;
+                            flex-wrap: wrap;
+                            row-gap: 10px;
+                            column-gap: 10px;
+                            background: rgba(0, 0, 0, 0);
+                            .text--6 {
+                                position: absolute;
+                                top: 8px;
+                                left: 15.59px;
+                                width: 45px;
+                                height: 24px;
+                                white-space: nowrap;
+                                color: #4B5563;
+                                font-family: "Roboto";
+                                font-size: 16px;
+                                line-height: 24px;
+                                font-weight: 400;
+                                text-align: center;
+                            }
+                        }
+                        .button-2 {
+                            position: absolute;
+                            top: 0px;
+                            left: 655.42px;
+                            width: 61.45px;
+                            height: 40px;
+                            border-radius: 4px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: start;
+                            align-items: start;
+                            flex-wrap: wrap;
+                            row-gap: 10px;
+                            column-gap: 10px;
+                            background: rgba(0, 0, 0, 0);
+                            .text--7 {
+                                position: absolute;
+                                top: 8px;
+                                left: 15.73px;
+                                width: 30px;
+                                height: 24px;
+                                white-space: nowrap;
+                                color: #4B5563;
+                                font-family: "Roboto";
+                                font-size: 16px;
+                                line-height: 24px;
+                                font-weight: 400;
+                                text-align: center;
+                            }
+                        }
+                        .button-3 {
+                            position: absolute;
+                            top: 0px;
+                            left: 959.08px;
+                            width: 112.89px;
+                            height: 40px;
+                            border-radius: 4px;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: start;
+                            align-items: center;
+                            flex-wrap: wrap;
+                            row-gap: 0px;
+                            background: #16A34A;
+                            .img {
+                                position: absolute;
+                                top: 12px;
+                                left: 16px;
+                                width: 14px;
+                                height: 16px;
+                                background: url(https://image-resource.creatie.ai/140826466779355/140826466779357/b6e42caa81345fcb85b1677a203cacb7.png), rgba(0, 0, 0, 0);
+                                object-fit: contain;
+                                background-size: contain;
+                            }
+                            .text--8 {
+                                position: absolute;
+                                top: 8px;
+                                left: 37.95px;
+                                width: 59px;
+                                height: 24px;
+                                white-space: nowrap;
+                                color: #FFFFFF;
+                                font-family: "Roboto";
+                                font-size: 16px;
+                                line-height: 24px;
+                                font-weight: 400;
+                                text-align: center;
+                            }
+                        }
+                    }
+                    .div-5 {
+                        position: absolute;
+                        top: 140px;
+                        left: 24px;
+                        width: 1072px;
+                        height: 42px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: start;
+                        align-items: start;
+                        flex-wrap: wrap;
+                        row-gap: 0px;
+                        background: rgba(0, 0, 0, 0);
+                        .select {
+                            position: absolute;
+                            top: 0px;
+                            left: 0px;
+                            width: 192px;
+                            height: 42px;
+                            border-radius: 8px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: start;
+                            align-items: start;
+                            flex-wrap: wrap;
+                            row-gap: 10px;
+                            column-gap: 10px;
+                            overflow: hidden;
+                            background: #FFFFFF;
+                            border: 1px solid #D1D5DB;
+                            .img-1 {
+                                position: absolute;
+                                top: 9px;
+                                left: 160px;
+                                width: 24px;
+                                height: 24px;
+                                object-fit: cover;
+                            }
+                            .option {
+                                position: absolute;
+                                top: -172.05px;
+                                left: -312px;
+                                width: 0.01px;
+                                height: 0.01px;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: start;
+                                align-items: start;
+                                flex-wrap: wrap;
+                                row-gap: 10px;
+                                column-gap: 10px;
+                                padding: 0px 2px 1px 2px;
+                                background: rgba(0, 0, 0, 0);
+                            }
+                            .option-1 {
+                                position: absolute;
+                                top: -172.05px;
+                                left: -312px;
+                                width: 0.01px;
+                                height: 0.01px;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: start;
+                                align-items: start;
+                                flex-wrap: wrap;
+                                row-gap: 10px;
+                                column-gap: 10px;
+                                padding: 0px 2px 1px 2px;
+                                background: rgba(0, 0, 0, 0);
+                            }
+                            .option-2 {
+                                position: absolute;
+                                top: -172.05px;
+                                left: -312px;
+                                width: 0.01px;
+                                height: 0.01px;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: start;
+                                align-items: start;
+                                flex-wrap: wrap;
+                                row-gap: 10px;
+                                column-gap: 10px;
+                                padding: 0px 2px 1px 2px;
+                                background: rgba(0, 0, 0, 0);
+                            }
+                            .option-3 {
+                                position: absolute;
+                                top: -172.05px;
+                                left: -312px;
+                                width: 0.01px;
+                                height: 0.01px;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: start;
+                                align-items: start;
+                                flex-wrap: wrap;
+                                row-gap: 10px;
+                                column-gap: 10px;
+                                padding: 0px 2px 1px 2px;
+                                background: rgba(0, 0, 0, 0);
+                            }
+                            .text--9 {
+                                position: absolute;
+                                top: 9px;
+                                left: 12px;
+                                width: 59px;
+                                height: 24px;
+                                white-space: nowrap;
+                                color: #000000;
+                                font-family: "Roboto";
+                                font-size: 16px;
+                                line-height: 24px;
+                                font-weight: 400;
+                            }
+                        }
+                        .div-6 {
+                            position: absolute;
+                            top: 0px;
+                            left: 208px;
+                            width: 864px;
+                            height: 42px;
+                            background: rgba(0, 0, 0, 0);
+                            .input {
+                                position: absolute;
+                                top: 0px;
+                                left: 0px;
+                                width: 864px;
+                                height: 42px;
+                                border-radius: 8px;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: start;
+                                align-items: start;
+                                flex-wrap: wrap;
+                                row-gap: 10px;
+                                column-gap: 10px;
+                                
+                                overflow: hidden;
+                                background: #FFFFFF;
+                                border: 1px solid #D1D5DB;
+                                .text---3 {
+                                    position: absolute;
+                                    top: 9px;
+                                    left: 40px;
+                                    width: 137px;
+                                    height: 24px;
+                                    white-space: nowrap;
+                                    color: #6B7280;
+                                    font-family: "Roboto";
+                                    font-size: 16px;
+                                    line-height: 24px;
+                                    font-weight: 400;
+                                }
+                            }
+                            .svg-6 {
+                                position: absolute;
+                                top: 12.95px;
+                                left: 12px;
+                                width: 16px;
+                                height: 16px;
+                            }
+                        }
+                    }
+                    .div-7 {
+                        position: absolute;
+                        top: 206px;
+                        left: 24px;
+                        width: 1072px;
+                        height: 575px;
+                        overflow: hidden;
+                        background: rgba(0, 0, 0, 0);
+                        .table {
+                            position: absolute;
+                            top: 0px;
+                            left: 0px;
+                            width: 1072px;
+                            height: 575px;
+                            background: rgba(0, 0, 0, 0);
+                            .thead {
+                                position: absolute;
+                                top: 0px;
+                                left: 0px;
+                                width: 1072px;
+                                height: 44.5px;
+                                background: rgba(0, 0, 0, 0);
+                                .tr {
+                                    position: absolute;
+                                    top: 0px;
+                                    left: 0px;
+                                    width: 1072px;
+                                    height: 44.5px;
+                                    background: rgba(0, 0, 0, 0);
+                                    border-width: 0px 0px 1px 0px;
+                                    border-style: solid;
+                                    border-color: #E5E7EB;
+                                    .th {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 0px;
+                                        width: 203.63px;
+                                        height: 44.5px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 12px 24px 12px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .text--10 {
+                                            position: absolute;
+                                            top: 12px;
+                                            left: 24px;
+                                            width: 26px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #6B7280;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 500;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                    .th-1 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 203.63px;
+                                        width: 151.83px;
+                                        height: 44.5px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 12px 24px 12px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .text--11 {
+                                            position: absolute;
+                                            top: 12px;
+                                            left: 24px;
+                                            width: 26px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #6B7280;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 500;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                    .th-2 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 355.45px;
+                                        width: 127.69px;
+                                        height: 44.5px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 12px 24px 12px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .text--12 {
+                                            position: absolute;
+                                            top: 12px;
+                                            left: 24px;
+                                            width: 26px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #6B7280;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 500;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                    .th-3 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 483.14px;
+                                        width: 209.56px;
+                                        height: 44.5px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 12px 24px 12px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .text--13 {
+                                            position: absolute;
+                                            top: 12px;
+                                            left: 24px;
+                                            width: 52px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #6B7280;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 500;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                    .th-4 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 692.7px;
+                                        width: 258.95px;
+                                        height: 44.5px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 12px 24px 12px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .text--14 {
+                                            position: absolute;
+                                            top: 12px;
+                                            left: 24px;
+                                            width: 39px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #6B7280;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 500;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                    .th-5 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 951.66px;
+                                        width: 120.34px;
+                                        height: 44.5px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 12px 24px 12px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .text--15 {
+                                            position: absolute;
+                                            top: 12px;
+                                            left: 24px;
+                                            width: 26px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #6B7280;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 500;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                }
+                            }
+                            .tbody {
+                                position: absolute;
+                                top: 44.5px;
+                                left: 0px;
+                                width: 1072px;
+                                height: 530px;
+                                background: rgba(0, 0, 0, 0);
+                                .tr-1 {
+                                    position: absolute;
+                                    top: 0px;
+                                    left: 0px;
+                                    width: 1072px;
+                                    height: 53px;
+                                    background: rgba(0, 0, 0, 0);
+                                    border-width: 0px 0px 1px 0px;
+                                    border-style: solid;
+                                    border-color: #E5E7EB;
+                                    .td {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 0px;
+                                        width: 203.63px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .text--16 {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 91px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                    .td-1 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 203.63px;
+                                        width: 151.83px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .text-2024001 {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 56px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                    .td-2 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 355.45px;
+                                        width: 127.69px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .text--17 {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 39px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                    .td-3 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 483.14px;
+                                        width: 209.56px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .text-010-1234-5678 {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 95px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                    .td-4 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 692.7px;
+                                        width: 258.95px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .jykoemailcom {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 104px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                    .td-5 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 951.66px;
+                                        width: 120.34px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .text-1 {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 34px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                }
+                                .tr-2 {
+                                    position: absolute;
+                                    top: 53px;
+                                    left: 0px;
+                                    width: 1072px;
+                                    height: 53px;
+                                    background: rgba(0, 0, 0, 0);
+                                    border-width: 0px 0px 1px 0px;
+                                    border-style: solid;
+                                    border-color: #E5E7EB;
+                                    .td-6 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 0px;
+                                        width: 203.63px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .text--18 {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 78px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                    .td-7 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 203.63px;
+                                        width: 151.83px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .text-2023015 {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 56px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                    .td-8 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 355.45px;
+                                        width: 127.69px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .text--19 {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 39px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                    .td-9 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 483.14px;
+                                        width: 209.56px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .text-010-9876-5432 {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 95px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                    .td-10 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 692.7px;
+                                        width: 258.95px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .jskimemailcom {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 112px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                    .td-11 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 951.66px;
+                                        width: 120.34px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .text-2 {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 34px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                }
+                                .tr-3 {
+                                    position: absolute;
+                                    top: 106px;
+                                    left: 0px;
+                                    width: 1072px;
+                                    height: 53px;
+                                    background: rgba(0, 0, 0, 0);
+                                    border-width: 0px 0px 1px 0px;
+                                    border-style: solid;
+                                    border-color: #E5E7EB;
+                                    .td-12 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 0px;
+                                        width: 203.63px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .text--20 {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 78px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                    .td-13 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 203.63px;
+                                        width: 151.83px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .text-2024003 {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 56px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                    .td-14 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 355.45px;
+                                        width: 127.69px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .text--21 {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 39px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                    .td-15 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 483.14px;
+                                        width: 209.56px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .text-010-2345-6789 {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 95px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                    .td-16 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 692.7px;
+                                        width: 258.95px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .mjparkemailcom {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 121px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                    .td-17 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 951.66px;
+                                        width: 120.34px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .text-3 {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 34px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                }
+                                .tr-4 {
+                                    position: absolute;
+                                    top: 159px;
+                                    left: 0px;
+                                    width: 1072px;
+                                    height: 53px;
+                                    background: rgba(0, 0, 0, 0);
+                                    border-width: 0px 0px 1px 0px;
+                                    border-style: solid;
+                                    border-color: #E5E7EB;
+                                    .td-18 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 0px;
+                                        width: 203.63px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .text--22 {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 91px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                    .td-19 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 203.63px;
+                                        width: 151.83px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .text-2024004 {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 56px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                    .td-20 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 355.45px;
+                                        width: 127.69px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .text--23 {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 39px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                    .td-21 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 483.14px;
+                                        width: 209.56px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .text-010-3456-7890 {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 95px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                    .td-22 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 692.7px;
+                                        width: 258.95px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .sjleeemailcom {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 107px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                    .td-23 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 951.66px;
+                                        width: 120.34px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .text-4 {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 34px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                }
+                                .tr-5 {
+                                    position: absolute;
+                                    top: 212px;
+                                    left: 0px;
+                                    width: 1072px;
+                                    height: 53px;
+                                    background: rgba(0, 0, 0, 0);
+                                    border-width: 0px 0px 1px 0px;
+                                    border-style: solid;
+                                    border-color: #E5E7EB;
+                                    .td-24 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 0px;
+                                        width: 203.63px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .text--24 {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 78px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                    .td-25 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 203.63px;
+                                        width: 151.83px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .text-2023005 {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 56px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                    .td-26 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 355.45px;
+                                        width: 127.69px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .text--25 {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 39px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                    .td-27 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 483.14px;
+                                        width: 209.56px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .text-010-4567-8901 {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 95px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                    .td-28 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 692.7px;
+                                        width: 258.95px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .dhjungemailcom {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 121px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                    .td-29 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 951.66px;
+                                        width: 120.34px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .text-5 {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 34px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                }
+                                .tr-6 {
+                                    position: absolute;
+                                    top: 265px;
+                                    left: 0px;
+                                    width: 1072px;
+                                    height: 53px;
+                                    background: rgba(0, 0, 0, 0);
+                                    border-width: 0px 0px 1px 0px;
+                                    border-style: solid;
+                                    border-color: #E5E7EB;
+                                    .td-30 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 0px;
+                                        width: 203.63px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .text--26 {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 78px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                    .td-31 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 203.63px;
+                                        width: 151.83px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .text-2024006 {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 56px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                    .td-32 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 355.45px;
+                                        width: 127.69px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .text--27 {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 39px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                    .td-33 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 483.14px;
+                                        width: 209.56px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .text-010-5678-9012 {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 95px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                    .td-34 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 692.7px;
+                                        width: 258.95px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .yrchoiemailcom {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 116px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                    .td-35 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 951.66px;
+                                        width: 120.34px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .text-6 {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 34px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                }
+                                .tr-7 {
+                                    position: absolute;
+                                    top: 318px;
+                                    left: 0px;
+                                    width: 1072px;
+                                    height: 53px;
+                                    background: rgba(0, 0, 0, 0);
+                                    border-width: 0px 0px 1px 0px;
+                                    border-style: solid;
+                                    border-color: #E5E7EB;
+                                    .td-36 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 0px;
+                                        width: 203.63px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .text--28 {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 91px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                    .td-37 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 203.63px;
+                                        width: 151.83px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .text-2024007 {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 56px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                    .td-38 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 355.45px;
+                                        width: 127.69px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .text--29 {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 39px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                    .td-39 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 483.14px;
+                                        width: 209.56px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .text-010-6789-0123 {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 95px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                    .td-40 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 692.7px;
+                                        width: 258.95px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .swhanemailcom {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 119px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                    .td-41 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 951.66px;
+                                        width: 120.34px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .text-7 {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 34px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                }
+                                .tr-8 {
+                                    position: absolute;
+                                    top: 371px;
+                                    left: 0px;
+                                    width: 1072px;
+                                    height: 53px;
+                                    background: rgba(0, 0, 0, 0);
+                                    border-width: 0px 0px 1px 0px;
+                                    border-style: solid;
+                                    border-color: #E5E7EB;
+                                    .td-42 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 0px;
+                                        width: 203.63px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .text--30 {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 78px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                    .td-43 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 203.63px;
+                                        width: 151.83px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .text-2023008 {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 56px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                    .td-44 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 355.45px;
+                                        width: 127.69px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .text--31 {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 39px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                    .td-45 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 483.14px;
+                                        width: 209.56px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .text-010-7890-1234 {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 95px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                    .td-46 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 692.7px;
+                                        width: 258.95px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .mskangemailcom {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 128px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                    .td-47 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 951.66px;
+                                        width: 120.34px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .text-8 {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 34px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                }
+                                .tr-9 {
+                                    position: absolute;
+                                    top: 424px;
+                                    left: 0px;
+                                    width: 1072px;
+                                    height: 53px;
+                                    background: rgba(0, 0, 0, 0);
+                                    border-width: 0px 0px 1px 0px;
+                                    border-style: solid;
+                                    border-color: #E5E7EB;
+                                    .td-48 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 0px;
+                                        width: 203.63px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .text--32 {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 78px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                    .td-49 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 203.63px;
+                                        width: 151.83px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .text-2024009 {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 56px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                    .td-50 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 355.45px;
+                                        width: 127.69px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .text--33 {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 39px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                    .td-51 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 483.14px;
+                                        width: 209.56px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .text-010-8901-2345 {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 95px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                    .td-52 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 692.7px;
+                                        width: 258.95px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .jwlimemailcom {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 111px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                    .td-53 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 951.66px;
+                                        width: 120.34px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .text-9 {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 34px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                }
+                                .tr-10 {
+                                    position: absolute;
+                                    top: 477px;
+                                    left: 0px;
+                                    width: 1072px;
+                                    height: 53px;
+                                    background: rgba(0, 0, 0, 0);
+                                    border-width: 0px 0px 1px 0px;
+                                    border-style: solid;
+                                    border-color: #E5E7EB;
+                                    .td-54 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 0px;
+                                        width: 203.63px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .text--34 {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 91px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                    .td-55 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 203.63px;
+                                        width: 151.83px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .text-2024010 {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 56px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                    .td-56 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 355.45px;
+                                        width: 127.69px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .text--35 {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 39px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                    .td-57 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 483.14px;
+                                        width: 209.56px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .text-010-9012-3456 {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 95px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                    .td-58 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 692.7px;
+                                        width: 258.95px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .hjsongemailcom {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 120px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                    .td-59 {
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 951.66px;
+                                        width: 120.34px;
+                                        height: 53px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: start;
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        row-gap: 10px;
+                                        column-gap: 10px;
+                                        padding: 16px 24px 16px 24px;
+                                        background: rgba(0, 0, 0, 0);
+                                        .text-10 {
+                                            position: absolute;
+                                            top: 17px;
+                                            left: 24px;
+                                            width: 34px;
+                                            height: 20px;
+                                            white-space: nowrap;
+                                            color: #000000;
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 400;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .div-8 {
+                        position: absolute;
+                        top: 805px;
+                        left: 24px;
+                        width: 1072px;
+                        height: 30px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        row-gap: 0px;
+                        background: rgba(0, 0, 0, 0);
+                        .div-9 {
+                            position: absolute;
+                            top: 5px;
+                            left: 0px;
+                            width: 87.28px;
+                            height: 20px;
+                            background: rgba(0, 0, 0, 0);
+                            .text--36 {
+                                position: absolute;
+                                top: 0px;
+                                left: 0px;
+                                width: 13px;
+                                height: 20px;
+                                white-space: nowrap;
+                                color: #6B7280;
+                                font-family: "Roboto";
+                                font-size: 14px;
+                                line-height: 20px;
+                                font-weight: 400;
+                            }
+                            .span-6 {
+                                position: absolute;
+                                top: 2px;
+                                left: 16.36px;
+                                width: 15.92px;
+                                height: 16px;
+                                background: rgba(0, 0, 0, 0);
+                                .text-22 {
+                                    position: absolute;
+                                    top: -2px;
+                                    left: 0px;
+                                    width: 16px;
+                                    height: 20px;
+                                    white-space: nowrap;
+                                    color: #6B7280;
+                                    font-family: "Roboto";
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    font-weight: 500;
+                                }
+                            }
+                            .text---4 {
+                                position: absolute;
+                                top: 0px;
+                                left: 32.28px;
+                                width: 55px;
+                                height: 20px;
+                                white-space: nowrap;
+                                color: #6B7280;
+                                font-family: "Roboto";
+                                font-size: 14px;
+                                line-height: 20px;
+                                font-weight: 400;
+                            }
+                        }
+                        .div-10 {
+                            position: absolute;
+                            top: 0px;
+                            left: 394.19px;
+                            width: 318.91px;
+                            height: 30px;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: start;
+                            align-items: center;
+                            flex-wrap: wrap;
+                            row-gap: 0px;
+                            background: rgba(0, 0, 0, 0);
+                            .button-4 {
+                                position: absolute;
+                                top: 0px;
+                                left: 0px;
+                                width: 51.77px;
+                                height: 30px;
+                                opacity: 0.5;
+                                border-radius: 8px;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: start;
+                                align-items: start;
+                                flex-wrap: wrap;
+                                row-gap: 10px;
+                                column-gap: 10px;
+                                padding: 4px 12px 4px 12px;
+                                background: rgba(0, 0, 0, 0);
+                                border: 1px solid #E5E7EB;
+                                .text--37 {
+                                    position: absolute;
+                                    top: 5px;
+                                    left: 12.88px;
+                                    width: 26px;
+                                    height: 20px;
+                                    opacity: 0.5;
+                                    white-space: nowrap;
+                                    color: #6B7280;
+                                    font-family: "Roboto";
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    font-weight: 400;
+                                    text-align: center;
+                                }
+                            }
+                            .button-5 {
+                                position: absolute;
+                                top: 1px;
+                                left: 59.77px;
+                                width: 31.88px;
+                                height: 28px;
+                                border-radius: 8px;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: start;
+                                align-items: start;
+                                flex-wrap: wrap;
+                                row-gap: 10px;
+                                column-gap: 10px;
+                                padding: 4px 12px 4px 12px;
+                                background: #000000;
+                                .text-11 {
+                                    position: absolute;
+                                    top: 4px;
+                                    left: 11.94px;
+                                    width: 8px;
+                                    height: 20px;
+                                    white-space: nowrap;
+                                    color: #FFFFFF;
+                                    font-family: "Roboto";
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    font-weight: 400;
+                                    text-align: center;
+                                }
+                            }
+                            .button-6 {
+                                position: absolute;
+                                top: 0px;
+                                left: 99.64px;
+                                width: 33.88px;
+                                height: 30px;
+                                border-radius: 8px;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: start;
+                                align-items: start;
+                                flex-wrap: wrap;
+                                row-gap: 10px;
+                                column-gap: 10px;
+                                padding: 4px 12px 4px 12px;
+                                background: rgba(0, 0, 0, 0);
+                                border: 1px solid #E5E7EB;
+                                .text-12 {
+                                    position: absolute;
+                                    top: 5px;
+                                    left: 12.94px;
+                                    width: 8px;
+                                    height: 20px;
+                                    white-space: nowrap;
+                                    color: #6B7280;
+                                    font-family: "Roboto";
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    font-weight: 400;
+                                    text-align: center;
+                                }
+                            }
+                            .button-7 {
+                                position: absolute;
+                                top: 0px;
+                                left: 141.52px;
+                                width: 33.88px;
+                                height: 30px;
+                                border-radius: 8px;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: start;
+                                align-items: start;
+                                flex-wrap: wrap;
+                                row-gap: 10px;
+                                column-gap: 10px;
+                                padding: 4px 12px 4px 12px;
+                                background: rgba(0, 0, 0, 0);
+                                border: 1px solid #E5E7EB;
+                                .text-13 {
+                                    position: absolute;
+                                    top: 5px;
+                                    left: 12.94px;
+                                    width: 8px;
+                                    height: 20px;
+                                    white-space: nowrap;
+                                    color: #6B7280;
+                                    font-family: "Roboto";
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    font-weight: 400;
+                                    text-align: center;
+                                }
+                            }
+                            .button-8 {
+                                position: absolute;
+                                top: 0px;
+                                left: 183.39px;
+                                width: 33.88px;
+                                height: 30px;
+                                border-radius: 8px;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: start;
+                                align-items: start;
+                                flex-wrap: wrap;
+                                row-gap: 10px;
+                                column-gap: 10px;
+                                padding: 4px 12px 4px 12px;
+                                background: rgba(0, 0, 0, 0);
+                                border: 1px solid #E5E7EB;
+                                .text-14 {
+                                    position: absolute;
+                                    top: 5px;
+                                    left: 12.94px;
+                                    width: 8px;
+                                    height: 20px;
+                                    white-space: nowrap;
+                                    color: #6B7280;
+                                    font-family: "Roboto";
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    font-weight: 400;
+                                    text-align: center;
+                                }
+                            }
+                            .button-9 {
+                                position: absolute;
+                                top: 0px;
+                                left: 225.27px;
+                                width: 33.88px;
+                                height: 30px;
+                                border-radius: 8px;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: start;
+                                align-items: start;
+                                flex-wrap: wrap;
+                                row-gap: 10px;
+                                column-gap: 10px;
+                                padding: 4px 12px 4px 12px;
+                                background: rgba(0, 0, 0, 0);
+                                border: 1px solid #E5E7EB;
+                                .text-15 {
+                                    position: absolute;
+                                    top: 5px;
+                                    left: 12.94px;
+                                    width: 8px;
+                                    height: 20px;
+                                    white-space: nowrap;
+                                    color: #6B7280;
+                                    font-family: "Roboto";
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    font-weight: 400;
+                                    text-align: center;
+                                }
+                            }
+                            .button-10 {
+                                position: absolute;
+                                top: 0px;
+                                left: 267.14px;
+                                width: 51.77px;
+                                height: 30px;
+                                border-radius: 8px;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: start;
+                                align-items: start;
+                                flex-wrap: wrap;
+                                row-gap: 10px;
+                                column-gap: 10px;
+                                padding: 4px 12px 4px 12px;
+                                background: rgba(0, 0, 0, 0);
+                                border: 1px solid #E5E7EB;
+                                .text--38 {
+                                    position: absolute;
+                                    top: 5px;
+                                    left: 12.88px;
+                                    width: 26px;
+                                    height: 20px;
+                                    white-space: nowrap;
+                                    color: #6B7280;
+                                    font-family: "Roboto";
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    font-weight: 400;
+                                    text-align: center;
+                                }
+                            }
+                        }
+                        .div-11 {
+                            position: absolute;
+                            top: 0px;
+                            left: 1020px;
+                            width: 52px;
+                            height: 30px;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: start;
+                            align-items: center;
+                            flex-wrap: wrap;
+                            row-gap: 0px;
+                            background: rgba(0, 0, 0, 0);
+                            .select-1 {
+                                position: absolute;
+                                top: 0px;
+                                left: 0px;
+                                width: 52px;
+                                height: 30px;
+                                border-radius: 8px;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: start;
+                                align-items: start;
+                                flex-wrap: wrap;
+                                row-gap: 10px;
+                                column-gap: 10px;
+                                padding: 4px;
+                                overflow: hidden;
+                                background: #FFFFFF;
+                                border: 1px solid #6B7280;
+                                .img-2 {
+                                    position: absolute;
+                                    top: 4.5px;
+                                    left: 23px;
+                                    width: 21px;
+                                    height: 21px;
+                                    object-fit: cover;
+                                }
+                                .option-4 {
+                                    position: absolute;
+                                    top: -837.05px;
+                                    left: -1332px;
+                                    width: 0.01px;
+                                    height: 0.01px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: start;
+                                    align-items: start;
+                                    flex-wrap: wrap;
+                                    row-gap: 10px;
+                                    column-gap: 10px;
+                                    padding: 0px 2px 1px 2px;
+                                    background: rgba(0, 0, 0, 0);
+                                }
+                                .option-5 {
+                                    position: absolute;
+                                    top: -837.05px;
+                                    left: -1332px;
+                                    width: 0.01px;
+                                    height: 0.01px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: start;
+                                    align-items: start;
+                                    flex-wrap: wrap;
+                                    row-gap: 10px;
+                                    column-gap: 10px;
+                                    padding: 0px 2px 1px 2px;
+                                    background: rgba(0, 0, 0, 0);
+                                }
+                                .option-6 {
+                                    position: absolute;
+                                    top: -837.05px;
+                                    left: -1332px;
+                                    width: 0.01px;
+                                    height: 0.01px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: start;
+                                    align-items: start;
+                                    flex-wrap: wrap;
+                                    row-gap: 10px;
+                                    column-gap: 10px;
+                                    padding: 0px 2px 1px 2px;
+                                    background: rgba(0, 0, 0, 0);
+                                }
+                                .option-7 {
+                                    position: absolute;
+                                    top: -837.05px;
+                                    left: -1332px;
+                                    width: 0.01px;
+                                    height: 0.01px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: start;
+                                    align-items: start;
+                                    flex-wrap: wrap;
+                                    row-gap: 10px;
+                                    column-gap: 10px;
+                                    padding: 0px 2px 1px 2px;
+                                    background: rgba(0, 0, 0, 0);
+                                }
+                                .text-16 {
+                                    position: absolute;
+                                    top: 5px;
+                                    left: 4px;
+                                    width: 42px;
+                                    height: 20px;
+                                    white-space: nowrap;
+                                    color: #000000;
+                                    font-family: "Roboto";
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    font-weight: 400;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

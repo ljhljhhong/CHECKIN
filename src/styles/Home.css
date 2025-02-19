@@ -274,11 +274,25 @@
 }
 
 .progress-wrap progress {
-  width: 85%;
-  height: 32px;
+  width: 93%;
+  height: 50%;
   z-index: 0;
   opacity: 1;
   background: #F3F4F6;
+  border-radius: 10px;
+}
+
+progress::-webkit-progress-bar {
+  background: #f0f0f0;
+  border-radius: 10px;
+  /* box-shadow: inset 3px 3px 10px #ccc; */
+}
+
+progress::-webkit-progress-value {
+  border-radius: 10px;
+  background: #000000;
+  /* background: -webkit-linear-gradient(to right, #93F9B9, #1D976C); */
+  /* background: linear-gradient(to right, #93F9B9, #1D976C); */
 }
 
 .progress-text {

@@ -88,7 +88,7 @@ return (
                     <h3 className='bar-wrap-h3-text'>최근 출결 현황</h3>
                 </div>
                 <div className={'progress-wrap'}>
-                    <progress value={85} max={100}/>
+                    <progress value={85} min={0} max={100}></progress>
                     <div className={'progress-text'}>
                         95%
                     </div>

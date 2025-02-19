@@ -1,7 +1,26 @@
-import React from 'react';
+import React, { useState }from 'react';
 import "../../styles/Student.css";
 
 const Root = ({}) => {
+    const [selectedButton, setSelectedButton] = useState('전체 학생');
+    const [isStudentAddSelected, setIsStudentAddSelected] = useState(false);
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const handleButtonClick = (buttonName) => {
+        setSelectedButton(buttonName);
+        setIsStudentAddSelected(false);
+    };
+
+    const handleStudentAddClick = () => {
+        setIsStudentAddSelected(true);
+        setSelectedButton('');
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setIsModalOpen(false);
+    };
+
     React.useEffect(() => {
         // Initialize the code
         return () => {}
@@ -14,11 +33,29 @@ const Root = ({}) => {
                     <h2 className={'h2-text'}>학생 관리</h2>
                 </div>
                 <div className={'button-wrap'}>
-                    <button className={'select-button'}>전체 학생</button>
-                    <button className={'non-select-button'}>학년별</button>
-                    <button className={'non-select-button'}>반별</button>
-                    <button className={'non-select-button'}>
-                        <div className={'img'}></div>
+                    <button
+                        className={selectedButton === '전체 학생' ? 'select-button' : 'non-select-button'}
+                        onClick={() => handleButtonClick('전체 학생')}
+                    >
+                        전체 학생
+                    </button>
+                    <button
+                        className={selectedButton === '학년별' ? 'select-button' : 'non-select-button'}
+                        onClick={() => handleButtonClick('학년별')}
+                    >
+                        학년별
+                    </button>
+                    <button
+                        className={selectedButton === '반별' ? 'select-button' : 'non-select-button'}
+                        onClick={() => handleButtonClick('반별')}
+                    >
+                        반별
+                    </button>
+                    <button
+                        className={'isStudentAddSelected'}
+                        onClick={handleStudentAddClick}
+                        style={{ marginLeft: 'auto' }}
+                    >
                         학생추가
                     </button>
                 </div>
@@ -41,229 +78,270 @@ const Root = ({}) => {
                     <div className={'thead'}>
                         <div className={'tr'}>
                             <div className={'th'}>
-                                <div className={'text--10'}>학과</div>
+                                <div className={'department'}>학과</div>
                             </div>
                             <div className={'th'}>
-                                <div className={'text--11'}>학번</div>
+                                <div className={'classnumber'}>학번</div>
                             </div>
                             <div class    ={'th'}>
-                                <div className={'text--12'}>이름</div>
+                                <div className={'name'}>이름</div>
                             </div>
                             <div className={'th'}>
-                                <div className={'text--13'}>전화번호</div>
+                                <div className={'phonenumber'}>전화번호</div>
                             </div>
                             <div className={'th'}>
-                                <div className={'text--14'}>이메일</div>
+                                <div className={'email'}>이메일</div>
                             </div>
                             <div className={'th'}>
-                                <div className={'text--15'}>학년</div>
+                                <div className={'grade'}>학년</div>
                             </div>
                         </div>
                     </div>
                     <div className={'tbody'}>
                         <div className={'tr'}>
                             <div className={'td'}>
-                                <div className={'text--16'}>소프트웨어학과</div>
+                                <div className={'department'}>소프트웨어학과</div>
                             </div>
                             <div className={'td'}>
-                                <div className={'text-2024001'}>2024001</div>
+                                <div className={'classnumber'}>2024001</div>
                             </div>
                             <div className={'td'}>
-                                <div className={'text--17'}>고정윤</div>
+                                <div className={'name'}>고정윤</div>
                             </div>
                             <div className={'td'}>
-                                <div className={'text-010-1234-5678'}>010-1234-5678</div>
+                                <div className={'phonenumber'}>010-1234-5678</div>
                             </div>
                             <div className={'td'}>
-                                <div className={'jykoemailcom'}>jyko@email.com</div>
+                                <div className={'email'}>jyko@email.com</div>
                             </div>
                             <div className={'td'}>
-                                <div className={'text-1'}>1학년</div>
-                            </div>
-                        </div>
-                        <div className={'tr'}>
-                            <div className={'td'}>
-                                <div className={'text--18'}>컴퓨터공학과</div>
-                            </div>
-                            <div className={'td'}>
-                                <div className={'text-2023015'}>2023015</div>
-                            </div>
-                            <div className={'td'}>
-                                <div className={'text--19'}>김준식</div>
-                            </div>
-                            <div className={'td'}>
-                                <div className={'text-010-9876-5432'}>010-9876-5432</div>
-                            </div>
-                            <div className={'td'}>
-                                <div className={'jskimemailcom'}>jskim@email.com</div>
-                            </div>
-                            <div className={'td'}>
-                                <div className={'text-2'}>2학년</div>
+                                <div className={'grade'}>1학년</div>
                             </div>
                         </div>
                         <div className={'tr'}>
                             <div className={'td'}>
-                                <div className={'text--20'}>정보통신학과</div>
+                                <div className={'department'}>컴퓨터공학과</div>
                             </div>
                             <div className={'td'}>
-                                <div className={'text-2024003'}>2024003</div>
+                                <div className={'classnumber'}>2023015</div>
                             </div>
                             <div className={'td'}>
-                                <div className={'text--21'}>박민지</div>
+                                <div className={'name'}>김준식</div>
                             </div>
                             <div className={'td'}>
-                                <div className={'text-010-2345-6789'}>010-2345-6789</div>
+                                <div className={'phonenumber'}>010-9876-5432</div>
                             </div>
                             <div className={'td'}>
-                                <div className={'mjparkemailcom'}>mjpark@email.com</div>
+                                <div className={'email'}>jskim@email.com</div>
                             </div>
                             <div className={'td'}>
-                                <div className={'text-3'}>1학년</div>
-                            </div>
-                        </div>
-                        <div className={'tr'}>
-                            <div className={'td'}>
-                                <div className={'text--22'}>소프트웨어학과</div>
-                            </div>
-                            <div className={'td'}>
-                                <div className={'text-2024004'}>2024004</div>
-                            </div>
-                            <div className={'td'}>
-                                <div className={'text--23'}>이수진</div>
-                            </div>
-                            <div className={'td'}>
-                                <div className={'text-010-3456-7890'}>010-3456-7890</div>
-                            </div>
-                            <div className={'td'}>
-                                <div className={'sjleeemailcom'}>sjlee@email.com</div>
-                            </div>
-                            <div className={'td'}>
-                                <div className={'text-4'}>1학년</div>
+                                <div className={'grade'}>2학년</div>
                             </div>
                         </div>
                         <div className={'tr'}>
                             <div className={'td'}>
-                                <div className={'text--24'}>컴퓨터공학과</div>
+                                <div className={'department'}>정보통신학과</div>
                             </div>
                             <div className={'td'}>
-                                <div className={'text-2023005'}>2023005</div>
+                                <div className={'classnumber'}>2024003</div>
                             </div>
                             <div className={'td'}>
-                                <div className={'text--25'}>정대현</div>
+                                <div className={'name'}>박민지</div>
                             </div>
                             <div className={'td'}>
-                                <div className={'text-010-4567-8901'}>010-4567-8901</div>
+                                <div className={'phonenumber'}>010-2345-6789</div>
                             </div>
                             <div className={'td'}>
-                                <div className={'dhjungemailcom'}>dhjung@email.com</div>
+                                <div className={'email'}>mjpark@email.com</div>
                             </div>
                             <div className={'td'}>
-                                <div className={'text-5'}>2학년</div>
-                            </div>
-                        </div>
-                        <div className={'tr'}>
-                            <div className={'td'}>
-                                <div className={'text--26'}>정보통신학과</div>
-                            </div>
-                            <div className={'td'}>
-                                <div className={'text-2024006'}>2024006</div>
-                            </div>
-                            <div className={'td'}>
-                                <div className={'text--27'}>최예린</div>
-                            </div>
-                            <div className={'td'}>
-                                <div className={'text-010-5678-9012'}>010-5678-9012</div>
-                            </div>
-                            <div className={'td'}>
-                                <div className={'yrchoiemailcom'}>yrchoi@email.com</div>
-                            </div>
-                            <div className={'td'}>
-                                <div className={'text-6'}>1학년</div>
+                                <div className={'grade'}>1학년</div>
                             </div>
                         </div>
                         <div className={'tr'}>
                             <div className={'td'}>
-                                <div className={'text--28'}>소프트웨어학과</div>
+                                <div className={'department'}>소프트웨어학과</div>
                             </div>
                             <div className={'td'}>
-                                <div className={'text-2024007'}>2024007</div>
+                                <div className={'classnumber'}>2024004</div>
                             </div>
                             <div className={'td'}>
-                                <div className={'text--29'}>한상우</div>
+                                <div className={'name'}>이수진</div>
                             </div>
                             <div className={'td'}>
-                                <div className={'text-010-6789-0123'}>010-6789-0123</div>
+                                <div className={'phonenumber'}>010-3456-7890</div>
                             </div>
                             <div className={'td'}>
-                                <div className={'swhanemailcom'}>swhan@email.com</div>
+                                <div className={'email'}>sjlee@email.com</div>
                             </div>
                             <div className={'td'}>
-                                <div className={'text-7'}>1학년</div>
-                            </div>
-                        </div>
-                        <div className={'tr'}>
-                            <div className={'td'}>
-                                <div className={'text--30'}>컴퓨터공학과</div>
-                            </div>
-                            <div className={'td'}>
-                                <div className={'text-2023008'}>2023008</div>
-                            </div>
-                            <div className={'td'}>
-                                <div className={'text--31'}>강민서</div>
-                            </div>
-                            <div className={'td'}>
-                                <div className={'text-010-7890-1234'}>010-7890-1234</div>
-                            </div>
-                            <div className={'td'}>
-                                <div className={'mskangemailcom'}>mskang@email.com</div>
-                            </div>
-                            <div className={'td'}>
-                                <div className={'text-8'}>2학년</div>
+                                <div className={'grade'}>1학년</div>
                             </div>
                         </div>
                         <div className={'tr'}>
                             <div className={'td'}>
-                                <div className={'text--32'}>정보통신학과</div>
+                                <div className={'department'}>컴퓨터공학과</div>
                             </div>
                             <div className={'td'}>
-                                <div className={'text-2024009'}>2024009</div>
+                                <div className={'classnumber'}>2023005</div>
                             </div>
                             <div className={'td'}>
-                                <div className={'text--33'}>임지원</div>
+                                <div className={'name'}>정대현</div>
                             </div>
                             <div className={'td'}>
-                                <div className={'text-010-8901-2345'}>010-8901-2345</div>
+                                <div className={'phonenumber'}>010-4567-8901</div>
                             </div>
                             <div className={'td'}>
-                                <div className={'jwlimemailcom'}>jwlim@email.com</div>
+                                <div className={'email'}>dhjung@email.com</div>
                             </div>
                             <div className={'td'}>
-                                <div className={'text-9'}>1학년</div>
+                                <div className={'grade'}>2학년</div>
                             </div>
                         </div>
                         <div className={'tr'}>
                             <div className={'td'}>
-                                <div className={'text--34'}>소프트웨어학과</div>
+                                <div className={'department'}>정보통신학과</div>
                             </div>
                             <div className={'td'}>
-                                <div className={'text-2024010'}>2024010</div>
+                                <div className={'classnumber'}>2024006</div>
                             </div>
                             <div className={'td'}>
-                                <div className={'text--35'}>송현주</div>
+                                <div className={'name'}>최예린</div>
                             </div>
                             <div className={'td'}>
-                                <div className={'text-010-9012-3456'}>010-9012-3456</div>
+                                <div className={'phonenumber'}>010-5678-9012</div>
                             </div>
                             <div className={'td'}>
-                                <div className={'hjsongemailcom'}>hjsong@email.com</div>
+                                <div className={'email'}>yrchoi@email.com</div>
                             </div>
                             <div className={'td'}>
-                                <div className={'text-10'}>1학년</div>
+                                <div className={'grade'}>1학년</div>
+                            </div>
+                        </div>
+                        <div className={'tr'}>
+                            <div className={'td'}>
+                                <div className={'department'}>소프트웨어학과</div>
+                            </div>
+                            <div className={'td'}>
+                                <div className={'classnumber'}>2024007</div>
+                            </div>
+                            <div className={'td'}>
+                                <div className={'name'}>한상우</div>
+                            </div>
+                            <div className={'td'}>
+                                <div className={'phonenumber'}>010-6789-0123</div>
+                            </div>
+                            <div className={'td'}>
+                                <div className={'email'}>swhan@email.com</div>
+                            </div>
+                            <div className={'td'}>
+                                <div className={'grade'}>1학년</div>
+                            </div>
+                        </div>
+                        <div className={'tr'}>
+                            <div className={'td'}>
+                                <div className={'department'}>컴퓨터공학과</div>
+                            </div>
+                            <div className={'td'}>
+                                <div className={'classnumber'}>2023008</div>
+                            </div>
+                            <div className={'td'}>
+                                <div className={'name'}>강민서</div>
+                            </div>
+                            <div className={'td'}>
+                                <div className={'phonenumber'}>010-7890-1234</div>
+                            </div>
+                            <div className={'td'}>
+                                <div className={'email'}>mskang@email.com</div>
+                            </div>
+                            <div className={'td'}>
+                                <div className={'grade'}>2학년</div>
+                            </div>
+                        </div>
+                        <div className={'tr'}>
+                            <div className={'td'}>
+                                <div className={'department'}>정보통신학과</div>
+                            </div>
+                            <div className={'td'}>
+                                <div className={'classnumber'}>2024009</div>
+                            </div>
+                            <div className={'td'}>
+                                <div className={'name'}>임지원</div>
+                            </div>
+                            <div className={'td'}>
+                                <div className={'phonenumber'}>010-8901-2345</div>
+                            </div>
+                            <div className={'td'}>
+                                <div className={'email'}>jwlim@email.com</div>
+                            </div>
+                            <div className={'td'}>
+                                <div className={'grade'}>1학년</div>
+                            </div>
+                        </div>
+                        <div className={'tr'}>
+                            <div className={'td'}>
+                                <div className={'department'}>소프트웨어학과</div>
+                            </div>
+                            <div className={'td'}>
+                                <div className={'classnumber'}>2024010</div>
+                            </div>
+                            <div className={'td'}>
+                                <div className={'name'}>송현주</div>
+                            </div>
+                            <div className={'td'}>
+                                <div className={'phonenumber'}>010-9012-3456</div>
+                            </div>
+                            <div className={'td'}>
+                                <div className={'email'}>hjsong@email.com</div>
+                            </div>
+                            <div className={'td'}>
+                                <div className={'grade'}>1학년</div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            {isModalOpen && (
+                <div className="modal">
+                    <div className="modal-content">
+                        <span className="close" onClick={closeModal}>&times;</span>
+                        <h2>학생 정보 입력</h2>
+                        <form>
+                            <label>
+                                이름:
+                                <input type="text" name="name" />
+                            </label>
+                            <br />
+                            <label>
+                                학과:
+                                <input type="text" name="department" />
+                            </label>
+                            <br />
+                            <label>
+                                학번:
+                                <input type="text" name="classnumber" />
+                            </label>
+                            <br />
+                            <label>
+                                전화번호:
+                                <input type="text" name="phonenumber" />
+                            </label>
+                            <br />
+                            <label>
+                                이메일:
+                                <input type="email" name="email" />
+                            </label>
+                            <br />
+                            <label>
+                                학년:
+                                <input type="text" name="grade" />
+                            </label>
+                            <br />
+                            <button type="submit">저장</button>
+                        </form>
+                    </div>
+                </div>
+            )}
         </div>
     );
 };

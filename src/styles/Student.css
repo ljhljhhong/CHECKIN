@@ -2,6 +2,7 @@
     width: 100%;
     height: 100%;
     justify-items: center;
+    overflow: auto;
   }
   
   .wrap {
@@ -313,8 +314,9 @@
   }
 /* 테이블 영역 */
 .table {
-    width: 100%;
+    width: 95%;
     border-collapse: collapse;
+    margin: 0 auto;
   }
   
   .table .thead {
@@ -369,9 +371,13 @@
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 30%;
     z-index: 1001;
     color: black
+}
+
+.modal-content form {
+  margin-top: 1em;
 }
 
 .close {

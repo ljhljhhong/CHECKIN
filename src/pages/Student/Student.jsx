@@ -298,6 +298,86 @@ const Root = ({}) => {
                                 <div className={'grade'}>1학년</div>
                             </div>
                         </div>
+                        <div className={'tr'}>
+                            <div className={'td'}>
+                                <div className={'department'}>소프트웨어학과</div>
+                            </div>
+                            <div className={'td'}>
+                                <div className={'classnumber'}>2024010</div>
+                            </div>
+                            <div className={'td'}>
+                                <div className={'name'}>송현주</div>
+                            </div>
+                            <div className={'td'}>
+                                <div className={'phonenumber'}>010-9012-3456</div>
+                            </div>
+                            <div className={'td'}>
+                                <div className={'email'}>hjsong@email.com</div>
+                            </div>
+                            <div className={'td'}>
+                                <div className={'grade'}>1학년</div>
+                            </div>
+                        </div>
+                        <div className={'tr'}>
+                            <div className={'td'}>
+                                <div className={'department'}>소프트웨어학과</div>
+                            </div>
+                            <div className={'td'}>
+                                <div className={'classnumber'}>2024010</div>
+                            </div>
+                            <div className={'td'}>
+                                <div className={'name'}>송현주</div>
+                            </div>
+                            <div className={'td'}>
+                                <div className={'phonenumber'}>010-9012-3456</div>
+                            </div>
+                            <div className={'td'}>
+                                <div className={'email'}>hjsong@email.com</div>
+                            </div>
+                            <div className={'td'}>
+                                <div className={'grade'}>1학년</div>
+                            </div>
+                        </div>
+                        <div className={'tr'}>
+                            <div className={'td'}>
+                                <div className={'department'}>소프트웨어학과</div>
+                            </div>
+                            <div className={'td'}>
+                                <div className={'classnumber'}>2024010</div>
+                            </div>
+                            <div className={'td'}>
+                                <div className={'name'}>송현주</div>
+                            </div>
+                            <div className={'td'}>
+                                <div className={'phonenumber'}>010-9012-3456</div>
+                            </div>
+                            <div className={'td'}>
+                                <div className={'email'}>hjsong@email.com</div>
+                            </div>
+                            <div className={'td'}>
+                                <div className={'grade'}>1학년</div>
+                            </div>
+                        </div>
+                        <div className={'tr'}>
+                            <div className={'td'}>
+                                <div className={'department'}>소프트웨어학과</div>
+                            </div>
+                            <div className={'td'}>
+                                <div className={'classnumber'}>2024010</div>
+                            </div>
+                            <div className={'td'}>
+                                <div className={'name'}>송현주</div>
+                            </div>
+                            <div className={'td'}>
+                                <div className={'phonenumber'}>010-9012-3456</div>
+                            </div>
+                            <div className={'td'}>
+                                <div className={'email'}>hjsong@email.com</div>
+                            </div>
+                            <div className={'td'}>
+                                <div className={'grade'}>1학년</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header/Header.jsx';
 
-import Student from './pages/Student/Student.jsx';
+//import Student from './pages/Student/Student.jsx';
+import Notices from './pages/Notices/Notices.jsx';
 import './App.css';
 const App = () => {
 	return (
@@ -19,7 +20,7 @@ const App = () => {
 					{/*<Route path="*" element={<NotFound />}></Route>
 				</Routes> */}
 				<div className="right">
-					<Student />
+					<Notices />
 				</div>
 			</BrowserRouter>
 		</div>

@@ -55,6 +55,9 @@
       &:hover {
         background: #f0f0f0;
       }
+      &.active:hover {
+        background: #000;
+      }
     }
   }
 }

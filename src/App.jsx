@@ -8,6 +8,7 @@ import Main from './components/Dashboard/Dashboard.jsx';
 import Product from './pages/Attendance_Management/Attendance_Management.jsx';
 import NotFound from './pages/NotFound/NotFound.jsx';
 import './App.css';
+import Attendance from './pages/Attendance/Attendance.jsx';
 const App = () => {
 	return (
 		<div className={'App'}>
@@ -23,7 +24,7 @@ const App = () => {
 					{/*<Route path="*" element={<NotFound />}></Route>
 				</Routes> */}
 				<div className="right">
-					<Attendance_Management/>
+					<Home/>
 				</div>
 			</BrowserRouter>
 		</div>

@@ -77,8 +77,10 @@ const Attendance = () => {
                                 <div className={styles.name}>세미콜론</div>
                             </div>
                             <div className={styles.td}>
-                                <div className={styles.attendanceTd}>
-                                    <div className={styles.attendanceTdText}>95%</div>
+                                <div className={styles.attendanceTd2}>
+                                    <div className={styles.attendanceTdBar}>
+                                        <div className={styles.attendanceTdText2}>95%</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

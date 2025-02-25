@@ -8,10 +8,11 @@
   display: flex;
   justify-content: center; 
   align-items: flex-start; 
+    overflow: auto;
 }
 
 .wrap {
-  width: 90%;
+  width: 97%;
   margin-top: 24px;
   margin-bottom: 40px;
   background: #FFFFFF;

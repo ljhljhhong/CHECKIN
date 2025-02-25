@@ -13,29 +13,31 @@ import Setting from './pages/Setting/Setting.jsx';
 import './App.css';
 
 const App = () => {
-	const [renderMenuName, setRenderMenuName] = useState();
+	// const [renderMenuName, setRenderMenuName] = useState();
+	console.log('app useState 실행')
 	// 현재 선택된 메뉴 변경
-    const currentMenu = (menu) => {
-        if (renderMenuName !== menu) {
-            setRenderMenuName(menu);
-        }
-    };
+    // const currentMenu = (menu) => {
+    //     if (renderMenuName !== menu) {
+    //         setRenderMenuName(menu);
+    //     }
+    // };
 	return (
 		<div className={'App'}>
 			<BrowserRouter>
 
 				<div className={'left'}>
-					<Header selectMenu={currentMenu} />
+					<Header />
 				</div>
 				<div className="right">
 					<Routes>
-                        <Route path="/" element={<Home />} />
+                        <Route path="/"  element={<Home />} />
+						{/* <Redirect from='*' to='/' /> */}
                         {/* 다른 메뉴에 대한 라우트 추가 */}
-                        {renderMenuName === "학생관리" && <Route path="/student" element={<Student />} />}
-                        {renderMenuName === "출결관리" && <Route path="/attendance-management" element={<Attendance_Management />} />}
-                        {renderMenuName === "출결현황" && <Route path="/attendance" element={<Attendance />} />}
-                        {renderMenuName === "공지사항" && <Route path="/notice" element={<Notice />} />}
-                        {renderMenuName === "설정" && <Route path="/setting" element={<Setting />} />}
+                        {<Route path="/student" element={<Student />} />}
+                        {<Route path="/attendance-management" element={<Attendance_Management />} />}
+						{<Route path="/attendance" element={<Attendance />} />}
+                        {<Route path="/notice" element={<Notice />} />}
+                        {<Route path="/setting" element={<Setting />} />}
                     </Routes>
 				</div>
 			</BrowserRouter>

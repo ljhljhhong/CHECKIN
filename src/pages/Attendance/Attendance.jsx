@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from "../../styles/Attendance.module.css";
 import Search from '../../assets/icons/search.svg?react';
 
 const Attendance = () => {
+    const [selectBtn, setSelectBtn] = useState('all');
+    const clickBtn = (btnName) => {
+        setSelectBtn(btnName);
+    }
     return (
         <div className={styles.container}>
             <div className={styles.wrap}>
@@ -10,9 +14,9 @@ const Attendance = () => {
                     <h2 className={styles.h2Text}>출석률 현황</h2>
                 </div>
                 <div className={styles.buttonWrap}>
-                    <button className={styles.selectButton}>오늘</button>
-                    <button className={styles.nonSelectButton}>지시별</button>
-                    <button className={styles.nonSelectButton}>수업과목별</button>
+                    <button className={'all' == selectBtn ? styles.selectButton : styles.nonSelectButton} onClick={() => clickBtn('all')}>전체</button>
+                    <button className={'chasi' == selectBtn ? styles.selectButton : styles.nonSelectButton} onClick={() => clickBtn('chasi')}>차시별</button>
+                    <button className={'subject' == selectBtn ? styles.selectButton : styles.nonSelectButton} onClick={() => clickBtn('subject')}>수업과목별</button>
                 </div>
                 <div className={styles.selectboxWrap}>
                     <select id={'search'}>
@@ -57,44 +61,75 @@ const Attendance = () => {
                                 <div className={styles.name}>세미콜론</div>
                             </div>
                             <div className={styles.td}>
-                                <div className={styles.attendanceTd}>95%</div>
+                                <div className={styles.attendanceTd}>
+                                    <div className={styles.attendanceTdText}>95%</div>
+                                </div>
                             </div>
                         </div>
+                        <div className={styles.tr}>
+                            <div className={styles.td}>
+                                <div className={styles.department}>김준식</div>
+                            </div>
+                            <div className={styles.td}>
+                                <div className={styles.classnumber}>19120566</div>
+                            </div>
+                            <div className={styles.td}>
+                                <div className={styles.name}>세미콜론</div>
+                            </div>
+                            <div className={styles.td}>
+                                <div className={styles.attendanceTd}>
+                                    <div className={styles.attendanceTdText}>95%</div>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
 
-            <div className={styles.rowWrap} >
+            {/* <div className={styles.wrap} >
                 <div className={styles.h2wrap}>
                     <h2 className={styles.h2Text}>출결 현황</h2>
                 </div>
                 <div className={styles.infoWrap}>
                     <div className={styles.infoBox}>
                         <div className={styles.infoBoxTitle}>
-                            전체 수업
+                            <div className={styles.infoBoxTitleText} >
+                                전체 수업
+                            </div>
                         </div>
                         <div className={styles.infoBoxContent}>
-                            32회
+                            <div className={styles.infoBoxContentText} >
+                                32회
+                            </div>
                         </div>
                     </div>
                     <div className={styles.infoBox}>
                         <div className={styles.infoBoxTitle}>
-                            출석률
+                            <div className={styles.infoBoxTitleText} >
+                                출석률
+                            </div>
                         </div>
                         <div className={styles.infoBoxContent}>
-                            91.5%
+                            <div className={styles.infoBoxContentText} >
+                                91.5%
+                            </div>
                         </div>
                     </div>
                     <div className={styles.infoBox}>
                         <div className={styles.infoBoxTitle}>
-                            평균 참석
+                            <div className={styles.infoBoxTitleText} >
+                                평균 참석
+                            </div>
                         </div>
                         <div className={styles.infoBoxContent}>
-                            29회
+                            <div className={styles.infoBoxContentText} >
+                                29회
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
         </div>
 

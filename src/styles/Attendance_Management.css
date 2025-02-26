@@ -8,11 +8,10 @@
   display: flex;
   justify-content: center; 
   align-items: flex-start; 
-    overflow: auto;
 }
 
 .wrap {
-  width: 97%;
+  width: 90%;
   margin-top: 24px;
   margin-bottom: 40px;
   background: #FFFFFF;
@@ -199,7 +198,7 @@
 
 .select-111 {
   position: relative;
-  width: 412px;
+  width: 100px;
   padding: 8px 12px;
   border-radius: 8px;
   background: #FFFFFF;
@@ -219,64 +218,6 @@
   white-space: nowrap;
 }
 
-/* 옵션 기본 숨김 */
-.select .option,
-.select .option-1,
-.select .option-2,
-.select .option-3,
-.select .option-4,
-.select .option-5,
-.select .option-6,
-.select .option-7 {
-  display: none;
-}
-
-/* active 시 표시 */
-.select.active .option,
-.select.active .option-1,
-.select.active .option-2,
-.select.active .option-3,
-.select.active .option-4,
-.select.active .option-5,
-.select.active .option-6,
-.select.active .option-7 {
-  display: block;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 412px;
-  margin-top: 4px;
-  background: #FFFFFF;
-  border: 1px solid #D1D5DB;
-  border-radius: 4px;
-  z-index: 10;
-}
-
-/* 옵션 항목 */
-.select .option,
-.select .option-1,
-.select .option-2,
-.select .option-3,
-.select .option-4,
-.select .option-5,
-.select .option-6,
-.select .option-7 {
-  padding: 8px 12px;
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  color: #000000;
-  cursor: pointer;
-}
-.select .option:hover,
-.select .option-1:hover,
-.select .option-2:hover,
-.select .option-3:hover,
-.select .option-4:hover,
-.select .option-5:hover,
-.select .option-6:hover,
-.select .option-7:hover {
-  background-color: #F9FAFB;
-}
 
 /***********************************************/
 /** ========== 표 (이름, 학번, 시간대) ========== **/
@@ -287,6 +228,7 @@
   border-collapse: collapse;
   background: #FFFFFF;
 
+
   /* 고정 테이블 레이아웃으로 열 너비가 균일하게 유지 */
   table-layout: fixed;
 }
@@ -294,6 +236,7 @@
 /* thead 배경 */
 .table thead {
   background: #F3F4F6;
+  
 }
 
 /* 표 셀 스타일 */

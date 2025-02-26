@@ -145,8 +145,6 @@ const Root = ({ }) => {
                 </div>
             </div>
         </div>
-
-
     );
 };
 export default Root

@@ -440,7 +440,7 @@ const Root = () => {
               <th>14:00</th>
               <th>15:00</th>
               <th>16:00</th>
-              <th>17:00</th>
+              <th>18:00</th>
             </tr>
           </thead>
           <tbody>

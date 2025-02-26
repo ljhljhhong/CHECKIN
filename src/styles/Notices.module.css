@@ -1,0 +1,310 @@
+.container {
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+    overflow: auto;
+}
+
+.wrap {
+    width: 97%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0px 10px;
+    border-radius: 8px;
+    opacity: 1;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.001), rgba(0, 0, 0, 0.001)), #FFFFFF;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+    margin-top: 1em;
+}
+
+.noticeHeader {
+    margin: 0 auto;
+    width: 95%;
+    height: auto;
+    z-index: 0;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0);
+    margin-top: 24px;
+}
+
+.noticeTitle {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 28px;
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+.buttonWrap {
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 0px 15.73px;
+    z-index: 1;
+    margin: 0 auto;
+    margin-top: 24px;
+}
+
+.buttonWrap .button {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 8px 16px;
+    gap: 0px 10px;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    z-index: 1;
+    border-radius: 4px;
+    opacity: 1;
+    background: black; /* 버튼 색상 변경 */
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+
+.noticeSection {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column; /* 세로 정렬 */
+    gap: 12px; /* 간격 줄이기 */
+}
+
+.noticeItem {
+    box-sizing: border-box;
+    padding: 12px; /* 패딩 줄이기 */
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    background: #FFFFFF;
+    margin-bottom: 12px; /* 마진 줄이기 */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto; /* 높이 자동 조정 */
+}
+
+.noticeItem .noticeTitle {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+.noticeItem .noticeDate {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    color: #6B7280;
+    margin-bottom: 8px;
+}
+
+.noticeItem .noticeContent {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 12px; /* 마진 줄이기 */
+    flex-grow: 1; /* 남은 공간을 채우도록 설정 */
+}
+
+.noticeItem .noticeFile {
+    display: flex;
+    align-items: center;
+    margin-top: 8px; /* 상단 마진 추가 */
+}
+
+.noticeItem .noticeFile .fileText {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    color: #000000;
+    margin-left: 8px;
+}
+
+.pagination {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 24px;
+    text-align: center;
+}
+
+.paginationButtons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px; /* 위로 띄우기 */
+}
+
+.paginationButtons .button {
+    padding: 8px 16px;
+    border-radius: 4px;
+    background: #FFFFFF; /* 바탕색 흰색 */
+    color: #000000;
+    border: 1px solid #000000; /* 검은색 선 */
+    cursor: pointer;
+}
+
+.paginationButtons .button .buttonText {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.surveySection {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 24px;
+}
+
+.surveyHeader {
+    margin-bottom: 16px;
+}
+
+.surveyTitle {
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.surveyContent {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.surveyItem {
+    padding: 16px;
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    background: #FFFFFF;
+}
+
+.surveyItem .surveyTitle {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+.surveyItem .surveyDate {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    color: #6B7280;
+    margin-bottom: 8px;
+}
+
+.surveyItem .surveyDescription {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 16px;
+}
+
+.surveyItem .surveyButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    border-radius: 4px;
+    background: black;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.surveyItem .surveyButton .buttonText {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* 모달 스타일 */
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: black;
+}
+
+.modalContent {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 폼 스타일 */
+.formGroup {
+    margin-bottom: 16px;
+}
+
+.formGroup label {
+    display: block;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.formGroup input,
+.formGroup textarea {
+    width: 100%;
+    padding: 8px;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #000000;
+    background-color: #FFFFFF; /* 배경색 흰색 */
+}
+
+.formGroup textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.submitButton {
+    padding: 10px 20px;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #FFFFFF;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submitButton:hover {
+    background-color: #0056b3;
+}

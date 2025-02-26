@@ -1,0 +1,401 @@
+/***********************************************/
+/** ========== 전체 컨테이너 & 래핑 박스 ========== **/
+/***********************************************/
+.container {
+  width: 100%;
+  height: 100%; /* 필요 시 auto로 조정 */
+  background: #F9FAFB; /* 페이지 배경 */
+  display: flex;
+  justify-content: center; 
+  align-items: flex-start; 
+    overflow: auto;
+}
+
+.wrap {
+  width: 97%;
+  margin-top: 24px;
+  margin-bottom: 40px;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 24px; /* 아래쪽 여백 */
+}
+
+/***********************************************/
+/** ========== 헤더(출결관리) ========== **/
+/***********************************************/
+.h2-wrap {
+  width: 95%;
+  margin: 24px auto 0 auto;
+  background: transparent;
+}
+
+.h2-text {
+  font-family: Roboto, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 28px;
+  color: #000000;
+  margin: 0;
+}
+
+/***********************************************/
+/** ========== 검색 조건/검색어 영역 ========== **/
+/***********************************************/
+.selectbox-wrap {
+  width: 95%;
+  margin: 24px auto 0 auto;
+  display: flex;
+  gap: 10px;
+}
+
+#search {
+  width: 15%;
+  padding: 8px 40px 8px 12px;
+  border: 1px solid #D1D5DB;
+  border-radius: 8px;
+  background: #FFFFFF;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.input-wrap {
+  width: 15%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 16px;
+  border: 1px solid #D1D5DB;
+  border-radius: 8px;
+  background: #FFFFFF;
+}
+
+.input {
+  flex-grow: 1;
+}
+
+.input input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+}
+
+/***********************************************/
+/** ========== 요약 정보 박스(전체 학생/출석 등) ========== **/
+/***********************************************/
+.info-wrap {
+  width: 95%;
+  margin: 24px auto 0 auto;
+  display: flex;
+  gap: 48px;
+}
+
+.infobox {
+  flex: 1;
+  height: 88px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  row-gap: 10px;
+}
+
+.infobox-title {
+  height: 20px;
+  background: transparent;
+}
+
+.infobox-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.infobox-content {
+  height: 36px;
+  background: transparent;
+}
+
+.infobox-content-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+}
+
+/* 박스 배경 */
+.bk-blue {
+  background: #EFF6FF;
+}
+.bk-green {
+  background: #F0FDF4;
+}
+.bk-purple {
+  background: #FAF5FF;
+}
+.bk-orange {
+  background: #FFF7ED;
+}
+
+/* 텍스트 색상 */
+.color-blue {
+  color: #2563EB;
+}
+.color-green {
+  color: #16A34A;
+}
+.color-purple {
+  color: #9333EA;
+}
+.color-orange {
+  color: #EA580C;
+}
+
+/***********************************************/
+/** ========== 수업 시간표 & 전체 시간 드롭다운 ========== **/
+/***********************************************/
+.info-wrap-1 {
+  width: 95%;
+  margin: 20px auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-wrap-1 .h3 {
+  display: flex;
+  align-items: center;
+}
+
+.info-wrap-1 .h3 .text-- {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000000;
+  white-space: nowrap;
+}
+
+/* 드롭다운 박스 */
+.select {
+  position: relative;
+  width: 100px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: #FFFFFF;
+  border: 1px solid #D1D5DB;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.select-111 {
+  position: relative;
+  width: 412px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: #FFFFFF;
+  border: 1px solid #D1D5DB;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.select .text---1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+  white-space: nowrap;
+}
+
+/* 옵션 기본 숨김 */
+.select .option,
+.select .option-1,
+.select .option-2,
+.select .option-3,
+.select .option-4,
+.select .option-5,
+.select .option-6,
+.select .option-7 {
+  display: none;
+}
+
+/* active 시 표시 */
+.select.active .option,
+.select.active .option-1,
+.select.active .option-2,
+.select.active .option-3,
+.select.active .option-4,
+.select.active .option-5,
+.select.active .option-6,
+.select.active .option-7 {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 412px;
+  margin-top: 4px;
+  background: #FFFFFF;
+  border: 1px solid #D1D5DB;
+  border-radius: 4px;
+  z-index: 10;
+}
+
+/* 옵션 항목 */
+.select .option,
+.select .option-1,
+.select .option-2,
+.select .option-3,
+.select .option-4,
+.select .option-5,
+.select .option-6,
+.select .option-7 {
+  padding: 8px 12px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #000000;
+  cursor: pointer;
+}
+.select .option:hover,
+.select .option-1:hover,
+.select .option-2:hover,
+.select .option-3:hover,
+.select .option-4:hover,
+.select .option-5:hover,
+.select .option-6:hover,
+.select .option-7:hover {
+  background-color: #F9FAFB;
+}
+
+/***********************************************/
+/** ========== 표 (이름, 학번, 시간대) ========== **/
+/***********************************************/
+.table {
+  width: 95%;
+  margin: 24px auto 0 auto;
+  border-collapse: collapse;
+  background: #FFFFFF;
+
+  /* 고정 테이블 레이아웃으로 열 너비가 균일하게 유지 */
+  table-layout: fixed;
+}
+
+/* thead 배경 */
+.table thead {
+  background: #F3F4F6;
+}
+
+/* 표 셀 스타일 */
+.table th,
+.table td {
+  border: 1px solid #D1D5DB;
+  padding: 12px 8px;
+  text-align: center;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  box-sizing: border-box;
+}
+
+/***********************************************/
+/** ========== 특이사항 (bar-wrap) ========== **/
+/***********************************************/
+.bar-wrap {
+  width: 95%;
+  margin: 20px auto 0 auto;
+  display: flex;
+  flex-direction: column; /* 이미지처럼 제목 + 내용이 수직 */
+  gap: 10px;
+}
+
+.bar-wrap-h3-text {
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 28px;
+  color: #000000;
+  margin: 0;
+}
+
+/* 특이사항 박스: 흰 배경, 약간의 padding */
+.div-26 {
+  background: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* 내부 행(이영희/박민수) 간격 */
+.div-27,
+.div-30 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.div-28,
+.div-29,
+.div-31,
+.div-32 {
+  display: flex;
+  align-items: center;
+}
+
+.text-2024002-,
+.text-2024003-,
+.text----,
+.text-----1 {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #000000;
+}
+
+/*이름 폰트*/
+.text- {
+  top: -1.95px;
+  left: 0px;
+  width: 23px;
+  height: 16px;
+  white-space: nowrap;
+  color: #6B7280;
+  font-family: "Roboto";
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  display: flex;
+  align-items: center;
+}
+
+.text-name {
+  top: -2.95px;
+  left: 0px;
+  width: 45px;
+  height: 24px;
+  white-space: nowrap;
+  color: #000000;
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+

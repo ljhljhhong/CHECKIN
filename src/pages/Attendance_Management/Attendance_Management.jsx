@@ -1,376 +1,475 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../styles/Attendance_Management.css";
 
-const Root = ({}) => {
-  React.useEffect(() => {
-    // Initialize the code
-    return () => {};
-  }, []);
+const initialStudents = [
+  {
+    name: "김덕희",
+    id: "20116861",
+    team: "3팀",
+    attendance: [
+      "출석",
+      "출석",
+      "출석",
+      "출석",
+      "출석",
+      "출석",
+      "출석",
+      "출석",
+    ],
+    date: "2023-05-01",
+  },
+  {
+    name: "이영희",
+    id: "20116862",
+    team: "B팀",
+    attendance: [
+      "지각",
+      "출석",
+      "출석",
+      "출석",
+      "출석",
+      "출석",
+      "출석",
+      "출석",
+    ],
+    date: "2023-05-01",
+  },
+  {
+    name: "박민수",
+    id: "20116863",
+    team: "A팀",
+    attendance: [
+      "결석",
+      "결석",
+      "결석",
+      "결석",
+      "결석",
+      "결석",
+      "결석",
+      "결석",
+    ],
+    date: "2023-05-01",
+  },
+  {
+    name: "최서연",
+    id: "20116864",
+    team: "C팀",
+    attendance: [
+      "출석",
+      "출석",
+      "출석",
+      "출석",
+      "출석",
+      "출석",
+      "출석",
+      "출석",
+    ],
+    date: "2023-05-01",
+  },
+  {
+    name: "정현우",
+    id: "20116865",
+    team: "B팀",
+    attendance: [
+      "출석",
+      "지각",
+      "출석",
+      "출석",
+      "출석",
+      "출석",
+      "출석",
+      "출석",
+    ],
+    date: "2023-05-01",
+  },
+  {
+    name: "김동성",
+    id: "20116866",
+    team: "B팀",
+    attendance: [
+      "출석",
+      "출석",
+      "출석",
+      "출석",
+      "출석",
+      "출석",
+      "출석",
+      "출석",
+    ],
+    date: "2023-05-01",
+  },
+  {
+    name: "김동현",
+    id: "22210473",
+    team: "A팀",
+    attendance: [
+      "결석",
+      "결석",
+      "결석",
+      "결석",
+      "결석",
+      "결석",
+      "결석",
+      "결석",
+    ],
+    date: "2023-05-01",
+  },
+  {
+    name: "김명재",
+    id: "20116887",
+    team: "B팀",
+    attendance: [
+      "출석",
+      "출석",
+      "출석",
+      "출석",
+      "출석",
+      "출석",
+      "출석",
+      "출석",
+    ],
+    date: "2023-05-01",
+  },
+  {
+    name: "김유찬",
+    id: "17122727",
+    team: "1팀",
+    attendance: [
+      "출석",
+      "지각",
+      "출석",
+      "출석",
+      "출석",
+      "출석",
+      "출석",
+      "출석",
+    ],
+    date: "2023-05-01",
+  },
+  {
+    name: "박규찬",
+    id: "20117186",
+    team: "1팀",
+    attendance: [
+      "출석",
+      "지각",
+      "출석",
+      "출석",
+      "출석",
+      "출석",
+      "출석",
+      "출석",
+    ],
+    date: "2023-05-01",
+  },
+  {
+    name: "박민준",
+    id: "20118178",
+    team: "3팀",
+    attendance: [
+      "출석",
+      "출석",
+      "출석",
+      "출석",
+      "출석",
+      "출석",
+      "출석",
+      "출석",
+    ],
+    date: "2023-05-01",
+  },
+  {
+    name: "선승한",
+    id: "21113523",
+    team: "3팀",
+    attendance: [
+      "출석",
+      "지각",
+      "출석",
+      "출석",
+      "출석",
+      "출석",
+      "출석",
+      "출석",
+    ],
+    date: "2023-05-01",
+  },
+  {
+    name: "이동현",
+    id: "21113718",
+    team: "1팀",
+    attendance: [
+      "출석",
+      "지각",
+      "출석",
+      "출석",
+      "출석",
+      "출석",
+      "출석",
+      "출석",
+    ],
+    date: "2023-05-01",
+  },
+  {
+    name: "이세영",
+    id: "20117602",
+    team: "2팀",
+    attendance: [
+      "출석",
+      "지각",
+      "출석",
+      "출석",
+      "출석",
+      "출석",
+      "출석",
+      "출석",
+    ],
+    date: "2023-05-01",
+  },
+  {
+    name: "조혜진",
+    id: "23115270",
+    team: "1팀",
+    attendance: [
+      "출석",
+      "지각",
+      "출석",
+      "출석",
+      "출석",
+      "출석",
+      "출석",
+      "출석",
+    ],
+    date: "2023-05-01",
+  },
+];
+
+const Root = () => {
+  const [dropdownActive, setDropdownActive] = useState(false);
+  const toggleDropdown = () => setDropdownActive(!dropdownActive);
+
+  // 텍스트 검색 상태
+  const [textSearchCondition, setTextSearchCondition] = useState("이름");
+  const [textSearchTerm, setTextSearchTerm] = useState("");
+
+  // 날짜 검색 상태
+  const [dateSearchTerm, setDateSearchTerm] = useState("");
+
+  // 두 검색 조건을 모두 적용해 필터링 (빈값이면 무시)
+  const filteredStudents = initialStudents.filter((student) => {
+    let textMatch = true;
+    if (textSearchTerm) {
+      if (textSearchCondition === "이름") {
+        textMatch = student.name.includes(textSearchTerm);
+      } else if (textSearchCondition === "학번") {
+        textMatch = student.id.includes(textSearchTerm);
+      }
+      // 학과, 학년 조건은 데이터에 없으므로 생략
+    }
+    let dateMatch = true;
+    if (dateSearchTerm) {
+      dateMatch = student.date === dateSearchTerm;
+    }
+    return textMatch && dateMatch;
+  });
+
   return (
-    <div className={"container"}>
-      <div className={"wrap"}>
-        <div className={"h2-wrap"}>
-          <h2 className={"h2-text"}>출결관리</h2>
+    <div className="container">
+      <div className="wrap">
+        {/* 상단 타이틀 */}
+        <div className="h2-wrap">
+          <h2 className="h2-text">출결관리</h2>
         </div>
-        <div className={"button-wrap"}>
-          <button className={"button"}>오늘</button>
-          <button className={"button"}>이번 주</button>
-          <button className={"button"}>이번 달</button>
-        </div>
-        <div className={"selectbox-wrap"}>
-          <select id={"search"}>
-            <option value="search_condition">검색조건</option>
-            <option value="">이름</option>
-            <option value="">학과</option>
-            <option value="">학년</option>
+
+        {/* 날짜 검색 영역, 텍스트 검색 영역  */}
+        <div className="selectbox-wrap" style={{ gap: "10px" }}>
+          <input 
+            type="date"
+            className="select"
+            value={dateSearchTerm}
+            onChange={(e) => setDateSearchTerm(e.target.value)}
+          />
+          <select className="select"
+            id="text-search-condition"
+            value={textSearchCondition}
+            onChange={(e) => setTextSearchCondition(e.target.value)}
+          >
+            <option value="이름">이름</option>
+            <option value="학번">학번</option>
           </select>
-          <div className={"input-wrap"}>
-            <div className={"input"}>
-              <input type="text" className={"text---3"} placeholder="검색어를 입력하세요" />
+          <div className="input-wrap">
+            <div className="input">
+              <input
+                type="text"
+
+                placeholder="검색어를 입력하세요"
+                value={textSearchTerm}
+                onChange={(e) => setTextSearchTerm(e.target.value)}
+              />
             </div>
           </div>
         </div>
-        <div className={"info-wrap"}>
-          <div className={"infobox bk-blue"}>
-            <div className={"infobox-title"}>
-              <div className={"infobox-text color-blue"}>전체 학생</div>
+
+        {/* 날짜 검색 영역 */}
+
+        {/* 요약 정보 박스 */}
+        <div className="info-wrap">
+          <div className="infobox bk-blue">
+            <div className="infobox-title">
+              <div className="infobox-text color-blue">전체 학생</div>
             </div>
-            <div className={"infobox-content"}>
-              <div className={"infobox-content-text"}>128명</div>
-            </div>
-          </div>
-          <div className={"infobox bk-green"}>
-            <div className={"infobox-title"}>
-              <div className={"infobox-text color-green"}>출석</div>
-            </div>
-            <div className={"infobox-content"}>
-              <div className={"infobox-content-text"}>122명</div>
-            </div>
-          </div>
-          <div className={"infobox bk-purple"}>
-            <div className={"infobox-title"}>
-              <div className={"infobox-text color-purple"}>지각</div>
-            </div>
-            <div className={"infobox-content"}>
-              <div className={"infobox-content-text"}>4명</div>
-            </div>
-          </div>
-          <div className={"infobox bk-orange"}>
-            <div className={"infobox-title"}>
-              <div className={"infobox-text color-orange"}>결석</div>
-            </div>
-            <div className={"infobox-content"}>
-              <div className={"infobox-content-text"}>2명</div>
-            </div>
-          </div>
-        </div>
-        <div className={"bar-wrap"}>
-          <div className={"bar-wrap-h3"}>
-            <h3 className={"bar-wrap-h3-text"}>수업 시간표</h3>
-          </div>
-          <div className={"selectbox-wrap"}>
-            <div className={"option"}></div>
-            <div className={"option-1"}></div>
-            <div className={"option-2"}></div>
-            <div className={"option-3"}></div>
-            <div className={"input_tt"}>
-              <input type="text" className={"text---6"} placeholder="전체시간" />
-            </div>
-          </div>
-        </div>
-        <div className={"table"}>
-          <div className={"thead"}>
-            <div className={"tr"}>
-              <div className={"th"}>
-                <div className={"text--12"}>이름</div>
-              </div>
-              <div className={"th-1"}>
-                <div className={"text--13"}>학번</div>
-              </div>
-              <div className={"th-2"}>
-                <div className={"text--14"}>팀명</div>
-              </div>
-              <div className={"th-3"}>
-                <div className={"text-0900"}>09:00</div>
-              </div>
-              <div className={"th-4"}>
-                <div className={"text-1010"}>10:10</div>
-              </div>
-              <div className={"th-5"}>
-                <div className={"text-1120"}>11:20</div>
-              </div>
-              <div className={"th-6"}>
-                <div className={"text-1330"}>13:30</div>
-              </div>
-              <div className={"th-7"}>
-                <div className={"text-1440"}>14:40</div>
-              </div>
-              <div className={"th-8"}>
-                <div className={"text-1550"}>15:50</div>
-              </div>
-              <div className={"th-9"}>
-                <div className={"text-1700"}>17:00</div>
+            <div className="infobox-content">
+              <div className="infobox-content-text">
+                {initialStudents.length}명
               </div>
             </div>
           </div>
-          <div className={"tbody"}>
-            <div className={"tr-1"}>
-              <div className={"td"}>
-                <div className={"text--15"}>김지훈</div>
-              </div>
-              <div className={"td-1"}>
-                <div className={"text-2024001"}>2024001</div>
-              </div>
-              <div className={"td-2"}>
-                <div className={"a-6"}>A팀</div>
-              </div>
-              <div className={"td-3"}>
-                <div className={"span-6"}>
-                  <div className={"text--16"}>출석</div>
-                </div>
-              </div>
-              <div className={"td-4"}>
-                <div className={"span-7"}>
-                  <div className={"text--17"}>출석</div>
-                </div>
-              </div>
-              <div className={"td-5"}>
-                <div className={"span-8"}>
-                  <div className={"text--18"}>출석</div>
-                </div>
-              </div>
-              <div className={"td-6"}>
-                <div className={"span-9"}>
-                  <div className={"text--19"}>출석</div>
-                </div>
-              </div>
-              <div className={"td-7"}>
-                <div className={"span-10"}>
-                  <div className={"text--20"}>출석</div>
-                </div>
-              </div>
-              <div className={"td-8"}>
-                <div className={"span-11"}>
-                  <div className={"text--21"}>출석</div>
-                </div>
-              </div>
-              <div className={"td-9"}>
-                <div className={"span-12"}>
-                  <div className={"text--22"}>출석</div>
-                </div>
+          <div className="infobox bk-green">
+            <div className="infobox-title">
+              <div className="infobox-text color-green">출석</div>
+            </div>
+            <div className="infobox-content">
+              <div className="infobox-content-text">
+                {
+                  initialStudents.filter((s) =>
+                    s.attendance.every((status) => status === "출석")
+                  ).length
+                }
+                명
               </div>
             </div>
-            <div className={"tr-2"}>
-              <div className={"td-10"}>
-                <div className={"text--23"}>이영희</div>
-              </div>
-              <div className={"td-11"}>
-                <div className={"text-2024002"}>2024002</div>
-              </div>
-              <div className={"td-12"}>
-                <div className={"b"}>B팀</div>
-              </div>
-              <div className={"td-13"}>
-                <div className={"span-13"}>
-                  <div className={"text--24"}>지각</div>
-                </div>
-              </div>
-              <div className={"td-14"}>
-                <div className={"span-14"}>
-                  <div className={"text--25"}>출석</div>
-                </div>
-              </div>
-              <div className={"td-15"}>
-                <div className={"span-15"}>
-                  <div className={"text--26"}>출석</div>
-                </div>
-              </div>
-              <div className={"td-16"}>
-                <div className={"span-16"}>
-                  <div className={"text--27"}>출석</div>
-                </div>
-              </div>
-              <div className={"td-17"}>
-                <div className={"span-17"}>
-                  <div className={"text--28"}>출석</div>
-                </div>
-              </div>
-              <div className={"td-18"}>
-                <div className={"span-18"}>
-                  <div className={"text--29"}>출석</div>
-                </div>
-              </div>
-              <div className={"td-19"}>
-                <div className={"span-19"}>
-                  <div className={"text--30"}>출석</div>
-                </div>
+          </div>
+          <div className="infobox bk-purple">
+            <div className="infobox-title">
+              <div className="infobox-text color-purple">지각</div>
+            </div>
+            <div className="infobox-content">
+              <div className="infobox-content-text">
+                {
+                  initialStudents.filter((s) =>
+                    s.attendance.some((status) => status === "지각")
+                  ).length
+                }
+                명
               </div>
             </div>
-            <div className={"tr-3"}>
-              <div className={"td-20"}>
-                <div className={"text--31"}>박민수</div>
-              </div>
-              <div className={"td-21"}>
-                <div className={"text-2024003"}>2024003</div>
-              </div>
-              <div className={"td-22"}>
-                <div className={"a-7"}>A팀</div>
-              </div>
-              <div className={"td-23"}>
-                <div className={"span-20"}>
-                  <div className={"text--32"}>결석</div>
-                </div>
-              </div>
-              <div className={"td-24"}>
-                <div className={"span-21"}>
-                  <div className={"text--33"}>결석</div>
-                </div>
-              </div>
-              <div className={"td-25"}>
-                <div className={"span-22"}>
-                  <div className={"text--34"}>결석</div>
-                </div>
-              </div>
-              <div className={"td-26"}>
-                <div className={"span-23"}>
-                  <div className={"text--35"}>결석</div>
-                </div>
-              </div>
-              <div className={"td-27"}>
-                <div className={"span-24"}>
-                  <div className={"text--36"}>결석</div>
-                </div>
-              </div>
-              <div className={"td-28"}>
-                <div className={"span-25"}>
-                  <div className={"text--37"}>결석</div>
-                </div>
-              </div>
-              <div className={"td-29"}>
-                <div className={"span-26"}>
-                  <div className={"text--38"}>결석</div>
-                </div>
-              </div>
+          </div>
+          <div className="infobox bk-orange">
+            <div className="infobox-title">
+              <div className="infobox-text color-orange">결석</div>
             </div>
-            <div className={"tr-4"}>
-              <div className={"td-30"}>
-                <div className={"text--39"}>최서연</div>
-              </div>
-              <div className={"td-31"}>
-                <div className={"text-2024004"}>2024004</div>
-              </div>
-              <div className={"td-32"}>
-                <div className={"c"}>C팀</div>
-              </div>
-              <div className={"td-33"}>
-                <div className={"span-27"}>
-                  <div className={"text--40"}>출석</div>
-                </div>
-              </div>
-              <div className={"td-34"}>
-                <div className={"span-28"}>
-                  <div className={"text--41"}>출석</div>
-                </div>
-              </div>
-              <div className={"td-35"}>
-                <div className={"span-29"}>
-                  <div className={"text--42"}>출석</div>
-                </div>
-              </div>
-              <div className={"td-36"}>
-                <div className={"span-30"}>
-                  <div className={"text--43"}>출석</div>
-                </div>
-              </div>
-              <div className={"td-37"}>
-                <div className={"span-31"}>
-                  <div className={"text--44"}>출석</div>
-                </div>
-              </div>
-              <div className={"td-38"}>
-                <div className={"span-32"}>
-                  <div className={"text--45"}>출석</div>
-                </div>
-              </div>
-              <div className={"td-39"}>
-                <div className={"span-33"}>
-                  <div className={"text--46"}>출석</div>
-                </div>
-              </div>
-            </div>
-            <div className={"tr-5"}>
-              <div className={"td-40"}>
-                <div className={"text--47"}>정현우</div>
-              </div>
-              <div className={"td-41"}>
-                <div className={"text-2024005"}>2024005</div>
-              </div>
-              <div className={"td-42"}>
-                <div className={"b-1"}>B팀</div>
-              </div>
-              <div className={"td-43"}>
-                <div className={"span-34"}>
-                  <div className={"text--48"}>출석</div>
-                </div>
-              </div>
-              <div className={"td-44"}>
-                <div className={"span-35"}>
-                  <div className={"text--49"}>지각</div>
-                </div>
-              </div>
-              <div className={"td-45"}>
-                <div className={"span-36"}>
-                  <div className={"text--50"}>출석</div>
-                </div>
-              </div>
-              <div className={"td-46"}>
-                <div className={"span-37"}>
-                  <div className={"text--51"}>출석</div>
-                </div>
-              </div>
-              <div className={"td-47"}>
-                <div className={"span-38"}>
-                  <div className={"text--52"}>출석</div>
-                </div>
-              </div>
-              <div className={"td-48"}>
-                <div className={"span-39"}>
-                  <div className={"text--53"}>출석</div>
-                </div>
-              </div>
-              <div className={"td-49"}>
-                <div className={"span-40"}>
-                  <div className={"text--54"}>출석</div>
-                </div>
+            <div className="infobox-content">
+              <div className="infobox-content-text">
+                {
+                  initialStudents.filter((s) =>
+                    s.attendance.some((status) => status === "결석")
+                  ).length
+                }
+                명
               </div>
             </div>
           </div>
         </div>
-        <div className={"bar-wrap"}>
-          <div className={"bar-wrap-h3"}>
-            <h3 className={"bar-wrap-h3-text"}>금일 특이사항</h3>
+
+        {/* 수업 시간표 / 전체 시간 드롭다운 */}
+        <div className="info-wrap-1" style={{ marginTop: "20px" }}>
+          <div className="h3">
+            <div className="text--">수업 시간표</div>
           </div>
-          <div className={"div-26"}>
-            <div className={"div-27"}>
-              <div className={"div-28"}>
-                <div className={"text-2024002-"}>2024002 이영희</div>
+          <div
+            className={`select ${dropdownActive ? "active" : ""}`}
+            onClick={toggleDropdown}
+            style={{ position: "relative" }}
+          >
+            <div className="text---1">전체 시간</div>
+            {dropdownActive && (
+              <div className="options">
+                <div className="option" onClick={() => {}}>
+                  옵션1
+                </div>
+                <div className="option" onClick={() => {}}>
+                  옵션2
+                </div>
+                <div className="option" onClick={() => {}}>
+                  옵션3
+                </div>
+                <div className="option" onClick={() => {}}>
+                  옵션4
+                </div>
+                <div className="option" onClick={() => {}}>
+                  옵션5
+                </div>
+                <div className="option" onClick={() => {}}>
+                  옵션6
+                </div>
+                <div className="option" onClick={() => {}}>
+                  옵션7
+                </div>
+                <div className="option" onClick={() => {}}>
+                  옵션8
+                </div>
               </div>
-              <div className={"div-29"}>
-                <div className={"text----"}>지각 사유: 교통 체증</div>
-              </div>
-            </div>
-            <div className={"div-30"}>
-              <div className={"div-31"}>
-                <div className={"text-2024003-"}>2024003 박민수</div>
-              </div>
-              <div className={"div-32"}>
-                <div className={"text-----1"}>결석 사유: 병원 진료</div>
-              </div>
-            </div>
+            )}
           </div>
         </div>
+
+        {/* 출결 관리 표 */}
+        <table className="table">
+          <colgroup>
+            <col style={{ width: "12%" }} />
+            <col style={{ width: "14%" }} />
+            <col style={{ width: "10%" }} />
+            <col style={{ width: "8%" }} />
+            <col style={{ width: "8%" }} />
+            <col style={{ width: "8%" }} />
+            <col style={{ width: "8%" }} />
+            <col style={{ width: "8%" }} />
+            <col style={{ width: "8%" }} />
+            <col style={{ width: "8%" }} />
+            <col style={{ width: "8%" }} />
+          </colgroup>
+          <thead>
+            <tr>
+              <th>이름</th>
+              <th>학번</th>
+              <th>팀명</th>
+              <th>09:00</th>
+              <th>10:00</th>
+              <th>11:00</th>
+              <th>13:00</th>
+              <th>14:00</th>
+              <th>15:00</th>
+              <th>16:00</th>
+              <th>18:00</th>
+            </tr>
+          </thead>
+          <tbody>
+            {filteredStudents.map((student, idx) => (
+              <tr key={idx}>
+                <td>{student.name}</td>
+                <td>{student.id}</td>
+                <td>{student.team}</td>
+                {student.attendance.map((status, i) => (
+                  <td
+                    key={i}
+                    className={
+                      status === "출석"
+                        ? "status-attend"
+                        : status === "지각"
+                        ? "status-late"
+                        : "status-absent"
+                    }
+                  >
+                    {status}
+                  </td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
     </div>
   );
 };
+
 export default Root;

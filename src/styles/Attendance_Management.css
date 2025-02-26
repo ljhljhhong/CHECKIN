@@ -1,107 +1,77 @@
+/***********************************************/
+/** ========== 전체 컨테이너 & 래핑 박스 ========== **/
+/***********************************************/
 .container {
   width: 100%;
-  height: 100%;
-  justify-items: center;
+  height: 100%; /* 필요 시 auto로 조정 */
+  background: #F9FAFB; /* 페이지 배경 */
+  display: flex;
+  justify-content: center; 
+  align-items: flex-start; 
+    overflow: auto;
 }
 
 .wrap {
   width: 97%;
-  height: auto;
+  margin-top: 24px;
+  margin-bottom: 40px;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
-  gap: 0px 10px;
-  border-radius: 8px;
-  opacity: 1;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.001), rgba(0, 0, 0, 0.001)), #FFFFFF;
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
-  margin-top: 1em;
+  gap: 10px;
+  padding-bottom: 24px; /* 아래쪽 여백 */
 }
 
+/***********************************************/
+/** ========== 헤더(출결관리) ========== **/
+/***********************************************/
 .h2-wrap {
-  margin: 0 auto;
   width: 95%;
-  height: auto;
-  z-index: 0;
-  opacity: 1;
-  background: rgba(0, 0, 0, 0);
-  margin-top: 24px;
+  margin: 24px auto 0 auto;
+  background: transparent;
 }
 
 .h2-text {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 20px;
   font-weight: bold;
   line-height: 28px;
-  letter-spacing: 0px;
   color: #000000;
+  margin: 0;
 }
 
-.button-wrap {
-  width: 95%;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  gap: 0px 15.73px;
-  z-index: 1;
-  margin: 0 auto;
-  margin-top: 24px;
-}
-
-.button-wrap .button {
-  width: auto;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  padding: 8px 16px;
-  gap: 0px 10px;
-  flex-wrap: wrap;
-  align-content: flex-start;
-  z-index: 1;
-  border-radius: 4px;
-  opacity: 1;
-  background: black;
-  color: #FFFFFF;
-  border: none;
-}
-
+/***********************************************/
+/** ========== 검색 조건/검색어 영역 ========== **/
+/***********************************************/
 .selectbox-wrap {
   width: 95%;
-  height: auto;
+  margin: 24px auto 0 auto;
   display: flex;
-  flex-direction: row;
   gap: 10px;
-  z-index: 1;
-  margin: 0 auto;
-  margin-top: 24px;
 }
 
 #search {
+  width: 15%;
   padding: 8px 40px 8px 12px;
-  width: 10%;
-  border-radius: 8px;
-  opacity: 1;
-  background: #FFFFFF;
-  box-sizing: border-box;
   border: 1px solid #D1D5DB;
+  border-radius: 8px;
+  background: #FFFFFF;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  cursor: pointer;
 }
 
 .input-wrap {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  background: #FFFFFF;
-  box-sizing: border-box;
-  border: 1px solid #D1D5DB;
+  width: 15%;
   display: flex;
   align-items: center;
-  padding: 8px 16px;
   gap: 10px;
-}
-
-.input-wrap .svg {
-  width: 16px;
-  height: 16px;
-  flex-shrink: 0;
+  padding: 8px 16px;
+  border: 1px solid #D1D5DB;
+  border-radius: 8px;
+  background: #FFFFFF;
 }
 
 .input {
@@ -112,414 +82,320 @@
   width: 100%;
   border: none;
   outline: none;
-  padding-left: 8px;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
 }
 
+/***********************************************/
+/** ========== 요약 정보 박스(전체 학생/출석 등) ========== **/
+/***********************************************/
 .info-wrap {
   width: 95%;
-  height: auto;
+  margin: 24px auto 0 auto;
   display: flex;
-  flex-direction: row;
-  gap: 0px 48px;
-  z-index: 1;
-  margin: 0 auto;
-  margin-top: 24px;
+  gap: 48px;
 }
 
 .infobox {
-  width: 20%;
+  flex: 1;
   height: 88px;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  align-items: start;
-  flex-wrap: wrap;
-  row-gap: 10px;
-  column-gap: 10px;
   padding: 24px;
+  row-gap: 10px;
 }
 
 .infobox-title {
-  width: 202px;
   height: 20px;
-  background: rgba(0, 0, 0, 0);
+  background: transparent;
 }
 
 .infobox-text {
-  width: 59px;
-  height: 20px;
-  white-space: nowrap;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
 }
 
-.color-blue {
-  color: #2563EB;
-}
-
-.color-green {
-  color: #16A34A;
-}
-
-.color-purple {
-  color: #9333EA;
-}
-
-.color-orange {
-  color: #EA580C;
-}
-
 .infobox-content {
-  width: 202px;
   height: 36px;
-  background: rgba(0, 0, 0, 0);
+  background: transparent;
 }
 
 .infobox-content-text {
-  width: 83px;
-  height: 36px;
-  white-space: nowrap;
-  color: #000000;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
+  color: #000000;
 }
 
+/* 박스 배경 */
 .bk-blue {
   background: #EFF6FF;
 }
-
 .bk-green {
   background: #F0FDF4;
 }
-
 .bk-purple {
   background: #FAF5FF;
 }
-
 .bk-orange {
   background: #FFF7ED;
 }
 
-.bar-wrap {
+/* 텍스트 색상 */
+.color-blue {
+  color: #2563EB;
+}
+.color-green {
+  color: #16A34A;
+}
+.color-purple {
+  color: #9333EA;
+}
+.color-orange {
+  color: #EA580C;
+}
+
+/***********************************************/
+/** ========== 수업 시간표 & 전체 시간 드롭다운 ========== **/
+/***********************************************/
+.info-wrap-1 {
+  width: 95%;
+  margin: 20px auto 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  padding: 10px 0;
 }
 
-.bar-wrap-h3 {
-  margin: 0;
-  font-size: 18px;
-  font-weight: bold;
+.info-wrap-1 .h3 {
+  display: flex;
+  align-items: center;
 }
 
-.bar-wrap-h3-text {
-  font-family: Roboto;
+.info-wrap-1 .h3 .text-- {
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
-  font-weight: bold;
-  line-height: 28px;
-  letter-spacing: 0px;
+  font-weight: 600;
   color: #000000;
-  opacity: 1;
+  white-space: nowrap;
 }
 
-.progress-wrap {
-  width: 100%;
-  height: 32px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px;
-  gap: 0px 24px;
-  flex-wrap: wrap;
-  align-content: center;
-  z-index: 1;
-}
-
-.progress-wrap progress {
-  width: 85%;
-  height: 32px;
-  z-index: 0;
-  opacity: 1;
-  background: #F3F4F6;
-}
-
-.progress-text {
-  width: 5%;
-  height: 35px;
-  font-family: Roboto;
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 35px;
-  letter-spacing: 0px;
-  color: #4B5563;
-}
-
-.input_tt {
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
-  align-items: center;
-}
-
-.text---6 {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  width: 100%;
-  max-width: 300px;
-  padding: 8px 16px;
+/* 드롭다운 박스 */
+.select {
+  position: relative;
+  width: 100px;
+  padding: 8px 12px;
   border-radius: 8px;
   background: #FFFFFF;
   border: 1px solid #D1D5DB;
-  box-sizing: border-box;
-  margin-left: auto;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
+.select-111 {
+  position: relative;
+  width: 412px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: #FFFFFF;
+  border: 1px solid #D1D5DB;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.select .text---1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+  white-space: nowrap;
+}
+
+/* 옵션 기본 숨김 */
+.select .option,
+.select .option-1,
+.select .option-2,
+.select .option-3,
+.select .option-4,
+.select .option-5,
+.select .option-6,
+.select .option-7 {
+  display: none;
+}
+
+/* active 시 표시 */
+.select.active .option,
+.select.active .option-1,
+.select.active .option-2,
+.select.active .option-3,
+.select.active .option-4,
+.select.active .option-5,
+.select.active .option-6,
+.select.active .option-7 {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 412px;
+  margin-top: 4px;
+  background: #FFFFFF;
+  border: 1px solid #D1D5DB;
+  border-radius: 4px;
+  z-index: 10;
+}
+
+/* 옵션 항목 */
+.select .option,
+.select .option-1,
+.select .option-2,
+.select .option-3,
+.select .option-4,
+.select .option-5,
+.select .option-6,
+.select .option-7 {
+  padding: 8px 12px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #000000;
+  cursor: pointer;
+}
+.select .option:hover,
+.select .option-1:hover,
+.select .option-2:hover,
+.select .option-3:hover,
+.select .option-4:hover,
+.select .option-5:hover,
+.select .option-6:hover,
+.select .option-7:hover {
+  background-color: #F9FAFB;
+}
+
+/***********************************************/
+/** ========== 표 (이름, 학번, 시간대) ========== **/
+/***********************************************/
 .table {
-  width: 100%;
+  width: 95%;
+  margin: 24px auto 0 auto;
   border-collapse: collapse;
-  margin-top: 24px;
+  background: #FFFFFF;
+
+  /* 고정 테이블 레이아웃으로 열 너비가 균일하게 유지 */
+  table-layout: fixed;
 }
 
-.thead {
+/* thead 배경 */
+.table thead {
   background: #F3F4F6;
 }
 
-.tr {
-  display: flex;
-  flex-direction: row;
-}
-
-.th,
-.td {
-  flex: 1;
-  padding: 8px;
-  text-align: center;
+/* 표 셀 스타일 */
+.table th,
+.table td {
   border: 1px solid #D1D5DB;
-}
-
-.th-1,
-.td-1,
-.th-2,
-.td-2,
-.th-3,
-.td-3,
-.th-4,
-.td-4,
-.th-5,
-.td-5,
-.th-6,
-.td-6,
-.th-7,
-.td-7,
-.th-8,
-.td-8,
-.th-9,
-.td-9,
-.td-10,
-.td-11,
-.td-12,
-.td-13,
-.td-14,
-.td-15,
-.td-16,
-.td-17,
-.td-18,
-.td-19,
-.td-20,
-.td-21,
-.td-22,
-.td-23,
-.td-24,
-.td-25,
-.td-26,
-.td-27,
-.td-28,
-.td-29,
-.td-30,
-.td-31,
-.td-32,
-.td-33,
-.td-34,
-.td-35,
-.td-36,
-.td-37,
-.td-38,
-.td-39,
-.td-40,
-.td-41,
-.td-42,
-.td-43,
-.td-44,
-.td-45,
-.td-46,
-.td-47,
-.td-48,
-.td-49 {
-  flex: 1;
-  padding: 8px;
+  padding: 12px 8px;
   text-align: center;
-  border: 1px solid #D1D5DB;
-}
-
-.text--12,
-.text--13,
-.text--14,
-.text--15,
-.text--16,
-.text--17,
-.text--18,
-.text--19,
-.text--20,
-.text--21,
-.text--22,
-.text--23,
-.text--24,
-.text--25,
-.text--26,
-.text--27,
-.text--28,
-.text--29,
-.text--30,
-.text--31,
-.text--32,
-.text--33,
-.text--34,
-.text--35,
-.text--36,
-.text--37,
-.text--38,
-.text--39,
-.text--40,
-.text--41,
-.text--42,
-.text--43,
-.text--44,
-.text--45,
-.text--46,
-.text--47,
-.text--48,
-.text--49,
-.text--50,
-.text--51,
-.text--52,
-.text--53,
-.text--54 {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 400;
+  color: #000000;
+  box-sizing: border-box;
 }
 
-.text-0900,
-.text-1010,
-.text-1120,
-.text-1330,
-.text-1440,
-.text-1550,
-.text-1700 {
-  font-family: Roboto;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 400;
-}
-
-.text-2024001,
-.text-2024002,
-.text-2024003,
-.text-2024004,
-.text-2024005 {
-  font-family: Roboto;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 400;
-}
-
-.a-6,
-.a-7,
-.b,
-.b-1,
-.c {
-  font-family: Roboto;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 400;
-}
-
-.span-6,
-.span-7,
-.span-8,
-.span-9,
-.span-10,
-.span-11,
-.span-12,
-.span-13,
-.span-14,
-.span-15,
-.span-16,
-.span-17,
-.span-18,
-.span-19,
-.span-20,
-.span-21,
-.span-22,
-.span-23,
-.span-24,
-.span-25,
-.span-26,
-.span-27,
-.span-28,
-.span-29,
-.span-30,
-.span-31,
-.span-32,
-.span-33,
-.span-34,
-.span-35,
-.span-36,
-.span-37,
-.span-38,
-.span-39,
-.span-40 {
-  font-family: Roboto;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 400;
-}
-
-.div-26,
-.div-27,
-.div-28,
-.div-29,
-.div-30,
-.div-31,
-.div-32 {
+/***********************************************/
+/** ========== 특이사항 (bar-wrap) ========== **/
+/***********************************************/
+.bar-wrap {
+  width: 95%;
+  margin: 20px auto 0 auto;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 8px;
+  flex-direction: column; /* 이미지처럼 제목 + 내용이 수직 */
   gap: 10px;
 }
 
-.text-2024002-,
-.text-2024003- {
-  font-family: Roboto;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 400;
+.bar-wrap-h3-text {
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 28px;
+  color: #000000;
+  margin: 0;
 }
 
+/* 특이사항 박스: 흰 배경, 약간의 padding */
+.div-26 {
+  background: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* 내부 행(이영희/박민수) 간격 */
+.div-27,
+.div-30 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.div-28,
+.div-29,
+.div-31,
+.div-32 {
+  display: flex;
+  align-items: center;
+}
+
+.text-2024002-,
+.text-2024003-,
 .text----,
 .text-----1 {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
+  color: #000000;
 }
+
+/*이름 폰트*/
+.text- {
+  top: -1.95px;
+  left: 0px;
+  width: 23px;
+  height: 16px;
+  white-space: nowrap;
+  color: #6B7280;
+  font-family: "Roboto";
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  display: flex;
+  align-items: center;
+}
+
+.text-name {
+  top: -2.95px;
+  left: 0px;
+  width: 45px;
+  height: 24px;
+  white-space: nowrap;
+  color: #000000;
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+

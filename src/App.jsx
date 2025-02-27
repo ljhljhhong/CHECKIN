@@ -11,18 +11,6 @@ import Student from './pages/Student/Student.jsx';
 import Notice from './pages/Notices/Notices.jsx';
 import './App.css';
 // import Layout from './components/Layout/Layout.jsx';
-const Layout = ({ children }) => {
-	return (
-		<div className="App">
-			<div className="left">
-				<Header />
-			</div>
-			<div className="right">
-				{children}
-			</div>
-		</div>
-	);
-};
 
 // ✅ Layout 컴포넌트를 따로 분리
 const Layout = ({ children }) => {

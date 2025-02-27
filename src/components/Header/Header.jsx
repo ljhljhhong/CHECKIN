@@ -37,8 +37,11 @@ const Root = () => {
         setMenu(menu);
         // selectMenu(menu);
         switch (menu) {
-            case '홈':
+            case '로그인':
                 navigate('/');
+                break;
+            case '홈':
+                navigate('/home');
                 break;
             case '학생관리':
                 navigate('/student');

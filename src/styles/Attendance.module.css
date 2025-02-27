@@ -206,46 +206,12 @@
     align-items: center;
 }
 
-.attendanceTd {
-    width: 95%;
-    height: 28px;
-    /* Smart layout */
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    /* padding: 4px 12px; */
-    gap: 0px 0px;
-    flex-wrap: wrap;
-    align-content: center;
-    z-index: 0;
-    border-radius: 9999px;
-    opacity: 1;
-    background: #DBEAFE;
-}
-
-.attendanceTdText {
-    width: 27px;
-    height: 20px;
-    z-index: 0;
-    font-family: Roboto;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 20px;
-    letter-spacing: 0px;
-    color: #1E40AF;
-    opacity: 1;
-    margin-left: auto;
-    padding-right: 15px;
-}
-
 .attendanceTd2 {
-    width: 100%;
+    width: 98%;
     height: 28px;
-    /* Smart layout */
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* padding: 4px 12px; */
     gap: 0px 0px;
     flex-wrap: wrap;
     align-content: center;
@@ -258,11 +224,9 @@
 .attendanceTdBar {
     width: 95%;
     height: 28px;
-    /* Smart layout */
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* padding: 4px 12px; */
     gap: 0px 0px;
     flex-wrap: wrap;
     align-content: center;
@@ -270,12 +234,10 @@
     border-radius: 9999px;
     opacity: 1;
     background: #DBEAFE;
+    position: relative;
 }
 
 .attendanceTdText2 {
-    width: 27px;
-    height: 20px;
-    z-index: 0;
     font-family: Roboto;
     font-size: 14px;
     font-weight: 500;
@@ -283,8 +245,10 @@
     letter-spacing: 0px;
     color: #1E40AF;
     opacity: 1;
-    margin-left: auto;
-    padding-right: 15px;
+    position: absolute;
+    right: -46px;
+    /* 프로그레스 바에서 텍스트가 벗어나는 거리 조정 */
+    z-index: 1;
 }
 
 

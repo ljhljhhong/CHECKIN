@@ -22,7 +22,7 @@
     margin-top: 1em;
   }
   
-  .h2-wrap {
+  .h2Wrap {
     margin: 0 auto;
     width: 95%;
     height: auto;
@@ -32,7 +32,7 @@
     margin-top: 24px;
   }
   
-  .h2-text {
+  .h2Text {
     font-family: Roboto;
     font-size: 20px;
     font-weight: bold;
@@ -41,7 +41,7 @@
     color: #000000;
   }
   
-  .button-wrap {
+  .buttonWrap {
     width: 95%;
     height: auto;
     /* Smart layout */
@@ -53,7 +53,7 @@
     margin-top: 24px;
 }
 
-.button-wrap .select-button {
+.buttonWrap .selectButton {
     width: auto;
     height: auto;
     /* Smart layout */
@@ -71,7 +71,7 @@
     border: none;
 }
 
-.button-wrap .non-select-button {
+.buttonWrap .nonSelectButton {
     width: auto;
     height: auto;
     /* Smart layout */
@@ -89,7 +89,7 @@
     border: none;
 }
 
-.button-wrap .isStudentAddSelected {
+.buttonWrap .isStudentAddSelected {
     width: auto;
     height: auto;
     /* Smart layout */
@@ -106,7 +106,7 @@
     color: #FFFFFF;
     border: none;
 }
-  .selectbox-wrap {
+  .selectboxWrap {
     width: 95%;
     height: auto;
     display: flex;
@@ -128,7 +128,7 @@
     color: #000000;
   }
   
-  .input-wrap {
+  .inputWrap {
     width: 100%;
     height: auto;
     border-radius: 8px;
@@ -141,7 +141,7 @@
     gap: 10px; /* 아이콘과 입력 필드 사이 간격 */
   }
   
-  .input-wrap .svg {
+  .inputWrap .svg {
     width: 16px;
     height: 16px;
     flex-shrink: 0; /* 크기가 줄어들지 않도록 설정 */
@@ -160,7 +160,7 @@
     color: black;
   }
   
-  .info-wrap {
+  .infowrap {
     width: 95%;
     height: auto;
     display: flex;
@@ -185,12 +185,12 @@
     padding: 24px;
     /* background: #EFF6FF; */
   
-    .infobox-title {
+    .infoboxTitle {
       width: 202px;
       height: 20px;
       background: rgba(0, 0, 0, 0);
   
-      .infobox-text {
+      .infoboxText {
         width: 59px;
         height: 20px;
         white-space: nowrap;
@@ -202,25 +202,25 @@
       }
     }
     
-    .color-blue {
+    .colorBlue {
       color: #2563EB;
     }
-    .color-green {
+    .colorGreen {
       color: #16A34A;
     }
-    .color-purple {
+    .colorPurple {
       color: #9333EA;
     }
-    .color-orange {
+    .colorOrange {
       color: #EA580C;
     }
   
-    .infobox-content {
+    .infoboxContent {
       width: 202px;
       height: 36px;
       background: rgba(0, 0, 0, 0);
   
-      .infobox-content-text {
+      .infoboxContentText {
         width: 83px;
         height: 36px;
         white-space: nowrap;
@@ -233,23 +233,23 @@
     }
   }
   
-  .bk-blue {
+  .bkBlue {
     background: #EFF6FF;
   }
   
-  .bk-green {
+  .bkGreen {
     background: #F0FDF4;
   }
   
-  .bk-purple {
+  .bkPurple {
     background: #FAF5FF;
   }
   
-  .bk-orange {
+  .bkOrange {
     background: #FFF7ED;
   }
   
-  .bar-wrap {
+  .barWrap {
     width: 95%;
     height: auto;
     display: flex;
@@ -262,7 +262,7 @@
     
   }
   
-  .bar-wrap-h3 {
+  .barWrapH3 {
     width: 1024px;
     height: 28px;
     z-index: 0;
@@ -270,7 +270,7 @@
     background: rgba(0, 0, 0, 0);
   }
   
-  .bar-wrap-h3-text {
+  .barWrapH3Text {
     font-family: Roboto;
     font-size: 18px;
     font-weight: bold;
@@ -280,7 +280,7 @@
     opacity: 1;
   }
   
-  .progress-wrap {
+  .progressWrap {
     width: 100%;
     height: 32px;
     /* Smart layout */
@@ -294,7 +294,7 @@
     z-index: 1;
   }
   
-  .progress-wrap progress {
+  .progressWrap progress {
     width: 85%;
     height: 32px;
     z-index: 0;
@@ -302,7 +302,7 @@
     background: #F3F4F6;
   }
   
-  .progress-text {
+  .progressText {
     width: 5%;
     height: 35px;
     font-family: Roboto;
@@ -362,11 +362,11 @@
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto;
+    overflow: hidden;
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-.modal-content {
+.modalContent {
     background-color: #fefefe;
     margin: 15% auto;
     padding: 20px;
@@ -376,7 +376,7 @@
     color: black
 }
 
-.modal-content form {
+.modalContent form {
   margin-top: 1em;
 }
 
@@ -394,8 +394,8 @@
     cursor: pointer;
 }
 
-.modal-content input[type="text"],
-.modal-content input[type="email"] {
+.modalContent input[type="text"],
+.modalContent input[type="email"] {
     width: 100%;
     padding: 10px;
     margin: 8px 0;

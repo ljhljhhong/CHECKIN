@@ -30,10 +30,10 @@ const App = () => {
     return (
         <Routes>
             {/* ✅ Layout이 필요 없는 페이지 */}
-            <Route path='/login' element={<NotFound />} />
+            <Route path='/' element={<Account />} />
 
             {/* ✅ Layout이 필요한 페이지 */}
-            <Route path='/' element={<Layout> <Home /> </Layout>} />
+            <Route path='/Home' element={<Layout> <Home /> </Layout>} />
             <Route path='/student' element={<Layout> <Student /> </Layout>} />
             <Route path='/attendance-management' element={<Layout> <Attendance_Management /> </Layout>} />
             <Route path='/attendance' element={<Layout> <Attendance /> </Layout>} />

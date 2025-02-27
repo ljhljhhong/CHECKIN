@@ -55,9 +55,6 @@ const Root = () => {
             case '공지사항':
                 navigate('/notice');
                 break;
-            case '설정':
-                navigate('/setting');
-                break;
             default:
                 navigate('/');
         }
@@ -73,7 +70,6 @@ const Root = () => {
                     <NavItem icon={menu === '출결현황' ? CASelect : CA} label="출결현황" isActive={menu === '출결현황'} onClick={() => sendSelectMenu('출결현황')} />
                     <NavItem icon={menu === '공지사항' ? NoticeSelect : Notice} label="공지사항" isActive={menu === '공지사항'} onClick={() => sendSelectMenu('공지사항')} />
                     <NavItem icon={menu === '일정관리' ? ScheduleSelect : Schedule} label="일정관리" isActive={menu === '일정관리'} onClick={() => sendSelectMenu('일정관리')} />
-                    <NavItem icon={menu === '설정' ? SettingSelect : Setting} label="설정" isActive={menu === '설정'} onClick={() => sendSelectMenu('설정')} />
                 </nav>
             </div>
         </div>

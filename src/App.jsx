@@ -24,28 +24,34 @@ const Layout = ({ children }) => {
 	);
 };
 
-const App = () => {
-	// const [renderMenuName, setRenderMenuName] = useState();
-	console.log('app useState 실행')
-	// 현재 선택된 메뉴 변경
-    // const currentMenu = (menu) => {
-    //     if (renderMenuName !== menu) {
-    //         setRenderMenuName(menu);
-    //     }
-    // };
-	return (
-		<Routes>
-			{/* Layout이 필요 없는 페이지 */}
-			<Route path='/' element={<Account />} />
+// ✅ Layout 컴포넌트를 따로 분리
+const Layout = ({ children }) => {
+    return (
+        <div className="App">
+            <div className="left">
+                <Header />
+            </div>
+            <div className="right">
+                {children}
+            </div>
+        </div>
+    );
+};
 
-			{/* Layout이 필요한 페이지 */}
-			<Route path='/home' element={<Layout> <Home /> </Layout>} />
-			<Route path='/student' element={<Layout> <Student /> </Layout>} />
-			<Route path='/attendance-management' element={<Layout> <Attendance_Management /> </Layout>} />
-			<Route path='/attendance' element={<Layout> <Attendance /> </Layout>} />
-			<Route path='/notice' element={<Layout> <Notice /> </Layout>} />
-		</Routes>
-	);
-}
+const App = () => {
+    return (
+        <Routes>
+            {/* ✅ Layout이 필요 없는 페이지 */}
+            <Route path='/login' element={<NotFound />} />
+
+            {/* ✅ Layout이 필요한 페이지 */}
+            <Route path='/' element={<Layout> <Home /> </Layout>} />
+            <Route path='/student' element={<Layout> <Student /> </Layout>} />
+            <Route path='/attendance-management' element={<Layout> <Attendance_Management /> </Layout>} />
+            <Route path='/attendance' element={<Layout> <Attendance /> </Layout>} />
+            <Route path='/notice' element={<Layout> <Notice /> </Layout>} />
+        </Routes>
+    );
+};
 
 export default App;

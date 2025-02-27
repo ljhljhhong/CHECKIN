@@ -296,6 +296,7 @@ const Root = () => {
             <option value="학번">학번</option>
           </select>
           <div className="input-wrap" style={{ width: "300px" }}>
+          <div className="input-wrap" style={{ width: "300px" }}>
             <div className="input">
               <input
                 type="text"
@@ -306,8 +307,6 @@ const Root = () => {
             </div>
           </div>
         </div>
-
-        {/* 날짜 검색 영역 */}
 
         {/* 요약 정보 박스 */}
         <div className="info-wrap">

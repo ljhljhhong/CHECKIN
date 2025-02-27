@@ -7,11 +7,10 @@
   display: flex;
   justify-content: center; 
   align-items: flex-start; 
-    overflow: auto;
 }
 
 .wrap {
-  width: 97%;
+  width: 90%;
   margin-top: 24px;
   margin-bottom: 40px;
   background: #FFFFFF;
@@ -198,7 +197,7 @@
 
 .select-111 {
   position: relative;
-  width: 412px;
+  width: 100px;
   padding: 8px 12px;
   border-radius: 8px;
   background: #FFFFFF;
@@ -227,6 +226,7 @@
   border-collapse: collapse;
   background: #FFFFFF;
 
+
   /* 고정 테이블 레이아웃으로 열 너비가 균일하게 유지 */
   table-layout: fixed;
 }
@@ -234,6 +234,7 @@
 /* thead 배경 */
 .table thead {
   background: #F3F4F6;
+  
 }
 
 /* 표 셀 스타일 */

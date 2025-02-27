@@ -4,14 +4,25 @@ import Header from './components/Header/Header.jsx';
 import Account from './pages/Account/Account.jsx';
 import Home from './pages/Home/Home.jsx';
 import Attendance_Management from './pages/Attendance_Management/Attendance_Management.jsx';
-import Main from './components/Dashboard/Dashboard.jsx';
 // import Product from './pages/Home/Home.jsx';
 import NotFound from './pages/NotFound/NotFound.jsx';
 import Attendance from './pages/Attendance/Attendance.jsx';
 import Student from './pages/Student/Student.jsx';
 import Notice from './pages/Notices/Notices.jsx';
-import Setting from './pages/Setting/Setting.jsx';
 import './App.css';
+// import Layout from './components/Layout/Layout.jsx';
+const Layout = ({ children }) => {
+	return (
+		<div className="App">
+			<div className="left">
+				<Header />
+			</div>
+			<div className="right">
+				{children}
+			</div>
+		</div>
+	);
+};
 
 const App = () => {
 	// const [renderMenuName, setRenderMenuName] = useState();
@@ -23,30 +34,17 @@ const App = () => {
     //     }
     // };
 	return (
-		<div className={'App'}>
-			<BrowserRouter>
-				<div>
-					<Account></Account>
-				</div>
-				{/* <div className={'left'}>
-                    
-                    {location.pathname !== '/account' && <Header />}
-                </div>
-				<div className="right">
-					<Routes>
-                        <Route path="/"  element={<Account />} />
-						
-                       
-						<Route path="/home" element={<Home />} />
-                        {<Route path="/student" element={<Student />} />}
-                        {<Route path="/attendance-management" element={<Attendance_Management />} />}
-						{<Route path="/attendance" element={<Attendance />} />}
-                        {<Route path="/notice" element={<Notice />} />}
-                        {<Route path="/setting" element={<Setting />} />}
-                    </Routes>
-				</div> */}
-			</BrowserRouter>
-		</div>
+		<Routes>
+			{/* Layout이 필요 없는 페이지 */}
+			<Route path='/login' element={<NotFound />} />
+
+			{/* Layout이 필요한 페이지 */}
+			<Route path='/' element={<Layout> <Home /> </Layout>} />
+			<Route path='/student' element={<Layout> <Student /> </Layout>} />
+			<Route path='/attendance-management' element={<Layout> <Attendance_Management /> </Layout>} />
+			<Route path='/attendance' element={<Layout> <Attendance /> </Layout>} />
+			<Route path='/notice' element={<Layout> <Notice /> </Layout>} />
+		</Routes>
 	);
 }
 

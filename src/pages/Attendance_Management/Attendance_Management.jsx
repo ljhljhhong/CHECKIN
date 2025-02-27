@@ -245,9 +245,6 @@ const initialStudents = [
 ];
 
 const Root = () => {
-  const [dropdownActive, setDropdownActive] = useState(false);
-  const toggleDropdown = () => setDropdownActive(!dropdownActive);
-
   // 텍스트 검색 상태
   const [textSearchCondition, setTextSearchCondition] = useState("이름");
   const [textSearchTerm, setTextSearchTerm] = useState("");
@@ -297,11 +294,10 @@ const Root = () => {
             <option value="이름">이름</option>
             <option value="학번">학번</option>
           </select>
-          <div className="input-wrap">
+          <div className="input-wrap" style={{ width: "300px" }}>
             <div className="input">
               <input
                 type="text"
-
                 placeholder="검색어를 입력하세요"
                 value={textSearchTerm}
                 onChange={(e) => setTextSearchTerm(e.target.value)}
@@ -309,8 +305,6 @@ const Root = () => {
             </div>
           </div>
         </div>
-
-        {/* 날짜 검색 영역 */}
 
         {/* 요약 정보 박스 */}
         <div className="info-wrap">
@@ -372,44 +366,9 @@ const Root = () => {
         </div>
 
         {/* 수업 시간표 / 전체 시간 드롭다운 */}
-        <div className="info-wrap-1" style={{ marginTop: "20px" }}>
+        <div className="info-wrap-1" style={{ marginTop: "20px", marginBottom: "20px" }}>
           <div className="h3">
             <div className="text--">수업 시간표</div>
-          </div>
-          <div
-            className={`select ${dropdownActive ? "active" : ""}`}
-            onClick={toggleDropdown}
-            style={{ position: "relative" }}
-          >
-            <div className="text---1">전체 시간</div>
-            {dropdownActive && (
-              <div className="options">
-                <div className="option" onClick={() => {}}>
-                  옵션1
-                </div>
-                <div className="option" onClick={() => {}}>
-                  옵션2
-                </div>
-                <div className="option" onClick={() => {}}>
-                  옵션3
-                </div>
-                <div className="option" onClick={() => {}}>
-                  옵션4
-                </div>
-                <div className="option" onClick={() => {}}>
-                  옵션5
-                </div>
-                <div className="option" onClick={() => {}}>
-                  옵션6
-                </div>
-                <div className="option" onClick={() => {}}>
-                  옵션7
-                </div>
-                <div className="option" onClick={() => {}}>
-                  옵션8
-                </div>
-              </div>
-            )}
           </div>
         </div>
 

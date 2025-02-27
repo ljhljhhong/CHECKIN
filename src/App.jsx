@@ -1,6 +1,7 @@
 import React, { Component, useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header/Header.jsx';
+import Account from './pages/Account/Account.jsx';
 import Home from './pages/Home/Home.jsx';
 import Attendance_Management from './pages/Attendance_Management/Attendance_Management.jsx';
 import Main from './components/Dashboard/Dashboard.jsx';
@@ -11,7 +12,6 @@ import Student from './pages/Student/Student.jsx';
 import Notice from './pages/Notices/Notices.jsx';
 import Setting from './pages/Setting/Setting.jsx';
 import './App.css';
-import Attendance from './pages/Attendance/Attendance.jsx';
 
 const App = () => {
 	// const [renderMenuName, setRenderMenuName] = useState();
@@ -25,13 +25,26 @@ const App = () => {
 	return (
 		<div className={'App'}>
 			<BrowserRouter>
-
-				<div className={'left'}>
-					<Header />
+				<div>
+					<Account></Account>
 				</div>
+				{/* <div className={'left'}>
+                    
+                    {location.pathname !== '/account' && <Header />}
+                </div>
 				<div className="right">
-					<Attendance_Management/>
-				</div>
+					<Routes>
+                        <Route path="/"  element={<Account />} />
+						
+                       
+						<Route path="/home" element={<Home />} />
+                        {<Route path="/student" element={<Student />} />}
+                        {<Route path="/attendance-management" element={<Attendance_Management />} />}
+						{<Route path="/attendance" element={<Attendance />} />}
+                        {<Route path="/notice" element={<Notice />} />}
+                        {<Route path="/setting" element={<Setting />} />}
+                    </Routes>
+				</div> */}
 			</BrowserRouter>
 		</div>
 	);

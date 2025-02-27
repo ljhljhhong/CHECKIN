@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from "../../styles/Home.module.css";
 import Search from '../../assets/icons/search.svg?react';
 
 
 const Root = ({ }) => {
+    const [selectBtn, setSelectBtn] = useState('today');
+    const clickBtn = (btnName) => {
+        setSelectBtn(btnName);
+    }
     React.useEffect(() => {
         // Initialize the code
         return () => { }
@@ -15,9 +19,9 @@ const Root = ({ }) => {
                     <h2 className={styles.h2Text}>홈 대시보드</h2>
                 </div>
                 <div className={styles.buttonWrap}>
-                    <button className={styles.selectButton}>오늘</button>
-                    <button className={styles.nonSelectButton}>이번 주</button>
-                    <button className={styles.nonSelectButton}>저번 달</button>
+                    <button className={'today' == selectBtn ? styles.selectButton : styles.nonSelectButton} onClick={() => clickBtn('today')} >오늘</button>
+                    <button className={'week' == selectBtn ? styles.selectButton : styles.nonSelectButton} onClick={() => clickBtn('week')} >이번 주</button>
+                    <button className={'month' == selectBtn ? styles.selectButton : styles.nonSelectButton} onClick={() => clickBtn('month')} >저번 달</button>
                 </div>
                 <div className={styles.selectboxWrap}>
                     <select id={'search'}>

@@ -61,22 +61,6 @@ const Attendance = () => {
                                 <div className={styles.name}>세미콜론</div>
                             </div>
                             <div className={styles.td}>
-                                <div className={styles.attendanceTd}>
-                                    <div className={styles.attendanceTdText}>95%</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className={styles.tr}>
-                            <div className={styles.td}>
-                                <div className={styles.department}>김준식</div>
-                            </div>
-                            <div className={styles.td}>
-                                <div className={styles.classnumber}>19120566</div>
-                            </div>
-                            <div className={styles.td}>
-                                <div className={styles.name}>세미콜론</div>
-                            </div>
-                            <div className={styles.td}>
                                 <div className={styles.attendanceTd2}>
                                     <div className={styles.attendanceTdBar}>
                                         <div className={styles.attendanceTdText2}>95%</div>

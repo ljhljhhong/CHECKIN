@@ -4,7 +4,6 @@
 .container {
   width: 100%;
   height: 100%; /* 필요 시 auto로 조정 */
-  background: #F9FAFB; /* 페이지 배경 */
   display: flex;
   justify-content: center; 
   align-items: flex-start; 
@@ -219,65 +218,6 @@
   white-space: nowrap;
 }
 
-/* 옵션 기본 숨김 */
-.select .option,
-.select .option-1,
-.select .option-2,
-.select .option-3,
-.select .option-4,
-.select .option-5,
-.select .option-6,
-.select .option-7 {
-  display: none;
-}
-
-/* active 시 표시 */
-.select.active .option,
-.select.active .option-1,
-.select.active .option-2,
-.select.active .option-3,
-.select.active .option-4,
-.select.active .option-5,
-.select.active .option-6,
-.select.active .option-7 {
-  display: block;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 412px;
-  margin-top: 4px;
-  background: #FFFFFF;
-  border: 1px solid #D1D5DB;
-  border-radius: 4px;
-  z-index: 10;
-}
-
-/* 옵션 항목 */
-.select .option,
-.select .option-1,
-.select .option-2,
-.select .option-3,
-.select .option-4,
-.select .option-5,
-.select .option-6,
-.select .option-7 {
-  padding: 8px 12px;
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  color: #000000;
-  cursor: pointer;
-}
-.select .option:hover,
-.select .option-1:hover,
-.select .option-2:hover,
-.select .option-3:hover,
-.select .option-4:hover,
-.select .option-5:hover,
-.select .option-6:hover,
-.select .option-7:hover {
-  background-color: #F9FAFB;
-}
-
 /***********************************************/
 /** ========== 표 (이름, 학번, 시간대) ========== **/
 /***********************************************/
@@ -302,11 +242,27 @@
   border: 1px solid #D1D5DB;
   padding: 12px 8px;
   text-align: center;
-  font-family: Roboto, sans-serif;
+  font-weight: 1000;
+  font-family: Roboto;
   font-size: 14px;
   line-height: 20px;
   color: #000000;
   box-sizing: border-box;
+}
+
+/* 출석 상태 */
+.table td.status-attend {
+  color: green; /* 초록색 */
+}
+
+/* 지각 상태 */
+.table td.status-late {
+  color: orange; /* 주황색색 */
+}
+
+/* 결석 상태 */
+.table td.status-absent {
+  color: red; /* 빨간색 */
 }
 
 /***********************************************/

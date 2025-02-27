@@ -280,13 +280,14 @@ const Root = () => {
 
         {/* 날짜 검색 영역, 텍스트 검색 영역  */}
         <div className="selectbox-wrap" style={{ gap: "10px" }}>
-          <input 
+          <input
             type="date"
             className="select"
             value={dateSearchTerm}
             onChange={(e) => setDateSearchTerm(e.target.value)}
           />
-          <select className="select"
+          <select
+            className="select"
             id="text-search-condition"
             value={textSearchCondition}
             onChange={(e) => setTextSearchCondition(e.target.value)}
@@ -294,6 +295,7 @@ const Root = () => {
             <option value="이름">이름</option>
             <option value="학번">학번</option>
           </select>
+          <div className="input-wrap" style={{ width: "300px" }}>
           <div className="input-wrap" style={{ width: "300px" }}>
             <div className="input">
               <input
@@ -365,8 +367,11 @@ const Root = () => {
           </div>
         </div>
 
-        {/* 수업 시간표 / 전체 시간 드롭다운 */}
-        <div className="info-wrap-1" style={{ marginTop: "20px", marginBottom: "20px" }}>
+        {/* 수업 시간표 */}
+        <div
+          className="info-wrap-1"
+          style={{ marginTop: "20px", marginBottom: "20px" }}
+        >
           <div className="h3">
             <div className="text--">수업 시간표</div>
           </div>

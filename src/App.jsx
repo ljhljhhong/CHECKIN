@@ -1,6 +1,7 @@
 import React, { Component, useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header/Header.jsx';
+import Account from './pages/Account/Account.jsx';
 import Home from './pages/Home/Home.jsx';
 import Attendance_Management from './pages/Attendance_Management/Attendance_Management.jsx';
 // import Product from './pages/Home/Home.jsx';

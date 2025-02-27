@@ -296,7 +296,6 @@ const Root = () => {
             <option value="학번">학번</option>
           </select>
           <div className="input-wrap" style={{ width: "300px" }}>
-          <div className="input-wrap" style={{ width: "300px" }}>
             <div className="input">
               <input
                 type="text"
@@ -433,6 +432,7 @@ const Root = () => {
         </table>
       </div>
     </div>
+    
   );
 };
 

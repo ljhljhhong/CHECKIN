@@ -18,7 +18,7 @@
     margin-top: 1em;
 }
 
-.notice-header {
+.noticeHeader {
     margin: 0 auto;
     width: 95%;
     height: auto;
@@ -28,7 +28,7 @@
     margin-top: 24px;
 }
 
-.notice-title {
+.noticeTitle {
     font-family: Roboto;
     font-size: 20px;
     font-weight: bold;
@@ -37,7 +37,7 @@
     color: #000000;
 }
 
-.button-wrap {
+.buttonWrap {
     width: 95%;
     height: auto;
     display: flex;
@@ -48,7 +48,7 @@
     margin-top: 24px;
 }
 
-.button-wrap .button {
+.buttonWrap .button {
     width: auto;
     height: auto;
     display: flex;
@@ -66,7 +66,7 @@
     cursor: pointer;
 }
 
-.notice-section {
+.noticeSection {
     width: 95%;
     margin: 0 auto;
     margin-top: 24px;
@@ -75,7 +75,7 @@
     gap: 12px; /* 간격 줄이기 */
 }
 
-.notice-item {
+.noticeItem {
     box-sizing: border-box;
     padding: 12px; /* 패딩 줄이기 */
     border: 1px solid #E5E7EB;
@@ -88,7 +88,7 @@
     height: auto; /* 높이 자동 조정 */
 }
 
-.notice-item .notice-title {
+.noticeItem .noticeTitle {
     font-family: Roboto, sans-serif;
     font-size: 16px;
     font-weight: bold;
@@ -96,14 +96,14 @@
     margin-bottom: 8px;
 }
 
-.notice-item .notice-date {
+.noticeItem .noticeDate {
     font-family: Roboto, sans-serif;
     font-size: 14px;
     color: #6B7280;
     margin-bottom: 8px;
 }
 
-.notice-item .notice-content {
+.noticeItem .noticeContent {
     font-family: Roboto, sans-serif;
     font-size: 14px;
     color: #000000;
@@ -111,13 +111,13 @@
     flex-grow: 1; /* 남은 공간을 채우도록 설정 */
 }
 
-.notice-item .notice-file {
+.noticeItem .noticeFile {
     display: flex;
     align-items: center;
     margin-top: 8px; /* 상단 마진 추가 */
 }
 
-.notice-item .notice-file .file-text {
+.noticeItem .noticeFile .fileText {
     font-family: Roboto, sans-serif;
     font-size: 14px;
     color: #000000;
@@ -131,14 +131,14 @@
     text-align: center;
 }
 
-.pagination-buttons {
+.paginationButtons {
     display: flex;
     gap: 10px;
     justify-content: center;
     margin-bottom: 20px; /* 위로 띄우기 */
 }
 
-.pagination-buttons .button {
+.paginationButtons .button {
     padding: 8px 16px;
     border-radius: 4px;
     background: #FFFFFF; /* 바탕색 흰색 */
@@ -147,43 +147,43 @@
     cursor: pointer;
 }
 
-.pagination-buttons .button .button-text {
+.paginationButtons .button .buttonText {
     font-family: Roboto, sans-serif;
     font-size: 14px;
     font-weight: 500;
 }
 
-.survey-section {
+.surveySection {
     width: 95%;
     margin: 0 auto;
     margin-top: 24px;
 }
 
-.survey-header {
+.surveyHeader {
     margin-bottom: 16px;
 }
 
-.survey-title {
+.surveyTitle {
     font-family: Roboto, sans-serif;
     font-size: 18px;
     font-weight: bold;
     color: #000000;
 }
 
-.survey-content {
+.surveyContent {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
-.survey-item {
+.surveyItem {
     padding: 16px;
     border: 1px solid #E5E7EB;
     border-radius: 8px;
     background: #FFFFFF;
 }
 
-.survey-item .survey-title {
+.surveyItem .surveyTitle {
     font-family: Roboto, sans-serif;
     font-size: 16px;
     font-weight: bold;
@@ -191,21 +191,21 @@
     margin-bottom: 8px;
 }
 
-.survey-item .survey-date {
+.surveyItem .surveyDate {
     font-family: Roboto, sans-serif;
     font-size: 14px;
     color: #6B7280;
     margin-bottom: 8px;
 }
 
-.survey-item .survey-description {
+.surveyItem .surveyDescription {
     font-family: Roboto, sans-serif;
     font-size: 14px;
     color: #000000;
     margin-bottom: 16px;
 }
 
-.survey-item .survey-button {
+.surveyItem .surveyButton {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -216,7 +216,7 @@
     cursor: pointer;
 }
 
-.survey-item .survey-button .button-text {
+.surveyItem .surveyButton .buttonText {
     font-family: Roboto, sans-serif;
     font-size: 14px;
     font-weight: 500;
@@ -238,7 +238,7 @@
     color: black;
 }
 
-.modal-content {
+.modalContent {
     background-color: #fefefe;
     margin: auto;
     padding: 20px;
@@ -263,11 +263,11 @@
 }
 
 /* 폼 스타일 */
-.form-group {
+.formGroup {
     margin-bottom: 16px;
 }
 
-.form-group label {
+.formGroup label {
     display: block;
     font-family: Roboto, sans-serif;
     font-size: 14px;
@@ -275,8 +275,8 @@
     margin-bottom: 8px;
 }
 
-.form-group input,
-.form-group textarea {
+.formGroup input,
+.formGroup textarea {
     width: 100%;
     padding: 8px;
     font-family: Roboto, sans-serif;
@@ -288,12 +288,12 @@
     background-color: #FFFFFF; /* 배경색 흰색 */
 }
 
-.form-group textarea {
+.formGroup textarea {
     resize: vertical;
     height: 100px;
 }
 
-.submit-button {
+.submitButton {
     padding: 10px 20px;
     font-family: Roboto, sans-serif;
     font-size: 14px;
@@ -305,6 +305,6 @@
     cursor: pointer;
 }
 
-.submit-button:hover {
+.submitButton:hover {
     background-color: #0056b3;
 }

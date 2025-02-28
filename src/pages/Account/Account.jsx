@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import "../../styles/Account.css";
+import titleImage from '../../assets/images/titleImage.png';
 
 const Account = () => {
     const [username, setUsername] = useState("");
@@ -20,7 +21,7 @@ const Account = () => {
             <div className="login-box">
                 <form onSubmit={handleLogin}>
                     <div className='loginTitle'>
-                        미지의 세계
+                        <img src={titleImage} alt="title" height='70px' width='240px'/>
                     </div>
                     <div className="input-group">
                         <label htmlFor="username">아이디</label>

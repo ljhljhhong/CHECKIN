@@ -13,6 +13,7 @@ const Account = () => {
     };
 
     const goToHome = () => {
+        sessionStorage.removeItem('menu');
         navigate('/home');
     }
 

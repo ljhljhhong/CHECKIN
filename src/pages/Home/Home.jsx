@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from "../../styles/Home.module.css";
 import Search from '../../assets/icons/search.svg?react';
 
@@ -12,6 +12,58 @@ const Root = ({ }) => {
         // Initialize the code
         return () => { }
     }, [])
+
+    const notices = [
+        { date: "2024.01.15", title: "2024년 1학기 수업 일정 안내" },
+        { date: "2024.02.10", title: "졸업식 안내" },
+        { date: "2024.03.05", title: "신입생 오리엔테이션 일정" }
+    ];
+
+    const surveys = [
+        { date: "2024.01.15", title: "2024년 교육과정 만족도 조사" },
+        { date: "2024.02.10", title: "겨울방학 특강 신청 안내" },
+        { date: "2024.03.05", title: "2023년 2학기 성적 발표" }
+    ];
+
+    const NoticeContent = () => {
+        return (
+            <>
+                {notices.map((notice, i) => (
+                    <div key={i} className={styles.noticeBox}>
+                        <div className={styles.nb}>
+                            <div className={styles.noticeBoxDateText}>
+                                {notice.date}
+                            </div>
+                            <div className={styles.noticeBoxTitleText}>
+                                {notice.title}
+                            </div>
+                        </div>
+                    </div>
+                ))}
+            </>
+        );
+    };
+
+    const SurveyContent = () => {
+        return (
+            <>
+                {notices.map((surveys, i) => (
+                    <div key={i} className={styles.noticeBox}>
+                        <div className={styles.nb}>
+                            <div className={styles.noticeBoxDateText}>
+                                {surveys.date}
+                            </div>
+                            <div className={styles.noticeBoxTitleText}>
+                                {surveys.title}
+                            </div>
+                        </div>
+                    </div>
+                ))}
+            </>
+        );
+    };
+
+
     return (
         <div className={styles.container}>
             <div className={styles.wrap}>
@@ -103,49 +155,11 @@ const Root = ({ }) => {
             <div className={styles.colWrap}>
                 <div className={styles.notice}>
                     <h2>공지사항</h2>
-                    <div className={styles.noticeBox}>
-                        <div className={styles.nb}>
-                            <div className={styles.noticeBoxDateText}>
-                                2024.01.15
-                            </div>
-                            <div className={styles.noticeBoxTitleText}>
-                                2024년 1학기 수업 일정 안내
-                            </div>
-                        </div>
-                    </div>
-                    <div className={styles.noticeBox}>
-                        <div className={styles.nb}>
-                            <div className={styles.noticeBoxDateText}>
-                                2024.01.15
-                            </div>
-                            <div className={styles.noticeBoxTitleText}>
-                                2024년 1학기 수업 일정 안내
-                            </div>
-                        </div>
-                    </div>
-                    <div className={styles.noticeBox}>
-                        <div className={styles.nb}>
-                            <div className={styles.noticeBoxDateText}>
-                                2024.01.15
-                            </div>
-                            <div className={styles.noticeBoxTitleText}>
-                                2024년 1학기 수업 일정 안내
-                            </div>
-                        </div>
-                    </div>
+                    <NoticeContent />
                 </div>
                 <div className={styles.notice}>
-                    <h2>공지사항</h2>
-                    <div className={styles.noticeBox}>
-                        <div className={styles.nb}>
-                            <div className={styles.noticeBoxDateText}>
-                                2024.01.15
-                            </div>
-                            <div className={styles.noticeBoxTitleText}>
-                                2024년 1학기 수업 일정 안내
-                            </div>
-                        </div>
-                    </div>
+                    <h2>설문조사</h2>
+                    <SurveyContent />
                 </div>
             </div>
         </div>

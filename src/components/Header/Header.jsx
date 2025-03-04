@@ -30,11 +30,14 @@ const NavItem = ({ icon: Icon, label, isActive, onClick }) => {
 };
 
 const Root = () => {
-    const [menu, setMenu] = useState('홈'); // 현재 선택된 메뉴 상태
+    const [menu, setMenu] = useState(() => {
+        return sessionStorage.getItem('menu') || '홈';
+    }); // 현재 선택된 메뉴 상태
     console.log('Header useState 실행');
     const navigate = useNavigate(); // useNavigate 훅 추가
     const sendSelectMenu = (menu) => {
         setMenu(menu);
+        sessionStorage.setItem('menu', menu);
         // selectMenu(menu);
         switch (menu) {
             case '로그인':
@@ -71,6 +74,7 @@ const Root = () => {
                     <NavItem icon={menu === '공지사항' ? NoticeSelect : Notice} label="공지사항" isActive={menu === '공지사항'} onClick={() => sendSelectMenu('공지사항')} />
                     <NavItem icon={menu === '일정관리' ? ScheduleSelect : Schedule} label="일정관리" isActive={menu === '일정관리'} onClick={() => sendSelectMenu('일정관리')} />
                 </nav>
+                <button className="logout-Btn">로그아웃</button>
             </div>
         </div>
     );

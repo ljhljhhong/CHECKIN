@@ -7,6 +7,7 @@
   // padding: 24px;
   
   .aside-content {
+    height: 100%;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -60,4 +61,24 @@
       }
     }
   }
+}
+
+.logout-Btn {
+  color: #4B5563;
+  font-size: 13px;
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  background: #ffffff;
+  margin-top: auto;
+  margin-bottom: 12px;
+  transition: background 0.3s;
+}
+
+.logout-Btn:hover {
+  cursor: pointer;
+  // background: #f0f0f0;
+  background: #000;
+  color: #ffffff;
 }

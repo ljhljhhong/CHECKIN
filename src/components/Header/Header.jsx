@@ -74,6 +74,7 @@ const Root = () => {
                     <NavItem icon={menu === '공지사항' ? NoticeSelect : Notice} label="공지사항" isActive={menu === '공지사항'} onClick={() => sendSelectMenu('공지사항')} />
                     <NavItem icon={menu === '일정관리' ? ScheduleSelect : Schedule} label="일정관리" isActive={menu === '일정관리'} onClick={() => sendSelectMenu('일정관리')} />
                 </nav>
+                <button className="logout-Btn">로그아웃</button>
             </div>
         </div>
     );

@@ -202,7 +202,7 @@ const Root = ({}) => {
                                 <input type="text" name="grade" />
                             </label>
                             <br />
-                            <button type="submit">저장</button>
+                            <button className={styles.submitBtn} type="submit">저장</button>
                         </form>
                     </div>
                 </div>

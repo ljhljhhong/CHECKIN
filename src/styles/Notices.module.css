@@ -19,7 +19,7 @@
     margin-bottom: 1em;
 }
 
-.noticeHeader {
+.h2Wrap {
     margin: 0 auto;
     width: 95%;
     height: auto;
@@ -28,9 +28,9 @@
     background: rgba(0, 0, 0, 0);
     margin-top: 24px;
 }
-
-.noticeTitle {
-    font-family: Roboto;
+  
+.h2Text {
+    font-family: "42dot Sans", serif;
     font-size: 20px;
     font-weight: bold;
     line-height: 28px;
@@ -51,20 +51,22 @@
 
 .buttonWrap .button {
     width: auto;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    padding: 8px 16px;
-    gap: 0px 10px;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    z-index: 1;
-    border-radius: 4px;
-    opacity: 1;
-    background: black; /* 버튼 색상 변경 */
-    color: #FFFFFF;
-    border: none;
-    cursor: pointer;
+  height: auto;
+  /* Smart layout */
+  display: flex;
+  flex-direction: column;
+  padding: 8px 16px;
+  gap: 0px 10px;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  z-index: 1;
+  border-radius: 4px;
+  opacity: 1;
+  background: black;
+  color: #FFFFFF;
+  border: none;
+  font-family: "42dot Sans", serif;
+  font-size: 14px;
 }
 
 .noticeSection {
@@ -200,13 +202,15 @@
 }
 
 .surveyItem .surveyDescription {
-    font-family: Roboto, sans-serif;
+    font-family: "42dot Sans", serif;
     font-size: 14px;
     color: #000000;
     margin-bottom: 16px;
 }
 
 .surveyItem .surveyButton {
+    width: 80px;
+    height: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -218,7 +222,7 @@
 }
 
 .surveyItem .surveyButton .buttonText {
-    font-family: Roboto, sans-serif;
+    font-family: "42dot Sans", serif;
     font-size: 14px;
     font-weight: 500;
 }

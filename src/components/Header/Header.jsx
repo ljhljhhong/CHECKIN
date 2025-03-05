@@ -58,6 +58,12 @@ const Root = () => {
             case '공지사항':
                 navigate('/notice');
                 break;
+            case '일정관리':
+                navigate('/date-management');
+                break;
+            case '설정':
+                navigate('/setting');
+                break;
             default:
                 navigate('/');
         }

@@ -15,7 +15,7 @@ const Root = ({ }) => {
                     <h2 className={styles.h2Text}>홈 대시보드</h2>
                 </div>
                 <div className={styles.buttonWrap}>
-                    <button className={styles.selectButton}>오늘</button>
+                    <button className={styles.todayButton}>오늘</button>
                     <button className={styles.nonSelectButton}>이번 주</button>
                     <button className={styles.nonSelectButton}>저번 달</button>
                 </div>

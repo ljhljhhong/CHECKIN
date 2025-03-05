@@ -21,6 +21,7 @@
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.001), rgba(0, 0, 0, 0.001)), #FFFFFF;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
   margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .h2Wrap {
@@ -73,7 +74,7 @@
   font-family: "42dot Sans", serif;
 }
 
-.buttonWrap .todayButton {
+.buttonWrap .selectButton {
   width: auto;
   height: auto;
   /* Smart layout */
@@ -162,10 +163,10 @@
   flex-direction: column;
   justify-content: start;
   align-items: start;
-  flex-wrap: wrap;
   row-gap: 10px;
   column-gap: 10px;
   padding: 24px;
+  font-family: "42dot Sans", serif;
   /* background: #EFF6FF; */
 
   .infoboxTitle {
@@ -182,6 +183,7 @@
       font-size: 14px;
       line-height: 20px;
       font-weight: 400;
+      font-family: "42dot Sans", serif;
     }
   }
   
@@ -208,7 +210,7 @@
       height: 36px;
       white-space: nowrap;
       color: #000000;
-      font-family: "Roboto";
+      font-family: "42dot Sans", serif;
       font-size: 30px;
       line-height: 36px;
       font-weight: 700;
@@ -337,6 +339,7 @@ progress::-webkit-progress-value {
   column-gap: 10px;
   padding: 24px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), #ffffff;
+  font-family: "42dot Sans", serif;
 }
 
 .nb {
@@ -348,7 +351,7 @@ progress::-webkit-progress-value {
 .notice h2 {
   width: 100%;
   height: auto;
-  font-family: Roboto;
+  font-family: "42dot Sans", serif;
   font-size: 20px;
   font-weight: bold;
   line-height: 28px;
@@ -374,7 +377,7 @@ progress::-webkit-progress-value {
 .noticeBoxDateText {
   width: 100%;
   height: auto;
-  font-family: Roboto;
+  font-family: "42dot Sans", serif;
   font-size: 14px;
   font-weight: normal;
   line-height: 20px;
@@ -386,7 +389,7 @@ progress::-webkit-progress-value {
 .noticeBoxTitleText {
   width: 100%;
   height: auto;
-  font-family: Roboto;
+  font-family: "42dot Sans", serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=42dot+Sans:wght@300..800&family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&display=swap');
+
 /* 컨테이너 영역 */
 .container {
     width: 100%;
@@ -36,7 +38,7 @@
 }
 
 .h2Text {
-    font-family: Roboto;
+    font-family: "42dot Sans", serif;
     font-size: 20px;
     font-weight: bold;
     line-height: 28px;
@@ -73,6 +75,7 @@
     background: #FFFFFF;
     color: black;
     border: none;
+    font-family: "42dot Sans", serif;
 }
 
 .buttonWrap .selectButton {
@@ -91,6 +94,7 @@
     background: black;
     color: #FFFFFF;
     border: none;
+    font-family: "42dot Sans", serif;
 }
 
 .selectButton:hover {
@@ -157,6 +161,7 @@
     border: none;
     outline: none;
     padding-left: 8px;
+    font-family: "42dot Sans", serif;
     /* 아이콘과의 간격 */
 }
 
@@ -181,7 +186,7 @@
 .table .thead .th {
     flex: 1;
     padding: 12px 24px;
-    font-family: Roboto, sans-serif;
+    font-family: "42dot Sans", serif;
     font-size: 14px;
     color: #6B7280;
     font-weight: 500;
@@ -199,7 +204,7 @@
 .table .tbody .td {
     flex: 1;
     padding: 3px 24px;
-    font-family: Roboto, sans-serif;
+    font-family: "42dot Sans", serif;
     font-size: 14px;
     color: #000;
     display: flex;
@@ -238,7 +243,7 @@
 }
 
 .attendanceTdText2 {
-    font-family: Roboto;
+    font-family: "42dot Sans", serif;
     font-size: 14px;
     font-weight: 500;
     line-height: 18px;
@@ -289,7 +294,7 @@
             width: 59px;
             height: 20px;
             white-space: nowrap;
-            font-family: Roboto;
+            font-family: "42dot Sans", serif;
             font-size: 14px;
             font-weight: normal;
             line-height: 20px;
@@ -308,7 +313,7 @@
             height: 36px;
             white-space: nowrap;
             color: #000000;
-            font-family: "Roboto";
+            font-family: "42dot Sans", serif;
             font-size: 30px;
             line-height: 36px;
             font-weight: 700;

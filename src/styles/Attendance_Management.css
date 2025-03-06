@@ -33,7 +33,7 @@
 }
 
 .h2-text {
-  font-family: Roboto, sans-serif;
+  font-family: "42dot Sans", serif;
   font-size: 20px;
   font-weight: bold;
   line-height: 28px;
@@ -57,7 +57,7 @@
   border: 1px solid #D1D5DB;
   border-radius: 8px;
   background: #FFFFFF;
-  font-family: Roboto, sans-serif;
+  font-family: "42dot Sans", serif;
   font-size: 14px;
   cursor: pointer;
 }
@@ -81,7 +81,7 @@
   width: 100%;
   border: none;
   outline: none;
-  font-family: Roboto, sans-serif;
+  font-family: "42dot Sans", serif;
   font-size: 14px;
 }
 
@@ -111,7 +111,7 @@
 }
 
 .infobox-text {
-  font-family: "Roboto", sans-serif;
+  font-family: "42dot Sans", serif;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
@@ -123,7 +123,7 @@
 }
 
 .infobox-content-text {
-  font-family: "Roboto", sans-serif;
+  font-family: "42dot Sans", serif;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -137,8 +137,8 @@
 .bk-green {
   background: #F0FDF4;
 }
-.bk-purple {
-  background: #FAF5FF;
+.bk-red {
+  background: #ffeded;
 }
 .bk-orange {
   background: #FFF7ED;
@@ -151,8 +151,8 @@
 .color-green {
   color: #16A34A;
 }
-.color-purple {
-  color: #9333EA;
+.color-red {
+  color: #d53939;
 }
 .color-orange {
   color: #EA580C;
@@ -163,7 +163,7 @@
 /***********************************************/
 .info-wrap-1 {
   width: 95%;
-  margin: 20px auto 0 auto;
+  margin: 24px auto 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -175,11 +175,36 @@
 }
 
 .info-wrap-1 .h3 .text-- {
-  font-family: "Roboto", sans-serif;
+  font-family: "42dot Sans", serif;
   font-size: 18px;
   font-weight: 600;
   color: #000000;
   white-space: nowrap;
+  margin-top: 20px;
+}
+
+.info-wrap-2 {
+  width: 95%;
+  margin-left: 24px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-wrap-2 .h3 {
+  display: flex;
+  align-items: center;
+}
+
+.info-wrap-2 .h3 .text-- {
+  font-family: "42dot Sans", serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: gray;
+  white-space: nowrap;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 /* 드롭다운 박스 */
@@ -210,7 +235,7 @@
 }
 
 .select .text---1 {
-  font-family: "Roboto", sans-serif;
+  font-family: "42dot Sans", serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -223,7 +248,8 @@
 /***********************************************/
 .table {
   width: 95%;
-  margin: 24px auto 0 auto;
+  margin-left: 24px;
+  margin: auto;
   border-collapse: collapse;
   background: #FFFFFF;
 
@@ -244,8 +270,8 @@
   border: 1px solid #D1D5DB;
   padding: 12px 8px;
   text-align: center;
-  font-weight: 1000;
-  font-family: Roboto;
+  font-weight: 500;
+  font-family: "42dot Sans", serif;
   font-size: 14px;
   line-height: 20px;
   color: #000000;
@@ -267,25 +293,6 @@
   color: red; /* 빨간색 */
 }
 
-/***********************************************/
-/** ========== 특이사항 (bar-wrap) ========== **/
-/***********************************************/
-.bar-wrap {
-  width: 95%;
-  margin: 20px auto 0 auto;
-  display: flex;
-  flex-direction: column; /* 이미지처럼 제목 + 내용이 수직 */
-  gap: 10px;
-}
-
-.bar-wrap-h3-text {
-  font-family: Roboto, sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 28px;
-  color: #000000;
-  margin: 0;
-}
 
 /* 특이사항 박스: 흰 배경, 약간의 padding */
 .div-26 {
@@ -318,42 +325,8 @@
 .text-2024003-,
 .text----,
 .text-----1 {
-  font-family: Roboto, sans-serif;
+  font-family: "42dot Sans", serif;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 400;
   color: #000000;
 }
-
-/*이름 폰트*/
-.text- {
-  top: -1.95px;
-  left: 0px;
-  width: 23px;
-  height: 16px;
-  white-space: nowrap;
-  color: #6B7280;
-  font-family: "Roboto";
-  font-size: 12px;
-  line-height: 16px;
-  font-weight: 500;
-  letter-spacing: 0.6px;
-  display: flex;
-  align-items: center;
-}
-
-.text-name {
-  top: -2.95px;
-  left: 0px;
-  width: 45px;
-  height: 24px;
-  white-space: nowrap;
-  color: #000000;
-  font-family: "Roboto";
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  display: flex;
-  align-items: center;
-}
-

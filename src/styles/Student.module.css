@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=42dot+Sans:wght@300..800&family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&display=swap');
+
 .container {
     width: 100%;
     height: 100%;
@@ -20,6 +22,7 @@
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.001), rgba(0, 0, 0, 0.001)), #FFFFFF;
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
     margin-top: 1em;
+    margin-bottom: 1em;
   }
   
   .h2Wrap {
@@ -33,7 +36,7 @@
   }
   
   .h2Text {
-    font-family: Roboto;
+    font-family: "42dot Sans", serif;
     font-size: 20px;
     font-weight: bold;
     line-height: 28px;
@@ -69,6 +72,7 @@
     background: black;
     color: #FFFFFF;
     border: none;
+    font-family: "42dot Sans", serif;
 }
 
 .buttonWrap .nonSelectButton {
@@ -84,9 +88,14 @@
     z-index: 1;
     border-radius: 4px;
     opacity: 1;
-    background: #E5E7EB;
+    background: white;
     color: #000000;
     border: none;
+    font-family: "42dot Sans", serif;
+}
+
+.nonSelectButton:hover {
+  background-color: #f0f0f0;
 }
 
 .buttonWrap .isStudentAddSelected {
@@ -105,6 +114,7 @@
     background: #16A34A;
     color: #FFFFFF;
     border: none;
+    font-family: "42dot Sans", serif;
 }
   .selectboxWrap {
     width: 95%;
@@ -195,7 +205,7 @@
         height: 20px;
         white-space: nowrap;
         /* color: #2563EB; */
-        font-family: "Roboto";
+        font-family: "42dot Sans", serif;
         font-size: 14px;
         line-height: 20px;
         font-weight: 400;
@@ -225,7 +235,7 @@
         height: 36px;
         white-space: nowrap;
         color: #000000;
-        font-family: "Roboto";
+        font-family: "42dot Sans", serif;
         font-size: 30px;
         line-height: 36px;
         font-weight: 700;
@@ -271,7 +281,7 @@
   }
   
   .barWrapH3Text {
-    font-family: Roboto;
+    font-family: "42dot Sans", serif;
     font-size: 18px;
     font-weight: bold;
     line-height: 28px;
@@ -305,7 +315,7 @@
   .progressText {
     width: 5%;
     height: 35px;
-    font-family: Roboto;
+    font-family: "42dot Sans", serif;
     font-size: 16px;
     font-weight: normal;
     line-height: 35px;
@@ -331,7 +341,7 @@
   .table .thead .th {
     flex: 1;
     padding: 12px 24px;
-    font-family: Roboto, sans-serif;
+    font-family: "42dot Sans", serif;
     font-size: 14px;
     color: #6B7280;
     font-weight: 500;
@@ -348,7 +358,7 @@
   .table .tbody .td {
     flex: 1;
     padding: 16px 24px;
-    font-family: Roboto, sans-serif;
+    font-family: "42dot Sans", serif;
     font-size: 14px;
     color: #000;
     display: flex;
@@ -368,16 +378,27 @@
 
 .modalContent {
     background-color: #fefefe;
-    margin: 15% auto;
+    margin: 10% auto;
     padding: 20px;
     border: 1px solid #888;
+    border-radius: 10px;
     width: 30%;
     z-index: 1001;
     color: black
 }
 
+.modalContent h2 {
+  font-family: "42dot Sans", serif;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 28px;
+  letter-spacing: 0px;
+  color: #000000;
+}
+
 .modalContent form {
   margin-top: 1em;
+  font-family: "42dot Sans", serif;
 }
 
 .close {
@@ -404,4 +425,16 @@
     border-radius: 4px;
     background-color: #fff; /* 입력 칸 배경색 흰색으로 설정 */
     color: #000; /* 입력 칸 글씨 색상 검정으로 설정 */
+    font-family: "42dot Sans", serif;
+}
+
+.submitBtn {
+  width: 60px;
+  height: 30px;
+  margin-top: 10px;
+  background: #2563EB;
+  color: #FFFFFF;
+  border-radius: 4px;
+  border: none;
+  font-family: "42dot Sans", serif;
 }

@@ -8,6 +8,7 @@ import Attendance_Management from './pages/Attendance_Management/Attendance_Mana
 import NotFound from './pages/NotFound/NotFound.jsx';
 import Attendance from './pages/Attendance/Attendance.jsx';
 import Student from './pages/Student/Student.jsx';
+import Date_Management from './pages/Date_Management/Date_Management.jsx';
 import Notice from './pages/Notices/Notices.jsx';
 import './App.css';
 // import Layout from './components/Layout/Layout.jsx';
@@ -32,14 +33,15 @@ const App = () => {
             {/* ✅ Layout이 필요 없는 페이지 */}
             <Route path='/' element={<Account />} />
 
-            {/* ✅ Layout이 필요한 페이지 */}
-            <Route path='/home' element={<Layout> <Home /> </Layout>} />
-            <Route path='/student' element={<Layout> <Student /> </Layout>} />
-            <Route path='/attendance-management' element={<Layout> <Attendance_Management /> </Layout>} />
-            <Route path='/attendance' element={<Layout> <Attendance /> </Layout>} />
-            <Route path='/notice' element={<Layout> <Notice /> </Layout>} />
-        </Routes>
-    );
-};
+			{/* Layout이 필요한 페이지 */}
+			<Route path='/home' element={<Layout> <Home /> </Layout>} />
+			<Route path='/student' element={<Layout> <Student /> </Layout>} />
+			<Route path='/attendance-management' element={<Layout> <Attendance_Management /> </Layout>} />
+			<Route path='/attendance' element={<Layout> <Attendance /> </Layout>} />
+			<Route path='/notice' element={<Layout> <Notice /> </Layout>} />
+			<Route path='/date-management' element={<Layout> <Date_Management /> </Layout>} />
+		</Routes>
+	);
+}
 
 export default App;

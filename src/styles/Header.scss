@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=42dot+Sans:wght@300..800&family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&display=swap');
+
 .aside {
   // width: 256px;
   width: 100%;
@@ -20,12 +22,14 @@
     font-weight: 700;
     color: #000;
     margin-top: 24px;
+    font-family: "42dot Sans", serif;
   }
 
   .nav {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    font-family: "42dot Sans", serif;
 
     .nav-item {
       display: flex;

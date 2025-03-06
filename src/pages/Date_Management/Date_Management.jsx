@@ -64,7 +64,7 @@ const Calendar = () => {
 const ImportantEvents = () => {
     const events = [
         { date: "2025.01.16 - 2024.03.13", title: "SW 이론", description: "SW이론 교육 및 실습교육 기간입니다." },
-        { date: "2024.03.14 ~ 2025.04.03", title: "공통PJT 및 개인PJT", description: "공통 주제 프로젝트 교육 / SW이론 교육과 동시에 병행행" },
+        { date: "2024.03.14 ~ 2025.04.03", title: "공통PJT 및 개인PJT", description: "공통 주제 프로젝트 교육 / SW이론 교육과 동시에 병행" },
         { date: "2024.03.28", title: "특강 일정", description: "AI 산업 동향 특강이 예정되어 있습니다." },
         { date: "2024.03.25", title: "학과 설명회", description: "신입생을 위한 학과 설명회가 진행됩니다." },
     ];

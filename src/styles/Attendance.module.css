@@ -78,6 +78,10 @@
     font-family: "42dot Sans", serif;
 }
 
+.nonSelectButton:hover {
+    background-color: #f0f0f0;
+}
+
 .buttonWrap .selectButton {
     width: auto;
     height: auto;
@@ -212,7 +216,7 @@
 }
 
 .attendanceTd2 {
-    width: 98%;
+    width: 90%;
     height: 28px;
     display: flex;
     flex-direction: row;
@@ -251,7 +255,7 @@
     color: #1E40AF;
     opacity: 1;
     position: absolute;
-    right: -46px;
+    right: -55px;
     /* 프로그레스 바에서 텍스트가 벗어나는 거리 조정 */
     z-index: 1;
 }

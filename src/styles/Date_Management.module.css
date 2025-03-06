@@ -44,6 +44,7 @@
     height: auto;
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
     gap: 0px 15.73px;
     z-index: 1;
     margin: 0 auto;
@@ -160,17 +161,23 @@
 
 /* 일정 추가 버튼 */
 .addEventButton {
-    width: 120px;
-    height: 40px;
-    background-color: #16A34A;
-    color: white;
-    font-family: "42dot Sans", serif;
-    font-size: 16px;
-    font-weight: bold;
+    width: auto;
+    height: auto;
+    /* Smart layout */
+    display: flex;
+    flex-direction: column;
+    padding: 8px 16px;
+    gap: 0px 10px;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    z-index: 1;
+    border-radius: 4px;
+    opacity: 1;
+    background: #16A34A;
+    color: #FFFFFF;
     border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background 0.2s ease-in-out;
+    font-family: "42dot Sans", serif;
+    font-size: 14px;
 }
 
 .addEventButton:hover {
@@ -181,7 +188,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 .eventItem {

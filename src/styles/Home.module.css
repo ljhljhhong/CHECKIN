@@ -74,6 +74,10 @@
   font-family: "42dot Sans", serif;
 }
 
+.nonSelectButton:hover {
+  background-color: #f0f0f0;
+}
+
 .buttonWrap .selectButton {
   width: auto;
   height: auto;

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import styles from "../../styles/Home.module.css";
-import Search from '../../assets/icons/search.svg?react';
 
 
 const Root = ({ }) => {
@@ -10,12 +9,84 @@ const Root = ({ }) => {
         return () => { }
     }, [])
 
+    {/* 전체 기간 80%에 근접한 학생들 명단 */}
+    const totalDuration = [
+        { name: "김민수", percentage: 82},
+        { name: "이지원", percentage: 80},
+        { name: "박준호", percentage: 84}
+    ];
+
+    {/* 차시별 80%에 근접한 학생들 명단 */}
+    const lessonStep  = [
+        { name: "최서연", percentage: 83},
+        { name: "정다은", percentage: 81}
+    ];
+
+    {/* 수업별 80%에 근접한 학생들 명단 */}
+    const subjectStep = [
+        { name: "장현우", percentage: 84},
+        { name: "송민지", percentage: 82}
+    ];
+
+    const TotalDuration = () => {
+        return (
+            <>
+                {totalDuration.map((td, i) => (
+                    <div key={i} className={styles.warningGroup}>
+                        <div className={styles.warningGroupName}>
+                            {td.name}
+                        </div>
+                        <div className={styles.warningGroupPercent}>
+                            {td.percentage}%
+                        </div>
+                    </div>
+                ))}
+            </>
+        );
+    };
+
+    const LessonStep = () => {
+        return (
+            <>
+                {lessonStep.map((ls, i) => (
+                    <div key={i} className={styles.warningGroup}>
+                        <div className={styles.warningGroupName}>
+                            {ls.name}
+                        </div>
+                        <div className={styles.warningGroupPercent}>
+                            {ls.percentage}%
+                        </div>
+                    </div>
+                ))}
+            </>
+        );
+    };
+
+    const SubjectStep = () => {
+        return (
+            <>
+                {subjectStep.map((ss, i) => (
+                    <div key={i} className={styles.warningGroup}>
+                        <div className={styles.warningGroupName}>
+                            {ss.name}
+                        </div>
+                        <div className={styles.warningGroupPercent}>
+                            {ss.percentage}%
+                        </div>
+                    </div>
+                ))}
+            </>
+        );
+    };
+
+    {/* 공지사항 */}
     const notices = [
         { date: "2024.01.15", title: "2024년 1학기 수업 일정 안내" },
         { date: "2024.02.10", title: "졸업식 안내" },
         { date: "2024.03.05", title: "신입생 오리엔테이션 일정" }
     ];
 
+    {/* 설문조사 */}
     const surveys = [
         { date: "2024.01.15", title: "2024년 교육과정 만족도 조사" },
         { date: "2024.02.10", title: "겨울방학 특강 신청 안내" },
@@ -119,17 +190,47 @@ const Root = ({ }) => {
                 </div>
             </div>
 
+            {/* 전체 기간 위험군 , 차시별 위험군, 수업별 위험군 */}
+            <div className={styles.wrap}>
+                <div className={styles.h2Wrap}>
+                    <h2 className={styles.h2Text}>출석률 85% 이하 위험군 학생</h2>
+                </div>
+                <div className={styles.infoWrap}>
+                    <div className={styles.warning}>
+                        <div>
+                            <h2>전체 기간 위험군 (3명)</h2>   
+                        </div>
+                        <TotalDuration />
+                    </div>
+                    <div className={styles.warning}>
+                        <div>
+                            <h2>차시별 위험군 (2명)</h2>   
+                        </div>
+                        <LessonStep />
+                    </div>
+                    <div className={styles.warning}>
+                        <div>
+                            <h2>수업별 위험군 (2명)</h2>   
+                        </div>
+                        <SubjectStep />
+                    </div>
+                </div>
+            </div>
+
             {/* 공지사항, 설문조사 */}
             <div className={styles.colWrap}>
                 <div className={styles.notice}>
-                    <div>
+                    <div className={styles.noticeHeader}>
                         <h2>공지사항</h2>   
-                        <h3>더보기 +</h3>
+                        <a href="javascript:void(0);">더보기 +</a>
                     </div>
                     <NoticeContent />
                 </div>
                 <div className={styles.notice}>
-                    <h2>설문조사</h2>
+                    <div className={styles.noticeHeader}>
+                        <h2>공지사항</h2>   
+                        <a href="javascript:void(0);">더보기 +</a>
+                    </div>
                     <SurveyContent />
                 </div>
             </div>

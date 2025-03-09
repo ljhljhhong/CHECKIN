@@ -4,10 +4,7 @@ import Search from '../../assets/icons/search.svg?react';
 
 
 const Root = ({ }) => {
-    const [selectBtn, setSelectBtn] = useState('today');
-    const clickBtn = (btnName) => {
-        setSelectBtn(btnName);
-    }
+    
     React.useEffect(() => {
         // Initialize the code
         return () => { }
@@ -70,91 +67,65 @@ const Root = ({ }) => {
                 <div className={styles.h2Wrap}>
                     <h2 className={styles.h2Text}>홈 대시보드</h2>
                 </div>
-                <div className={styles.buttonWrap}>
-                    <button className={'today' == selectBtn ? styles.selectButton : styles.nonSelectButton} onClick={() => clickBtn('today')} >오늘</button>
-                    <button className={'week' == selectBtn ? styles.selectButton : styles.nonSelectButton} onClick={() => clickBtn('week')} >이번 주</button>
-                    <button className={'month' == selectBtn ? styles.selectButton : styles.nonSelectButton} onClick={() => clickBtn('month')} >저번 달</button>
-                </div>
-                <div className={styles.selectboxWrap}>
-                    <select id={'search'}>
-                        <option value="search_condition">검색조건</option>
-                        <option value="">이름</option>
-                        <option value="">학과</option>
-                        <option value="">학년</option>
-                    </select>
-                    <div className={styles.inputWrap}>
-                        <Search id="12:02916" className={styles.svg} />
-                        <div className={styles.input}>
-                            <input type='text' className={styles.text3} placeholder='검색어를 입력하세요' />
-                        </div>
-                    </div>
-                </div>
                 <div className={styles.infoWrap}>
                     <div className={`${styles.infobox} ${styles.bkBlue}`}>
                         <div className={styles.infoboxTitle}>
                             <div className={`${styles.infoboxText} ${styles.colorBlue}`}>
-                                총 학생 수
+                                전체 학생
                             </div>
                         </div>
                         <div className={styles.infoboxContent}>
                             <div className={styles.infoboxContentText}>
-                                128명
+                                15명
                             </div>
                         </div>
                     </div>
                     <div className={`${styles.infobox} ${styles.bkGreen}`}>
                         <div className={styles.infoboxTitle}>
                             <div className={`${styles.infoboxText} ${styles.colorGreen}`}>
-                                오늘 출석률
+                                09:00 ~ 09:59 출석
                             </div>
                         </div>
                         <div className={styles.infoboxContent}>
                             <div className={styles.infoboxContentText}>
-                                95.3%
+                                12명
                             </div>
                         </div>
                     </div>
                     <div className={`${styles.infobox} ${styles.bkPurple}`}>
                         <div className={styles.infoboxTitle}>
                             <div className={`${styles.infoboxText} ${styles.colorPurple}`}>
-                                이번 주 출석률
+                                09:00 ~ 09:59 지각
                             </div>
                         </div>
                         <div className={styles.infoboxContent}>
                             <div className={styles.infoboxContentText}>
-                                92.8%
+                                1명
                             </div>
                         </div>
                     </div>
                     <div className={`${styles.infobox} ${styles.bkOrange}`}>
                         <div className={styles.infoboxTitle}>
                             <div className={`${styles.infoboxText} ${styles.colorOrange}`}>
-                                이번 달 출석률
+                                09:00 ~ 09:59 결석
                             </div>
                         </div>
                         <div className={styles.infoboxContent}>
                             <div className={styles.infoboxContentText}>
-                                91.5%
+                                2명
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div className={styles.barWrap}>
-                    <div className={styles.barWrapH3}>
-                        <h3 className={styles.barWrapH3Text}>최근 출결 현황</h3>
-                    </div>
-                    <div className={styles.progressWrap}>
-                        <progress value={85} min={0} max={100}></progress>
-                        <div className={styles.progressText}>
-                            95%
                         </div>
                     </div>
                 </div>
             </div>
 
+            {/* 공지사항, 설문조사 */}
             <div className={styles.colWrap}>
                 <div className={styles.notice}>
-                    <h2>공지사항</h2>
+                    <div>
+                        <h2>공지사항</h2>   
+                        <h3>더보기 +</h3>
+                    </div>
                     <NoticeContent />
                 </div>
                 <div className={styles.notice}>

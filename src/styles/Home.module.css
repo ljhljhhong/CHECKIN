@@ -43,111 +43,6 @@
   color: #000000;
 }
 
-.buttonWrap {
-  width: 95%;
-  height: auto;
-  /* Smart layout */
-  display: flex;
-  flex-direction: row;
-  gap: 0px 15.73px;
-  z-index: 1;
-  margin: 0 auto;
-  margin-top: 24px;
-}
-
-.buttonWrap .nonSelectButton {
-  width: auto;
-  height: auto;
-  /* Smart layout */
-  display: flex;
-  flex-direction: column;
-  padding: 8px 16px;
-  gap: 0px 10px;
-  flex-wrap: wrap;
-  align-content: flex-start;
-  z-index: 1;
-  border-radius: 4px;
-  opacity: 1;
-  background: #FFFFFF;
-  color: black;
-  border: none;
-  font-family: "42dot Sans", serif;
-}
-
-.nonSelectButton:hover {
-  background-color: #f0f0f0;
-}
-
-.buttonWrap .selectButton {
-  width: auto;
-  height: auto;
-  /* Smart layout */
-  display: flex;
-  flex-direction: column;
-  padding: 8px 16px;
-  gap: 0px 10px;
-  flex-wrap: wrap;
-  align-content: flex-start;
-  z-index: 1;
-  border-radius: 4px;
-  opacity: 1;
-  background: black;
-  color: #FFFFFF;
-  border: none;
-  font-family: "42dot Sans", serif;
-}
-
-.selectboxWrap {
-  width: 95%;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  gap: 0px 15.73px;
-  z-index: 1;
-  margin: 0 auto;
-  margin-top: 24px;
-}
-
-#search {
-  padding: 8px 40px 8px 12px;
-  width: 10%;
-  border-radius: 8px;
-  opacity: 1;
-  background: #FFFFFF;
-  box-sizing: border-box;
-  border: 1px solid #D1D5DB;
-}
-
-.inputWrap {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  background: #FFFFFF;
-  box-sizing: border-box;
-  border: 1px solid #D1D5DB;
-  display: flex;
-  align-items: center; /* 세로 중앙 정렬 */
-  padding: 8px 16px;
-  gap: 10px; /* 아이콘과 입력 필드 사이 간격 */
-}
-
-.inputWrap .svg {
-  width: 16px;
-  height: 16px;
-  flex-shrink: 0; /* 크기가 줄어들지 않도록 설정 */
-}
-
-.input {
-  flex-grow: 1; /* input이 남은 공간을 차지하도록 설정 */
-}
-
-.input input {
-  width: 100%;
-  border: none;
-  outline: none;
-  padding-left: 8px; /* 아이콘과의 간격 */
-}
-
 .infoWrap {
   width: 95%;
   height: auto;
@@ -156,7 +51,7 @@
   gap: 0px 48px;
   z-index: 1;
   margin: 0 auto;
-  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 .infobox {
@@ -190,16 +85,19 @@
       font-family: "42dot Sans", serif;
     }
   }
-  
+
   .colorBlue {
     color: #2563EB;
   }
+
   .colorGreen {
     color: #16A34A;
   }
+
   .colorPurple {
     color: #9333EA;
   }
+
   .colorOrange {
     color: #EA580C;
   }
@@ -238,84 +136,6 @@
   background: #FFF7ED;
 }
 
-.barWrap {
-  width: 95%;
-  height: auto;
-  display: flex;
-  gap: 0px 48px;
-  z-index: 1;
-  margin: 0 auto;
-  margin-top: 24px;
-  flex-direction: column;
-  padding: 24px;
-  
-}
-
-.barWrapH3 {
-  width: 1024px;
-  height: 28px;
-  z-index: 0;
-  opacity: 1;
-  background: rgba(0, 0, 0, 0);
-}
-
-.barWrapH3Text {
-  font-family: Roboto;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 28px;
-  letter-spacing: 0px;
-  color: #000000;
-  opacity: 1;
-}
-
-.progressWrap {
-  width: 100%;
-  height: 32px;
-  /* Smart layout */
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px;
-  gap: 0px 24px;
-  flex-wrap: wrap;
-  align-content: center;
-  z-index: 1;
-}
-
-.progressWrap progress {
-  width: 93%;
-  height: 50%;
-  z-index: 0;
-  opacity: 1;
-  background: #F3F4F6;
-  border-radius: 10px;
-}
-
-progress::-webkit-progress-bar {
-  background: #f0f0f0;
-  border-radius: 10px;
-  /* box-shadow: inset 3px 3px 10px #ccc; */
-}
-
-progress::-webkit-progress-value {
-  border-radius: 10px;
-  background: #000000;
-  /* background: -webkit-linear-gradient(to right, #93F9B9, #1D976C); */
-  /* background: linear-gradient(to right, #93F9B9, #1D976C); */
-}
-
-.progressText {
-  width: 5%;
-  height: 35px;
-  font-family: Roboto;
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 35px;
-  letter-spacing: 0px;
-  color: #4B5563;
-}
-
 .colWrap {
   width: 97%;
   height: auto;
@@ -329,6 +149,42 @@ progress::-webkit-progress-value {
   margin-top: 24px;
 }
 
+/* 전체 기간, 차시별, 과목별 위험군 */
+.warningGroup {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.warningGroupName {
+  width: auto;
+  height: auto;
+  font-family: "42dot Sans", serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: 0px;
+  color: #4b5563;
+}
+
+.warningGroupPercent {
+  width: auto;
+  height: auto;
+  font-family: "42dot Sans", serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: 0px;
+  color: #ef4444;
+}
+
+
+/* 공시사항, 설문조사 */
 .notice {
   width: 50%;
   height: auto;
@@ -346,6 +202,16 @@ progress::-webkit-progress-value {
   font-family: "42dot Sans", serif;
 }
 
+.noticeHeader {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
 .nb {
   width: 100%;
   height: auto;
@@ -353,7 +219,7 @@ progress::-webkit-progress-value {
 }
 
 .notice h2 {
-  width: 100%;
+  width: auto;
   height: auto;
   font-family: "42dot Sans", serif;
   font-size: 20px;
@@ -361,6 +227,14 @@ progress::-webkit-progress-value {
   line-height: 28px;
   letter-spacing: 0px;
   color: #000000;
+}
+
+a {
+  margin-bottom: 20px;
+  font-family: "42dot Sans", serif;
+  font-size: 14px;
+  color: #6B7280;
+  text-decoration-line: none;
 }
 
 .noticeBox {
@@ -373,9 +247,10 @@ progress::-webkit-progress-value {
   gap: 0px 10px;
   flex-wrap: wrap;
   align-content: flex-start;
-  border-radius: 8px;
   opacity: 1;
-  background: #F9FAFB;
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
+  background: #FFFFFF;
 }
 
 .noticeBoxDateText {
@@ -400,4 +275,51 @@ progress::-webkit-progress-value {
   letter-spacing: 0px;
   color: #000000;
   opacity: 1;
+}
+
+.infoWrap2 {
+  width: 95%;
+  margin-left: 24px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.infoWrap2 .h3 {
+  display: flex;
+  align-items: center;
+}
+
+.infoWrap2 .h3 .text {
+  font-family: "42dot Sans", serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: gray;
+  white-space: nowrap;
+  margin-bottom: 10px;
+}
+
+/* 현재 날짜 및 시간*/
+.currentTimeContainer {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  font-family: "42dot Sans", serif;
+  padding: 0 auto;
+}
+
+.currentTime {
+  font-size: 40px;
+  font-weight: bold;
+  color: #202124;
+}
+
+.currentDate {
+  font-size: 16px;
+  color: #5f6368;
+  /* Google 서브텍스트 색상 */
+  font-weight: 400;
+  margin-top: 4px;
 }

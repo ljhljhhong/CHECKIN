@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import styles from "../../styles/Student.module.css";
+import Search from '../../assets/icons/search.svg?react';
+
 
 const Root = ({}) => {
     const [selectedButton, setSelectedButton] = useState('전체 학생');
@@ -104,7 +106,8 @@ const Root = ({}) => {
                         <option value="학년">학년</option>
                     </select>
                     <div className={styles.inputWrap}>
-                        <img src="https://image-resource.creatie.ai/140826466779355/140826466779357/ef0d5f9b0dd3ddc582782e4f4b44dd00.png" className={styles.svg}/>
+                        <Search id="12:02916" className={styles.svg} />
+                        {/* <img src="https://image-resource.creatie.ai/140826466779355/140826466779357/ef0d5f9b0dd3ddc582782e4f4b44dd00.png" className={styles.svg}/> */}
                         <div className={styles.input}>
                             <input 
                                 type='text' 

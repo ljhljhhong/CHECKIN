@@ -114,6 +114,7 @@ const Root = () => {
                   >
                     {editing?.studentIdx === studentIdx && editing?.attIdx === attIdx ? (
                       <select
+                        className="attendanceSelect"
                         value={status}
                         onChange={(e) => handleEdit(studentIdx, attIdx, e.target.value)}
                         onBlur={() => setEditing(null)}

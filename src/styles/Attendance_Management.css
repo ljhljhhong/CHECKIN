@@ -51,6 +51,18 @@
   gap: 10px;
 }
 
+.selectbox-wrap input{
+  font-family: "42dot Sans", serif;
+}
+
+.selectbox-wrap select{
+  font-family: "42dot Sans", serif;
+}
+
+.selectbox-wrap option{
+  font-family: "42dot Sans", serif;
+}
+
 #search {
   width: 15%;
   padding: 8px 40px 8px 12px;
@@ -329,4 +341,8 @@
   font-size: 14px;
   line-height: 20px;
   color: #000000;
+}
+
+.attendanceSelect {
+  font-family: "42dot Sans", serif;
 }

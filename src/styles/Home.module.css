@@ -314,6 +314,7 @@ a {
   font-size: 40px;
   font-weight: bold;
   color: #202124;
+  margin-bottom: 10px;
 }
 
 .currentDate {
@@ -322,4 +323,5 @@ a {
   /* Google 서브텍스트 색상 */
   font-weight: 400;
   margin-top: 4px;
+  margin-bottom: 10px;
 }

@@ -4,21 +4,90 @@ import Search from '../../assets/icons/search.svg?react';
 
 
 const Root = ({ }) => {
-    const [selectBtn, setSelectBtn] = useState('today');
-    const clickBtn = (btnName) => {
-        setSelectBtn(btnName);
-    }
+
     React.useEffect(() => {
         // Initialize the code
         return () => { }
     }, [])
 
+    {/* 전체 기간 80%에 근접한 학생들 명단 */ }
+    const totalDuration = [
+        { name: "김민수", percentage: 82 },
+        { name: "이지원", percentage: 80 },
+        { name: "박준호", percentage: 84 }
+    ];
+
+    {/* 차시별 80%에 근접한 학생들 명단 */ }
+    const lessonStep = [
+        { name: "최서연", percentage: 83 },
+        { name: "정다은", percentage: 81 }
+    ];
+
+    {/* 수업별 80%에 근접한 학생들 명단 */ }
+    const subjectStep = [
+        { name: "장현우", percentage: 84 },
+        { name: "송민지", percentage: 82 }
+    ];
+
+    const TotalDuration = () => {
+        return (
+            <>
+                {totalDuration.map((td, i) => (
+                    <div key={i} className={styles.warningGroup}>
+                        <div className={styles.warningGroupName}>
+                            {td.name}
+                        </div>
+                        <div className={styles.warningGroupPercent}>
+                            {td.percentage}%
+                        </div>
+                    </div>
+                ))}
+            </>
+        );
+    };
+
+    const LessonStep = () => {
+        return (
+            <>
+                {lessonStep.map((ls, i) => (
+                    <div key={i} className={styles.warningGroup}>
+                        <div className={styles.warningGroupName}>
+                            {ls.name}
+                        </div>
+                        <div className={styles.warningGroupPercent}>
+                            {ls.percentage}%
+                        </div>
+                    </div>
+                ))}
+            </>
+        );
+    };
+
+    const SubjectStep = () => {
+        return (
+            <>
+                {subjectStep.map((ss, i) => (
+                    <div key={i} className={styles.warningGroup}>
+                        <div className={styles.warningGroupName}>
+                            {ss.name}
+                        </div>
+                        <div className={styles.warningGroupPercent}>
+                            {ss.percentage}%
+                        </div>
+                    </div>
+                ))}
+            </>
+        );
+    };
+
+    {/* 공지사항 */ }
     const notices = [
         { date: "2024.01.15", title: "2024년 1학기 수업 일정 안내" },
         { date: "2024.02.10", title: "졸업식 안내" },
         { date: "2024.03.05", title: "신입생 오리엔테이션 일정" }
     ];
 
+    {/* 설문조사 */ }
     const surveys = [
         { date: "2024.01.15", title: "2024년 교육과정 만족도 조사" },
         { date: "2024.02.10", title: "겨울방학 특강 신청 안내" },
@@ -63,102 +132,130 @@ const Root = ({ }) => {
         );
     };
 
+    {/* 현재 시간 나타내는 부분 */}
+    const [date, setDate] = useState(new Date());
+
+    useEffect(() => {
+        const tick = () => setDate(new Date());
+        const timeId = setInterval(tick, 1000);
+
+        return () => clearInterval(timeId);
+    }, []);
+
+    const CurrentTime = () => {
+        const daysOfWeek = ["일요일", "월요일", "화요일", "수요일", "목요일", "금요일", "토요일"];
+        const dayOfWeek = daysOfWeek[date.getDay()]; // 요일 변환
+        const formattedDate = `${date.getFullYear()}년 ${date.getMonth() + 1}월 ${date.getDate()}일 (${dayOfWeek})`;
+
+        return (
+            <>
+                <div className={styles.currentTimeContainer}>
+                    <div className={styles.currentTime}>{date.toLocaleTimeString()}</div>
+                    <div className={styles.currentDate}>{formattedDate}</div>
+                </div>
+            </>
+        );
+    };
+
 
     return (
         <div className={styles.container}>
             <div className={styles.wrap}>
                 <div className={styles.h2Wrap}>
-                    <h2 className={styles.h2Text}>홈 대시보드</h2>
                 </div>
-                <div className={styles.buttonWrap}>
-                    <button className={'today' == selectBtn ? styles.selectButton : styles.nonSelectButton} onClick={() => clickBtn('today')} >오늘</button>
-                    <button className={'week' == selectBtn ? styles.selectButton : styles.nonSelectButton} onClick={() => clickBtn('week')} >이번 주</button>
-                    <button className={'month' == selectBtn ? styles.selectButton : styles.nonSelectButton} onClick={() => clickBtn('month')} >저번 달</button>
+                {/* 현재 날짜 및 시간 */}
+                <div className={styles.infoWrap2}>
+                    <div className={styles.h3}><div className={styles.text}><CurrentTime/></div></div>
                 </div>
-                <div className={styles.selectboxWrap}>
-                    <select id={'search'}>
-                        <option value="search_condition">검색조건</option>
-                        <option value="">이름</option>
-                        <option value="">학과</option>
-                        <option value="">학년</option>
-                    </select>
-                    <div className={styles.inputWrap}>
-                        <Search id="12:02916" className={styles.svg} />
-                        <div className={styles.input}>
-                            <input type='text' className={styles.text3} placeholder='검색어를 입력하세요' />
-                        </div>
-                    </div>
-                </div>
+                {/* 출석률 85% 이하 위험군 학생 */}
                 <div className={styles.infoWrap}>
                     <div className={`${styles.infobox} ${styles.bkBlue}`}>
                         <div className={styles.infoboxTitle}>
                             <div className={`${styles.infoboxText} ${styles.colorBlue}`}>
-                                총 학생 수
+                                전체 학생
                             </div>
                         </div>
                         <div className={styles.infoboxContent}>
                             <div className={styles.infoboxContentText}>
-                                128명
+                                15명
                             </div>
                         </div>
                     </div>
                     <div className={`${styles.infobox} ${styles.bkGreen}`}>
                         <div className={styles.infoboxTitle}>
                             <div className={`${styles.infoboxText} ${styles.colorGreen}`}>
-                                오늘 출석률
+                                출석
                             </div>
                         </div>
                         <div className={styles.infoboxContent}>
                             <div className={styles.infoboxContentText}>
-                                95.3%
+                                12명
                             </div>
                         </div>
                     </div>
                     <div className={`${styles.infobox} ${styles.bkPurple}`}>
                         <div className={styles.infoboxTitle}>
                             <div className={`${styles.infoboxText} ${styles.colorPurple}`}>
-                                이번 주 출석률
+                                지각
                             </div>
                         </div>
                         <div className={styles.infoboxContent}>
                             <div className={styles.infoboxContentText}>
-                                92.8%
+                                1명
                             </div>
                         </div>
                     </div>
                     <div className={`${styles.infobox} ${styles.bkOrange}`}>
                         <div className={styles.infoboxTitle}>
                             <div className={`${styles.infoboxText} ${styles.colorOrange}`}>
-                                이번 달 출석률
+                                결석
                             </div>
                         </div>
                         <div className={styles.infoboxContent}>
                             <div className={styles.infoboxContentText}>
-                                91.5%
+                                2명
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div className={styles.barWrap}>
-                    <div className={styles.barWrapH3}>
-                        <h3 className={styles.barWrapH3Text}>최근 출결 현황</h3>
-                    </div>
-                    <div className={styles.progressWrap}>
-                        <progress value={85} min={0} max={100}></progress>
-                        <div className={styles.progressText}>
-                            95%
                         </div>
                     </div>
                 </div>
             </div>
 
+            {/* 전체 기간 위험군 , 차시별 위험군, 수업별 위험군 */}
             <div className={styles.colWrap}>
                 <div className={styles.notice}>
-                    <h2>공지사항</h2>
+                    <div>
+                        <h2>전체 기간 위험군(출석률 85% 이하)</h2>
+                    </div>
+                    <TotalDuration />
+                </div>
+                <div className={styles.notice}>
+                    <div>
+                        <h2>차시별 위험군(출석률 85% 이하)</h2>
+                    </div>
+                    <LessonStep />
+                </div>
+                <div className={styles.notice}>
+                    <div>
+                        <h2>수업별 위험군(출석률 85% 이하)</h2>
+                    </div>
+                    <SubjectStep />
+                </div>
+            </div>
+
+            {/* 공지사항, 설문조사 */}
+            <div className={styles.colWrap}>
+                <div className={styles.notice}>
+                    <div className={styles.noticeHeader}>
+                        <h2>공지사항</h2>
+                        <a href="javascript:void(0);">더보기 +</a>
+                    </div>
                     <NoticeContent />
                 </div>
                 <div className={styles.notice}>
-                    <h2>설문조사</h2>
+                    <div className={styles.noticeHeader}>
+                        <h2>공지사항</h2>
+                        <a href="javascript:void(0);">더보기 +</a>
+                    </div>
                     <SurveyContent />
                 </div>
             </div>

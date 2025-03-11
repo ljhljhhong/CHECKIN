@@ -89,7 +89,7 @@ const Root = () => {
             {[...Array(8)].map((_, i) => <col key={i} style={{ width: "8%" }} />)}
           </colgroup>
           <thead>
-            <tr><th>이름</th><th>학번</th><th>팀명</th>{["09:00", "10:00", "11:00", "13:00", "14:00", "15:00", "16:00", "18:00"].map(time => <th key={time}>{time}</th>)}</tr>
+            <tr><th>이름</th><th>학번</th><th>팀명</th>{["09:00", "10:00", "11:00", "13:00", "14:00", "15:00", "16:00", "17:00"].map(time => <th key={time}>{time}</th>)}</tr>
           </thead>
           <tbody>
             {filteredStudents.map(({ name, id, team, attendance }, idx) => (

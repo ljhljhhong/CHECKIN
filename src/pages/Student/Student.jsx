@@ -121,13 +121,16 @@ const Root = ({}) => {
                     <div className={styles.thead}>
                         <div className={styles.tr}>
                             <div className={styles.th}>
-                                <div className={styles.department}>학과</div>
-                            </div>
-                            <div className={styles.th}>
                                 <div className={styles.classnumber}>학번</div>
                             </div>
                             <div className={styles.th}>
                                 <div className={styles.name}>이름</div>
+                            </div>
+                            <div className={styles.th}>
+                                <div className={styles.grade}>학년</div>
+                            </div>
+                            <div className={styles.th}>
+                                <div className={styles.department}>학과</div>
                             </div>
                             <div className={styles.th}>
                                 <div className={styles.phonenumber}>전화번호</div>
@@ -135,17 +138,11 @@ const Root = ({}) => {
                             <div className={styles.th}>
                                 <div className={styles.email}>이메일</div>
                             </div>
-                            <div className={styles.th}>
-                                <div className={styles.grade}>학년</div>
-                            </div>
                         </div>
                     </div>
                     <div className={styles.tbody}>
                         {sortedStudents.map((student, index) => (
                             <div className={styles.tr} key={index}>
-                                <div className={styles.td}>
-                                    <div className={styles.department}>{student.department}</div>
-                                </div>
                                 <div className={styles.td}>
                                     <div className={styles.classnumber}>{student.classnumber}</div>
                                 </div>
@@ -153,13 +150,16 @@ const Root = ({}) => {
                                     <div className={styles.name}>{student.name}</div>
                                 </div>
                                 <div className={styles.td}>
+                                    <div className={styles.grade}>{student.grade}</div>
+                                </div>
+                                <div className={styles.td}>
+                                    <div className={styles.department}>{student.department}</div>
+                                </div>
+                                <div className={styles.td}>
                                     <div className={styles.phonenumber}>{student.phonenumber}</div>
                                 </div>
                                 <div className={styles.td}>
                                     <div className={styles.email}>{student.email}</div>
-                                </div>
-                                <div className={styles.td}>
-                                    <div className={styles.grade}>{student.grade}</div>
                                 </div>
                             </div>
                         ))}
@@ -178,13 +178,18 @@ const Root = ({}) => {
                             </label>
                             <br />
                             <label>
-                                학과:
-                                <input type="text" name="department" />
+                                학번:
+                                <input type="text" name="classnumber" />
                             </label>
                             <br />
                             <label>
-                                학번:
-                                <input type="text" name="classnumber" />
+                                학년:
+                                <input type="text" name="grade" />
+                            </label>
+                            <br />
+                            <label>
+                                학과:
+                                <input type="text" name="department" />
                             </label>
                             <br />
                             <label>
@@ -195,11 +200,6 @@ const Root = ({}) => {
                             <label>
                                 이메일:
                                 <input type="email" name="email" />
-                            </label>
-                            <br />
-                            <label>
-                                학년:
-                                <input type="text" name="grade" />
                             </label>
                             <br />
                             <button className={styles.submitBtn} type="submit">저장</button>

@@ -55,8 +55,9 @@ const Root = () => {
   return (
     <div className="container">
       <div className="wrap">
-        <h2 className="h2-text">출결관리</h2>
-        
+        <div className="h2-wrap">
+          <h2 className="h2-text">출결관리</h2>
+        </div>
         {/* 검색 필터 */}
         <div className="selectbox-wrap" style={{ gap: "10px" }}>
           <input type="date" className="select" value={dateSearchTerm} onChange={(e) => setDateSearchTerm(e.target.value)} />

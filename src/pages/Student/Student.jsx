@@ -5,10 +5,11 @@ import Search from '../../assets/icons/search.svg?react';
 
 const Root = ({}) => {
     const [selectedButton, setSelectedButton] = useState('전체 학생');
-    const [isStudentAddSelected, setIsStudentAddSelected] = useState(false);
+    const [isStudentAddSelected, setIsStudentAddSelected] = useState(true);
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [searchTerm, setSearchTerm] = useState('');
     const [searchCondition, setSearchCondition] = useState('이름');
+    const [updateStudentInfo, setUpdateStudentInfo] = useState({ department: '', classnumber: '', name: '', phonenumber: '', email: '', grade: '' })
 
     const students = [
         { department: '소프트웨어학과', classnumber: '2024001', name: '고정윤', phonenumber: '010-1234-5678', email: 'jyko@email.com', grade: '1학년' },
@@ -33,9 +34,16 @@ const Root = ({}) => {
     };
 
     const handleStudentAddClick = () => {
+        setUpdateStudentInfo({ department: '', classnumber: '', name: '', phonenumber: '', email: '', grade: '' })
         setIsStudentAddSelected(true);
         setIsModalOpen(true);
     };
+
+    const handleStudentUpdateClick = (student) => {
+        setUpdateStudentInfo({department: student.department, classnumber: student.classnumber, name: student.name, phonenumber: student.phonenumber, email: student.email, grade: student.grade})
+        setIsStudentAddSelected(false);
+        setIsModalOpen(true);
+    }
 
     const closeModal = () => {
         setIsModalOpen(false);
@@ -124,13 +132,16 @@ const Root = ({}) => {
                     <div className={styles.thead}>
                         <div className={styles.tr}>
                             <div className={styles.th}>
-                                <div className={styles.department}>학과</div>
-                            </div>
-                            <div className={styles.th}>
                                 <div className={styles.classnumber}>학번</div>
                             </div>
                             <div className={styles.th}>
                                 <div className={styles.name}>이름</div>
+                            </div>
+                            <div className={styles.th}>
+                                <div className={styles.grade}>학년</div>
+                            </div>
+                            <div className={styles.th}>
+                                <div className={styles.department}>학과</div>
                             </div>
                             <div className={styles.th}>
                                 <div className={styles.phonenumber}>전화번호</div>
@@ -138,31 +149,28 @@ const Root = ({}) => {
                             <div className={styles.th}>
                                 <div className={styles.email}>이메일</div>
                             </div>
-                            <div className={styles.th}>
-                                <div className={styles.grade}>학년</div>
-                            </div>
                         </div>
                     </div>
                     <div className={styles.tbody}>
                         {sortedStudents.map((student, index) => (
                             <div className={styles.tr} key={index}>
                                 <div className={styles.td}>
-                                    <div className={styles.department}>{student.department}</div>
-                                </div>
-                                <div className={styles.td}>
                                     <div className={styles.classnumber}>{student.classnumber}</div>
                                 </div>
                                 <div className={styles.td}>
-                                    <div className={styles.name}>{student.name}</div>
+                                    <div className={styles.name} onClick={() => handleStudentUpdateClick(student)}>{student.name}</div>
+                                </div>
+                                <div className={styles.td}>
+                                    <div className={styles.grade}>{student.grade}</div>
+                                </div>
+                                <div className={styles.td}>
+                                    <div className={styles.department}>{student.department}</div>
                                 </div>
                                 <div className={styles.td}>
                                     <div className={styles.phonenumber}>{student.phonenumber}</div>
                                 </div>
                                 <div className={styles.td}>
                                     <div className={styles.email}>{student.email}</div>
-                                </div>
-                                <div className={styles.td}>
-                                    <div className={styles.grade}>{student.grade}</div>
                                 </div>
                             </div>
                         ))}
@@ -173,39 +181,41 @@ const Root = ({}) => {
                 <div className={styles.modal}>
                     <div className={styles.modalContent}>
                         <span className={styles.close} onClick={closeModal}>&times;</span>
-                        <h2>학생 정보 입력</h2>
+                        <h2>{isStudentAddSelected ? "학생 정보 입력" : "학생 정보 수정"}</h2>
                         <form>
                             <label>
                                 이름:
-                                <input type="text" name="name" />
-                            </label>
-                            <br />
-                            <label>
-                                학과:
-                                <input type="text" name="department" />
+                                <input type="text" name="name" value={updateStudentInfo.name} />
                             </label>
                             <br />
                             <label>
                                 학번:
-                                <input type="text" name="classnumber" />
-                            </label>
-                            <br />
-                            <label>
-                                전화번호:
-                                <input type="text" name="phonenumber" />
-                            </label>
-                            <br />
-                            <label>
-                                이메일:
-                                <input type="email" name="email" />
+                                <input type="text" name="classnumber" value={updateStudentInfo.classnumber} />
                             </label>
                             <br />
                             <label>
                                 학년:
-                                <input type="text" name="grade" />
+                                <input type="text" name="grade" value={updateStudentInfo.grade} />
                             </label>
                             <br />
-                            <button className={styles.submitBtn} type="submit">저장</button>
+                            <label>
+                                학과:
+                                <input type="text" name="department" value={updateStudentInfo.department} />
+                            </label>
+                            <br />
+                            <label>
+                                전화번호:
+                                <input type="text" name="phonenumber" value={updateStudentInfo.phonenumber} />
+                            </label>
+                            <br />
+                            <label>
+                                이메일:
+                                <input type="email" name="email" value={updateStudentInfo.email} />
+                            </label>
+                            <br />
+                            <button className={styles.submitBtn} type="submit">
+                                {isStudentAddSelected ? "저장" : "수정"}
+                            </button>
                         </form>
                     </div>
                 </div>

@@ -162,7 +162,6 @@ const Root = ({ }) => {
         <div className={styles.container}>
             <div className={styles.wrap}>
                 <div className={styles.h2Wrap}>
-                    <h2 className={styles.h2Text}>홈 대시보드</h2>
                 </div>
                 {/* 현재 날짜 및 시간 */}
                 <div className={styles.infoWrap2}>
